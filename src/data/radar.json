@@ -1,0 +1,467 @@
+{
+  "meta": {
+    "date": "2026-08-28",
+    "snapshot": "2026.08.28 / 08:06 UTC",
+    "reportFile": "startup_radar_2026-08-28_zh.md"
+  },
+  "signals": [
+    { "source": "Product Hunt", "count": "18", "note": "今日发布样本", "type": "发布" },
+    { "source": "Show HN", "count": "100", "note": "近七日项目样本", "type": "技术" },
+    { "source": "GitHub Trending", "count": "51", "note": "今日去重仓库", "type": "开源" },
+    { "source": "YC RFS", "count": "03", "note": "高相关最新命题", "type": "投资" },
+    { "source": "Shopify Reviews", "count": "1,171", "note": "两个问题应用评论", "type": "需求" },
+    { "source": "36氪 / IT桔子", "count": "06", "note": "近期产业样本", "type": "国内" }
+  ],
+  "themes": [
+    {
+      "name": "Agent 验证与可观测",
+      "status": "强共振",
+      "evidence": "4 类来源",
+      "summary": "评测、引用、运行时差异、恢复证明和成本归因同时出现。",
+      "sources": ["GitHub", "Product Hunt", "Show HN", "YC"]
+    },
+    {
+      "name": "多人 Agent 工作空间",
+      "status": "供给增长",
+      "evidence": "3 类来源",
+      "summary": "从个人聊天转向团队共享、接管、审批和知识沉淀。",
+      "sources": ["YC", "Product Hunt", "Show HN"]
+    },
+    {
+      "name": "本地优先工作记忆",
+      "status": "持续重复",
+      "evidence": "3 类来源",
+      "summary": "屏幕活动、会话记忆和隐私边界成为 Agent 上下文入口。",
+      "sources": ["GitHub", "Product Hunt", "Show HN"]
+    },
+    {
+      "name": "企业小软件",
+      "status": "早期命题",
+      "evidence": "2 类来源",
+      "summary": "生成代码变容易后，部署、权限、审计和分享成为新瓶颈。",
+      "sources": ["YC", "Product Hunt"]
+    },
+    {
+      "name": "Physical AI 工具链",
+      "status": "资本拥挤",
+      "evidence": "3 类来源",
+      "summary": "机器人融资密集，更适合寻找校准、数据质量和运维工具切口。",
+      "sources": ["YC", "Dealroom", "36氪"]
+    },
+    {
+      "name": "电商基础体验修复",
+      "status": "需求明确",
+      "evidence": "1,171 条评论",
+      "summary": "搜索相关性和订阅管理存在具体、近期且可量化的商家损失。",
+      "sources": ["Shopify App Store"]
+    }
+  ],
+  "datasets": {
+    "launches": [
+      {
+        "name": "PageIndex",
+        "source": "Product Hunt",
+        "metric": "2026 新产品",
+        "category": "专业文档",
+        "signal": "跨长文档回答，并可跳到精确来源行。",
+        "url": "https://www.producthunt.com/products/pageindexai"
+      },
+      {
+        "name": "screenpipe",
+        "source": "Product Hunt",
+        "metric": "133 followers",
+        "category": "工作记忆",
+        "signal": "记录电脑工作，为 Agent 提供持续上下文。",
+        "url": "https://www.producthunt.com/products/screenpipe"
+      },
+      {
+        "name": "OpenTag",
+        "source": "Product Hunt",
+        "metric": "今日发布",
+        "category": "团队 Agent",
+        "signal": "AI 同事直接驻留在 Slack 与 Teams。",
+        "url": "https://www.producthunt.com/products/opentag"
+      },
+      {
+        "name": "Revalvo",
+        "source": "Product Hunt",
+        "metric": "今日发布",
+        "category": "模型评测",
+        "signal": "跨模型运行 prompt，评分、版本化后再发布。",
+        "url": "https://www.producthunt.com/products/revalvo"
+      },
+      {
+        "name": "Caddi",
+        "source": "Product Hunt",
+        "metric": "今日发布",
+        "category": "流程学习",
+        "signal": "用户演示一次工作，系统据此构建 Agent。",
+        "url": "https://www.producthunt.com/"
+      },
+      {
+        "name": "Glisio",
+        "source": "Product Hunt",
+        "metric": "今日发布",
+        "category": "本地媒体",
+        "signal": "Mac 本地录制与快速剪辑，直接输出 MP4。",
+        "url": "https://www.producthunt.com/"
+      },
+      {
+        "name": "CTRL Micro",
+        "source": "Product Hunt",
+        "metric": "今日发布",
+        "category": "Agent 硬件",
+        "signal": "用触觉控制台操控 Mac 与 AI Agent。",
+        "url": "https://www.producthunt.com/"
+      },
+      {
+        "name": "Microduck",
+        "source": "Product Hunt",
+        "metric": "今日发布",
+        "category": "机器人",
+        "signal": "可由用户自行训练的小型开源双足机器人。",
+        "url": "https://www.producthunt.com/"
+      }
+    ],
+    "technical": [
+      {
+        "name": "LatticeDB",
+        "source": "Show HN",
+        "metric": "182 points / 53 comments",
+        "category": "数据库",
+        "signal": "尝试把 SQLite 式体验带到图数据库。",
+        "url": "https://github.com/jeffhajewski/latticedb"
+      },
+      {
+        "name": "Experiential",
+        "source": "Show HN",
+        "metric": "167 points / 30 comments",
+        "category": "模型路由",
+        "signal": "开放式模型路由，并用使用反馈改进模型。",
+        "url": "https://github.com/experientiallabs/experiential"
+      },
+      {
+        "name": "CarWatch",
+        "source": "Show HN",
+        "metric": "145 points / 66 comments",
+        "category": "边缘 AI",
+        "signal": "Raspberry Pi、摄像头和本地 Qwen 进入汽车。",
+        "url": "https://news.ycombinator.com/item?id=49435675"
+      },
+      {
+        "name": "OzBrain",
+        "source": "Show HN",
+        "metric": "92 points / 58 comments",
+        "category": "共享知识",
+        "signal": "在团队成员与多个 Agent 之间共享知识。",
+        "url": "https://news.ycombinator.com/item?id=49394827"
+      },
+      {
+        "name": "Tare",
+        "source": "Show HN",
+        "metric": "76 points / 55 comments",
+        "category": "AI FinOps",
+        "signal": "从本地日志解释 Claude 额度消耗。",
+        "url": "https://news.ycombinator.com/item?id=49467551"
+      },
+      {
+        "name": "Ambient Context",
+        "source": "Show HN",
+        "metric": "61 points / 25 comments",
+        "category": "工作记忆",
+        "signal": "不留截图，把屏幕活动转成 Markdown。",
+        "url": "https://news.ycombinator.com/item?id=49429095"
+      },
+      {
+        "name": "Restoredrill",
+        "source": "Show HN",
+        "metric": "44 points / 21 comments",
+        "category": "可靠性",
+        "signal": "持续证明 Postgres 备份实际可恢复。",
+        "url": "https://news.ycombinator.com/item?id=49465291"
+      },
+      {
+        "name": "RealDiff",
+        "source": "Show HN",
+        "metric": "38 points / 8 comments",
+        "category": "代码验证",
+        "signal": "在 PR 中展示运行时行为变化。",
+        "url": "https://news.ycombinator.com/item?id=49464459"
+      }
+    ],
+    "github": [
+      {
+        "name": "bilawalsidhu/gods-eye-view",
+        "source": "GitHub Daily",
+        "metric": "+1,984 stars",
+        "category": "JavaScript",
+        "signal": "融合公共实时信号的 3D 空间情报界面。",
+        "url": "https://github.com/bilawalsidhu/gods-eye-view"
+      },
+      {
+        "name": "tt-a1i/archify",
+        "source": "GitHub Daily",
+        "metric": "+4,239 stars",
+        "category": "JavaScript",
+        "signal": "用 typed IR 和确定性验证生成架构图。",
+        "url": "https://github.com/tt-a1i/archify"
+      },
+      {
+        "name": "K-Dense-AI/scientific-agent-skills",
+        "source": "GitHub Daily",
+        "metric": "+498 stars",
+        "category": "Python",
+        "signal": "科研 Agent Skill 供应链与版本治理。",
+        "url": "https://github.com/K-Dense-AI/scientific-agent-skills"
+      },
+      {
+        "name": "calesthio/OpenMontage",
+        "source": "GitHub Daily",
+        "metric": "+1,292 stars",
+        "category": "Python",
+        "signal": "带预算、审批和运行回放的视频生产系统。",
+        "url": "https://github.com/calesthio/OpenMontage"
+      },
+      {
+        "name": "securo-finance/securo",
+        "source": "GitHub Weekly",
+        "metric": "+432 stars",
+        "category": "Python",
+        "signal": "自托管、隐私优先的个人财务。",
+        "url": "https://github.com/securo-finance/securo"
+      },
+      {
+        "name": "bookorbit/bookorbit",
+        "source": "GitHub Weekly",
+        "metric": "+803 stars",
+        "category": "TypeScript",
+        "signal": "跨设备同步阅读进度与标注。",
+        "url": "https://github.com/bookorbit/bookorbit"
+      },
+      {
+        "name": "chaitanyagiri/munder-difflin",
+        "source": "GitHub Weekly",
+        "metric": "+2,017 stars",
+        "category": "JavaScript",
+        "signal": "跨供应商本地多 Agent 办公室。",
+        "url": "https://github.com/chaitanyagiri/munder-difflin"
+      },
+      {
+        "name": "santifer/career-ops",
+        "source": "GitHub Weekly",
+        "metric": "+2,611 stars",
+        "category": "JavaScript",
+        "signal": "覆盖职位扫描到面试准备的本地工作流。",
+        "url": "https://github.com/santifer/career-ops"
+      },
+      {
+        "name": "thedotmack/claude-mem",
+        "source": "GitHub Daily",
+        "metric": "+143 stars",
+        "category": "JavaScript",
+        "signal": "跨会话捕获、压缩并召回 Agent 上下文。",
+        "url": "https://github.com/thedotmack/claude-mem"
+      },
+      {
+        "name": "OpenCut-app/OpenCut",
+        "source": "GitHub Daily",
+        "metric": "+478 stars",
+        "category": "TypeScript",
+        "signal": "开源 CapCut 替代，验证主权软件需求。",
+        "url": "https://github.com/OpenCut-app/OpenCut"
+      }
+    ],
+    "market": [
+      {
+        "name": "A Cloud for Small Software",
+        "source": "YC RFS",
+        "metric": "Fall 2026",
+        "category": "企业软件",
+        "signal": "Agent 生成小工具后，部署、身份和权限仍然困难。",
+        "url": "https://www.ycombinator.com/rfs"
+      },
+      {
+        "name": "Multiplayer AI",
+        "source": "YC RFS",
+        "metric": "Fall 2026",
+        "category": "协作",
+        "signal": "团队需要进入同一 Agent 会话并接管、交接。",
+        "url": "https://www.ycombinator.com/rfs"
+      },
+      {
+        "name": "The Primer",
+        "source": "YC RFS",
+        "metric": "Fall 2026",
+        "category": "教育",
+        "signal": "面向儿童基础技能的长期自适应 AI 导师。",
+        "url": "https://www.ycombinator.com/rfs"
+      },
+      {
+        "name": "Humanoid robotics",
+        "source": "Dealroom",
+        "metric": "84 startups / $6.2B",
+        "category": "Physical AI",
+        "signal": "资本热度高，供应链和部署工具可能受益。",
+        "url": "https://dealroom.co/"
+      },
+      {
+        "name": "中国灵巧手赛道",
+        "source": "IT桔子 / 36氪",
+        "metric": "47 家 / 74 起融资",
+        "category": "机器人",
+        "signal": "整机自研与第三方供应商双轨竞争。",
+        "url": "https://www.36kr.com/p/3936247953898882"
+      },
+      {
+        "name": "深海机器人",
+        "source": "36氪",
+        "metric": "超 5 亿元 A 轮",
+        "category": "特种作业",
+        "signal": "油气、采矿和深海作业形成软硬件一体订单。",
+        "url": "https://www.36kr.com/p/3937295227796864"
+      }
+    ],
+    "pain": [
+      {
+        "name": "Search & Discovery：无关结果",
+        "source": "Shopify App Store",
+        "metric": "2.7 / 458 reviews",
+        "category": "站内搜索",
+        "signal": "精确型号或 SKU 查询返回大量无关商品。",
+        "url": "https://apps.shopify.com/search-and-discovery"
+      },
+      {
+        "name": "Search & Discovery：缺货过滤",
+        "source": "Shopify App Store",
+        "metric": "2026-07 评论",
+        "category": "商品过滤",
+        "signal": "尺码筛选后仍展示无库存商品。",
+        "url": "https://apps.shopify.com/search-and-discovery"
+      },
+      {
+        "name": "Search & Discovery：过滤器上限",
+        "source": "Shopify App Store",
+        "metric": "25 filters limit",
+        "category": "复杂目录",
+        "signal": "复杂店铺受到固定过滤器数量限制。",
+        "url": "https://apps.shopify.com/search-and-discovery"
+      },
+      {
+        "name": "Subscriptions：意外订阅",
+        "source": "Shopify App Store",
+        "metric": "3.7 / 713 reviews",
+        "category": "订阅电商",
+        "signal": "切换商品变体后购买方式可能自动变为订阅。",
+        "url": "https://apps.shopify.com/shopify-subscriptions"
+      },
+      {
+        "name": "Subscriptions：自助修改困难",
+        "source": "Shopify App Store",
+        "metric": "2026-07 评论",
+        "category": "客户门户",
+        "signal": "客户无法顺畅修改订阅，增加客服沟通。",
+        "url": "https://apps.shopify.com/shopify-subscriptions"
+      },
+      {
+        "name": "Subscriptions：折扣套利",
+        "source": "Shopify App Store",
+        "metric": "2026-07 评论",
+        "category": "收入保护",
+        "signal": "用户获取首单折扣后可立即取消订阅。",
+        "url": "https://apps.shopify.com/shopify-subscriptions"
+      }
+    ]
+  },
+  "opportunities": [
+    {
+      "rank": "01",
+      "score": 86,
+      "category": "Agent 基础设施",
+      "title": "Agent 产物验收与证据层",
+      "thesis": "让每次 Agent 交付都带来源、验证、成本、审批记录与可重放的 receipt。",
+      "buyer": "工程、法务、投研和内容生产团队",
+      "wedge": "从 PR 的运行时行为差异，或专业文档的逐行引用开始。",
+      "proof": ["GitHub Archify", "Product Hunt PageIndex / Revalvo", "Show HN RealDiff / Restoredrill"],
+      "risk": "通用评测容易被模型平台内置，必须进入正式审批或合规流程。",
+      "sources": [
+        ["PageIndex", "https://www.producthunt.com/products/pageindexai"],
+        ["RealDiff", "https://news.ycombinator.com/item?id=49464459"],
+        ["Archify", "https://github.com/tt-a1i/archify"]
+      ]
+    },
+    {
+      "rank": "02",
+      "score": 83,
+      "category": "AI FinOps",
+      "title": "模型额度与任务收益账本",
+      "thesis": "回答“额度花到哪里、哪些 Agent 真正完成了任务、什么时候该换模型”。",
+      "buyer": "同时使用 Claude、Codex、Gemini 的研发团队",
+      "wedge": "先读取本地会话日志，做零上传的 token 归因和异常诊断。",
+      "proof": ["Show HN Tare：76 points / 55 comments", "Product Hunt Revalvo", "GitHub 多模型路由持续上榜"],
+      "risk": "只展示 token 图表不够，需要连接结果质量、任务完成率和预算策略。",
+      "sources": [
+        ["Tare", "https://news.ycombinator.com/item?id=49467551"],
+        ["Revalvo", "https://www.producthunt.com/products/revalvo"]
+      ]
+    },
+    {
+      "rank": "03",
+      "score": 83,
+      "category": "Commerce",
+      "title": "电商目录质量与搜索守门员",
+      "thesis": "持续检查搜索相关性、缺货过滤、SKU 命中和多语言同义词，避免改版直接损伤转化。",
+      "buyer": "SKU 较多的 Shopify 品牌和代理商",
+      "wedge": "每天跑真实买家查询，发现回归后给出可直接发布的规则修复。",
+      "proof": ["Shopify 官方搜索应用 2.7 分", "458 条评论中 19% 为一星", "近期评论直接报告无关结果和过滤限制"],
+      "risk": "平台依赖强；应把测试资产和诊断能力扩展到多个电商系统。",
+      "sources": [
+        ["Shopify Search & Discovery", "https://apps.shopify.com/search-and-discovery"]
+      ]
+    },
+    {
+      "rank": "04",
+      "score": 80,
+      "category": "Internal Tools",
+      "title": "企业“小软件云”",
+      "thesis": "让 Agent 临时做出的内部工具具备一键分享、权限、审计、数据库和生命周期管理。",
+      "buyer": "使用飞书或企业微信的 50—500 人团队",
+      "wedge": "先解决一个入口：表格加审批生成受控内部应用。",
+      "proof": ["YC Fall 2026 明确提出 A Cloud for Small Software", "Product Hunt 持续出现 vibe automation", "GitHub 本地优先 Agent 工作区上榜"],
+      "risk": "产品面很宽，第一版只能服务一种数据源、一种权限模型和一种部署方式。",
+      "sources": [
+        ["YC RFS", "https://www.ycombinator.com/rfs"],
+        ["Product Hunt", "https://www.producthunt.com/"]
+      ]
+    },
+    {
+      "rank": "05",
+      "score": 80,
+      "category": "Reliability",
+      "title": "持续恢复证明",
+      "thesis": "备份成功不等于可恢复；自动恢复到隔离环境、做完整性检查并留下审计证据。",
+      "buyer": "没有专职 SRE 的 SaaS、小型金融和医疗软件团队",
+      "wedge": "Postgres 单数据库、对象存储备份、每周验证、失败告警。",
+      "proof": ["Show HN Restoredrill：44 points / 21 comments", "问题直接关联停机与合规风险", "MVP 集成边界清晰"],
+      "risk": "不是新概念，胜负取决于安装成本、可信隔离和审计报告。",
+      "sources": [
+        ["Restoredrill", "https://news.ycombinator.com/item?id=49465291"]
+      ]
+    },
+    {
+      "rank": "06",
+      "score": 76,
+      "category": "Physical AI",
+      "title": "机器人部署与数据质量工具链",
+      "thesis": "不造整机，帮助机器人团队做传感器校准、现场回放、数据质量和异常定位。",
+      "buyer": "具身智能、工业机器人和特种作业团队",
+      "wedge": "选择一种传感器和一个现场工序，交付可重复的验收报告。",
+      "proof": ["YC 将 AI 进入物理世界列为最新主题", "Dealroom 显示机器人和双用途方向升温", "国内机器人融资高度密集"],
+      "risk": "销售周期长且需要现场能力；不适合纯软件流量打法。",
+      "sources": [
+        ["YC RFS", "https://www.ycombinator.com/rfs"],
+        ["Dealroom", "https://dealroom.co/"],
+        ["36氪机器人融资观察", "https://www.36kr.com/p/3936247953898882"]
+      ]
+    }
+  ]
+}

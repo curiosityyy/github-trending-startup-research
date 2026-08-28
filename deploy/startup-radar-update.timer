@@ -1,0 +1,11 @@
+[Unit]
+Description=Run Startup Radar research every morning
+
+[Timer]
+OnCalendar=*-*-* 01:15:00 UTC
+Persistent=true
+RandomizedDelaySec=5min
+Unit=startup-radar-update.service
+
+[Install]
+WantedBy=timers.target

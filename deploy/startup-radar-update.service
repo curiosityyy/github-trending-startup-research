@@ -1,0 +1,20 @@
+[Unit]
+Description=Generate and deploy the daily Startup Radar update
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=ec2-user
+Group=ec2-user
+Environment=HOME=/home/ec2-user
+Environment=PATH=/home/ec2-user/.local/share/fnm/node-versions/v22.22.0/installation/bin:/usr/local/bin:/usr/bin:/bin
+WorkingDirectory=/home/ec2-user/project/github-trending-startup-research
+ExecStart=/bin/bash /home/ec2-user/project/github-trending-startup-research/automation/update_daily.sh
+TimeoutStartSec=45min
+Nice=10
+IOSchedulingClass=best-effort
+IOSchedulingPriority=6
+
+[Install]
+WantedBy=multi-user.target

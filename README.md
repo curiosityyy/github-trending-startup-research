@@ -19,6 +19,17 @@ npm run build
 
 当前机器使用只监听回环地址的静态服务，并由 Caddy 在 `/startup-radar/` 路径对外转发。部署文件位于 [`deploy/`](deploy/)。
 
+## Daily automation
+
+`startup-radar-update.timer` 每天在北京时间 09:15 后的五分钟窗口内运行。任务在隔离 worktree 中研究并更新完整数据页、机会页和当日报告；只有允许文件白名单、数据校验、前端构建、Git 推送和 HTTP 健康检查全部成功后才切换线上版本。
+
+检查定时器：
+
+```bash
+systemctl status startup-radar-update.timer
+journalctl -u startup-radar-update.service
+```
+
 ## Reports
 
 - [2026-08-28 Startup Radar 创业机会日报](docs/startup_radar_2026-08-28_zh.md)

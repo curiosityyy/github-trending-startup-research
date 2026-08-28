@@ -35,6 +35,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   transition: background-color .3s cubic-bezier(.16,1,.3,1), color .3s cubic-bezier(.16,1,.3,1);
 }
 .nav-link:hover { background: #e4e4e7; color: #18181b; }
+.nav-link-active { color: #18181b; background: #e4e4e7; }
 
 .primary-action, .secondary-action {
   display: inline-flex;
@@ -88,6 +89,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .reveal:nth-child(3) { animation-delay: 150ms; }
 .reveal:nth-child(4) { animation-delay: 220ms; }
 .signal-row, .opportunity-row { animation: reveal .65s cubic-bezier(.16,1,.3,1) both; animation-delay: var(--delay); }
+.data-row { animation: reveal .55s cubic-bezier(.16,1,.3,1) both; animation-delay: var(--delay); }
 .live-dot { width: 7px; height: 7px; border-radius: 999px; background: #327a5b; animation: breathe 2.1s ease-in-out infinite; }
 
 .skeleton { position: relative; overflow: hidden; background: #e4e4e1; }

@@ -6,6 +6,7 @@ import {
   Check,
   Clock,
   Copy,
+  Database,
   GithubLogo,
   MagnifyingGlass,
   Pulse,
@@ -13,110 +14,11 @@ import {
   WarningCircle,
   X,
 } from '@phosphor-icons/react'
+import radar from './data/radar.json'
+import DataExplorer from './DataExplorer.jsx'
 
-const opportunities = [
-  {
-    rank: '01',
-    score: 86,
-    category: 'Agent 基础设施',
-    title: 'Agent 产物验收与证据层',
-    thesis: '让每次 Agent 交付都带来源、验证、成本、审批记录与可重放的 receipt。',
-    buyer: '工程、法务、投研和内容生产团队',
-    wedge: '从 PR 的运行时行为差异，或专业文档的逐行引用开始。',
-    proof: ['GitHub Archify', 'Product Hunt PageIndex / Revalvo', 'Show HN RealDiff / Restoredrill'],
-    risk: '通用评测容易被模型平台内置，必须进入正式审批或合规流程。',
-    sources: [
-      ['PageIndex', 'https://www.producthunt.com/products/pageindexai'],
-      ['RealDiff', 'https://news.ycombinator.com/item?id=49464459'],
-      ['Archify', 'https://github.com/tt-a1i/archify'],
-    ],
-  },
-  {
-    rank: '02',
-    score: 83,
-    category: 'AI FinOps',
-    title: '模型额度与任务收益账本',
-    thesis: '回答“额度花到哪里、哪些 Agent 真正完成了任务、什么时候该换模型”。',
-    buyer: '同时使用 Claude、Codex、Gemini 的研发团队',
-    wedge: '先读取本地会话日志，做零上传的 token 归因和异常诊断。',
-    proof: ['Show HN Tare：76 points / 55 comments', 'Product Hunt Revalvo', 'GitHub 多模型路由持续上榜'],
-    risk: '只展示 token 图表不够，需要连接结果质量、任务完成率和预算策略。',
-    sources: [
-      ['Tare', 'https://news.ycombinator.com/item?id=49467551'],
-      ['Revalvo', 'https://www.producthunt.com/products/revalvo'],
-    ],
-  },
-  {
-    rank: '03',
-    score: 83,
-    category: 'Commerce',
-    title: '电商目录质量与搜索守门员',
-    thesis: '持续检查搜索相关性、缺货过滤、SKU 命中和多语言同义词，避免改版直接损伤转化。',
-    buyer: 'SKU 较多的 Shopify 品牌和代理商',
-    wedge: '每天跑真实买家查询，发现回归后给出可直接发布的规则修复。',
-    proof: ['Shopify 官方搜索应用 2.7 分', '458 条评论中 19% 为一星', '近期评论直接报告无关结果和过滤限制'],
-    risk: '平台依赖强；应把测试资产和诊断能力扩展到多个电商系统。',
-    sources: [
-      ['Shopify Search & Discovery', 'https://apps.shopify.com/search-and-discovery'],
-    ],
-  },
-  {
-    rank: '04',
-    score: 80,
-    category: 'Internal Tools',
-    title: '企业“小软件云”',
-    thesis: '让 Agent 临时做出的内部工具具备一键分享、权限、审计、数据库和生命周期管理。',
-    buyer: '使用飞书或企业微信的 50—500 人团队',
-    wedge: '先解决一个入口：表格加审批生成受控内部应用。',
-    proof: ['YC Fall 2026 明确提出 A Cloud for Small Software', 'Product Hunt 持续出现 vibe automation', 'GitHub 本地优先 Agent 工作区上榜'],
-    risk: '产品面很宽，第一版只能服务一种数据源、一种权限模型和一种部署方式。',
-    sources: [
-      ['YC RFS', 'https://www.ycombinator.com/rfs'],
-      ['Product Hunt', 'https://www.producthunt.com/'],
-    ],
-  },
-  {
-    rank: '05',
-    score: 80,
-    category: 'Reliability',
-    title: '持续恢复证明',
-    thesis: '备份成功不等于可恢复；自动恢复到隔离环境、做完整性检查并留下审计证据。',
-    buyer: '没有专职 SRE 的 SaaS、小型金融和医疗软件团队',
-    wedge: 'Postgres 单数据库、对象存储备份、每周验证、失败告警。',
-    proof: ['Show HN Restoredrill：44 points / 21 comments', '问题直接关联停机与合规风险', 'MVP 集成边界清晰'],
-    risk: '不是新概念，胜负取决于安装成本、可信隔离和审计报告。',
-    sources: [
-      ['Restoredrill', 'https://news.ycombinator.com/item?id=49465291'],
-    ],
-  },
-  {
-    rank: '06',
-    score: 76,
-    category: 'Physical AI',
-    title: '机器人部署与数据质量工具链',
-    thesis: '不造整机，帮助机器人团队做传感器校准、现场回放、数据质量和异常定位。',
-    buyer: '具身智能、工业机器人和特种作业团队',
-    wedge: '选择一种传感器和一个现场工序，交付可重复的验收报告。',
-    proof: ['YC 将 AI 进入物理世界列为最新主题', 'Dealroom 显示机器人和双用途方向升温', '国内机器人融资高度密集'],
-    risk: '销售周期长且需要现场能力；不适合纯软件流量打法。',
-    sources: [
-      ['YC RFS', 'https://www.ycombinator.com/rfs'],
-      ['Dealroom', 'https://dealroom.co/'],
-      ['36氪机器人融资观察', 'https://www.36kr.com/p/3936247953898882'],
-    ],
-  },
-]
-
-const signals = [
-  { source: 'Product Hunt', count: '18', note: '今日发布样本', type: '发布' },
-  { source: 'Show HN', count: '100', note: '近七日项目样本', type: '技术' },
-  { source: 'GitHub Trending', count: '51', note: '今日去重仓库', type: '开源' },
-  { source: 'YC RFS', count: '03', note: '高相关最新命题', type: '投资' },
-  { source: 'Shopify Reviews', count: '1,171', note: '两个问题应用评论', type: '需求' },
-  { source: '36氪 / IT桔子', count: '06', note: '近期产业样本', type: '国内' },
-]
-
-const filters = ['全部', 'Agent 基础设施', 'AI FinOps', 'Commerce', 'Internal Tools', 'Reliability', 'Physical AI']
+const { meta, opportunities, signals } = radar
+const filters = ['全部', ...new Set(opportunities.map((item) => item.category))]
 
 function ScoreRing({ score }) {
   return (
@@ -150,6 +52,7 @@ function LoadingRows() {
 }
 
 function App() {
+  const [page, setPage] = useState(() => window.location.hash === '#data' ? 'data' : 'home')
   const [activeFilter, setActiveFilter] = useState('全部')
   const [query, setQuery] = useState('')
   const [loading, setLoading] = useState(true)
@@ -158,6 +61,15 @@ function App() {
   useEffect(() => {
     const timer = window.setTimeout(() => setLoading(false), 460)
     return () => window.clearTimeout(timer)
+  }, [])
+
+  useEffect(() => {
+    const handleRoute = () => {
+      setPage(window.location.hash === '#data' ? 'data' : 'home')
+      window.scrollTo({ top: 0, behavior: 'instant' })
+    }
+    window.addEventListener('hashchange', handleRoute)
+    return () => window.removeEventListener('hashchange', handleRoute)
   }, [])
 
   const visibleOpportunities = useMemo(() => {
@@ -183,13 +95,14 @@ function App() {
     <div className="min-h-[100dvh] bg-[#f4f5f1] text-zinc-900">
       <header className="border-b border-zinc-300/80">
         <nav className="mx-auto flex max-w-[1400px] items-center justify-between px-4 py-4 md:px-8">
-          <a href="#top" className="flex items-center gap-3 font-semibold tracking-tight">
+          <a href="#home" className="flex items-center gap-3 font-semibold tracking-tight">
             <span className="signal-mark" aria-hidden="true"><i /><i /><i /></span>
             STARTUP RADAR
           </a>
           <div className="flex items-center gap-2 text-sm">
-            <a className="nav-link hidden sm:inline-flex" href="#method">方法</a>
-            <a className="nav-link hidden sm:inline-flex" href="#opportunities">机会</a>
+            <a className={`nav-link hidden sm:inline-flex ${page === 'home' ? 'nav-link-active' : ''}`} href="#home">机会</a>
+            <a className={`nav-link hidden sm:inline-flex ${page === 'data' ? 'nav-link-active' : ''}`} href="#data">数据全景</a>
+            <a aria-label="打开数据全景" className={`nav-link inline-flex sm:hidden ${page === 'data' ? 'nav-link-active' : ''}`} href="#data"><Database size={17} /></a>
             <a
               className="inline-flex items-center gap-2 rounded-full bg-zinc-900 px-4 py-2 text-[#f4f5f1] transition-transform active:scale-[0.98]"
               href="https://github.com/curiosityyy/github-trending-startup-research"
@@ -203,12 +116,12 @@ function App() {
         </nav>
       </header>
 
-      <main id="top">
+      {page === 'data' ? <DataExplorer radar={radar} /> : <main id="top">
         <section className="mx-auto grid max-w-[1400px] gap-12 px-4 py-14 md:grid-cols-12 md:px-8 md:py-24">
           <div className="md:col-span-7">
             <div className="reveal flex items-center gap-3 font-mono text-xs uppercase tracking-[0.16em] text-[#327a5b]">
               <span className="live-dot" />
-              Snapshot 2026.08.28 / 08:06 UTC
+              Snapshot {meta.snapshot}
             </div>
             <h1 className="reveal mt-7 max-w-4xl text-4xl font-semibold leading-[0.98] tracking-[-0.055em] md:text-6xl">
               从热闹的新产品里，<br />找出值得验证的生意。
@@ -284,7 +197,7 @@ function App() {
           <div className="grid items-end gap-8 md:grid-cols-12">
             <div className="md:col-span-7">
               <p className="section-kicker">OPPORTUNITY BOARD / 02</p>
-              <h2 className="mt-4 text-3xl font-semibold tracking-[-0.045em] md:text-5xl">今天值得测试的六个方向</h2>
+              <h2 className="mt-4 text-3xl font-semibold tracking-[-0.045em] md:text-5xl">今天值得测试的 {opportunities.length} 个方向</h2>
               <p className="mt-5 max-w-[60ch] leading-relaxed text-zinc-600">评分由需求证据、买家清晰度、跨源共振、两周可验证性、分发路径和防御性组成。它是研究优先级，不是市场规模预测。</p>
             </div>
             <div className="md:col-span-5">
@@ -400,13 +313,13 @@ function App() {
             </ol>
           </div>
         </section>
-      </main>
+      </main>}
 
       <footer className="bg-zinc-900 text-zinc-400">
         <div className="mx-auto flex max-w-[1400px] flex-col gap-5 px-4 py-8 text-sm md:flex-row md:items-center md:justify-between md:px-8">
           <div className="flex items-center gap-3"><Clock size={17} /> 每日快照会变化，所有数字均保留日期。</div>
           <div className="flex flex-wrap gap-5">
-            <a className="footer-link" href="https://github.com/curiosityyy/github-trending-startup-research/blob/main/docs/startup_radar_2026-08-28_zh.md" target="_blank" rel="noreferrer">完整报告</a>
+            <a className="footer-link" href={`https://github.com/curiosityyy/github-trending-startup-research/blob/main/docs/${meta.reportFile}`} target="_blank" rel="noreferrer">完整报告</a>
             <a className="footer-link" href="https://github.com/curiosityyy/github-trending-startup-research/blob/main/docs/startup_radar_method_zh.md" target="_blank" rel="noreferrer">研究方法</a>
             <a className="footer-link" href="https://github.com/curiosityyy/github-trending-startup-research" target="_blank" rel="noreferrer">数据与历史</a>
           </div>
