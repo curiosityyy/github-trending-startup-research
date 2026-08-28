@@ -9,3 +9,15 @@
 		reverse_proxy 127.0.0.1:8081
 	}
 }
+
+35-90-72-78.sslip.io {
+	redir / /startup-radar/ 308
+
+	handle_path /startup-radar/* {
+		reverse_proxy 127.0.0.1:4173
+	}
+
+	handle {
+		respond "Not found" 404
+	}
+}
