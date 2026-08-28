@@ -1,7 +1,9 @@
 # GitHub Trending 创业灵感日报（2026-08-28）
 
-> 快照时间：2026-08-28 约 07:00 UTC  
-> 范围：GitHub Trending 仓库总榜，`Language: Any`、`Spoken Language: Any`；覆盖 [Daily](https://github.com/trending?since=daily)、[Weekly](https://github.com/trending?since=weekly)、[Monthly](https://github.com/trending?since=monthly)。  
+> 快照时间：2026-08-28 约 07:00 UTC
+>
+> 范围：GitHub Trending 仓库总榜，`Language: Any`、`Spoken Language: Any`；覆盖 [Daily](https://github.com/trending?since=daily)、[Weekly](https://github.com/trending?since=weekly)、[Monthly](https://github.com/trending?since=monthly)。
+>
 > 对比基线：[2026-08-26 报告](github_trending_startup_report_2026-08-26_zh.md)。
 
 ## 1. 今日结论
@@ -304,4 +306,3 @@
 今天最大的创业启发不是某个仓库涨了多少 Star，而是 Agent 生态开始从“生成内容”走向“生产系统”：输入有来源，过程有状态，输出可验证，成本可见，关键步骤有人审批，运行结束还能复盘。
 
 短期最容易传播的是 3D 地球、办公室 Avatar 和漂亮架构图；长期更容易收费的是它们下面的硬能力：数据许可与融合、typed artifact、验证 receipt、权限、审计、版本和行业工作流。创业验证应优先测客户是否把这些产物用于真实决策，而不是是否愿意点 Star。
-
