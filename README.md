@@ -4,5 +4,5 @@
 
 ## Reports
 
+- [2026-08-28 GitHub Trending 创业灵感日报](docs/github_trending_startup_report_2026-08-28_zh.md)
 - [2026-08-26 GitHub Trending 创业灵感报告](docs/github_trending_startup_report_2026-08-26_zh.md)
-
