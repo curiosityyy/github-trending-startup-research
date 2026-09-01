@@ -1,233 +1,235 @@
 {
   "meta": {
-    "date": "2026-08-31",
-    "snapshot": "2026.08.31 / 01:22 UTC",
-    "reportFile": "startup_radar_2026-08-31_zh.md"
+    "date": "2026-09-01",
+    "snapshot": "2026.09.01 / 01:21 UTC",
+    "reportFile": "startup_radar_2026-09-01_zh.md"
   },
   "signals": [
-    { "source": "Product Hunt", "count": "17", "note": "公开首页可见的当前发布；榜单按 PH 时区滚动", "type": "发布" },
-    { "source": "Show HN", "count": "837", "note": "2026-08-24 00:00 UTC 后的公开 API 快照", "type": "技术" },
-    { "source": "GitHub Trending", "count": "50", "note": "daily 19 / weekly 19 / monthly 22，跨窗口去重", "type": "开源" },
-    { "source": "YC RFS / Directory", "count": "896", "note": "Fall 2026 RFS 与 AI 目录公开结果数", "type": "投资" },
-    { "source": "Crunchbase News", "count": "521", "note": "2026 上半年 Physical AI 交易样本", "type": "资本" },
-    { "source": "Shopify App Store", "count": "1,222", "note": "Search & Discovery 与 Subscriptions 当前评论合计", "type": "需求" },
-    { "source": "36氪 / IT桔子", "count": "74 / 47", "note": "中国灵巧手融资事件 / 公司公开统计", "type": "国内" }
+    { "source": "Product Hunt", "count": "访问受限", "note": "公开首页与 2026-09-01 日榜均返回 Cloudflare 验证页；未绕过，发布样本改用 YC Launches", "type": "发布" },
+    { "source": "YC Launches", "count": "20", "note": "公开当前页可见的 2026-08-25 至 08-31 发布；票数为滚动快照", "type": "发布" },
+    { "source": "Show HN", "count": "901", "note": "2026-08-25 00:00 UTC 后的公开 Algolia API 快照", "type": "技术" },
+    { "source": "GitHub Trending", "count": "45", "note": "Any / Any：daily 16、weekly 20、monthly 22，跨窗口去重", "type": "开源" },
+    { "source": "YC RFS / Directory", "count": "903", "note": "Fall 2026 RFS 与 AI Company Directory 当前公开结果数", "type": "投资" },
+    { "source": "Shopify App Store", "count": "1,224", "note": "Search & Discovery 464 条、Subscriptions 760 条评论", "type": "需求" },
+    { "source": "36氪 / IT桔子", "count": "3 / 受限", "note": "核验 9 月 1 日两篇与 8 月 31 日一篇融资原文；IT桔子返回安全验证页", "type": "国内" },
+    { "source": "Crunchbase News", "count": "访问受限", "note": "公开 Venture 页面返回 Cloudflare block；未用旧数字补位", "type": "资本" }
   ],
   "themes": [
     {
-      "name": "Agent 行为漂移与证据",
+      "name": "代码、文档与证据同步",
       "status": "强共振",
       "evidence": "3 类来源",
-      "summary": "提示词依赖、运行时差异、事实核查和追加式日志共同指向可重放验收。",
-      "sources": ["Show HN", "Product Hunt", "GitHub"]
+      "summary": "架构图生成、幻灯片漂移检测、运行结果证明和 AI 代码审阅共同把“产出可验证”推向发布门。",
+      "sources": ["GitHub Trending", "Show HN", "YC Launches"]
     },
     {
-      "name": "Agent 隔离运行与接管",
-      "status": "供给加速",
-      "evidence": "3 类来源",
-      "summary": "每个 Agent 的持久机器、权限决策日志和多人接管正从功能变成基础设施。",
-      "sources": ["Product Hunt", "GitHub", "YC"]
-    },
-    {
-      "name": "面向 Agent 的 Web 数据层",
-      "status": "拥挤但未定型",
-      "evidence": "3 类来源",
-      "summary": "搜索、抓取、结构化和来源核验同时增长，差异点转向合规、时效和可追溯。",
-      "sources": ["Product Hunt", "GitHub", "Show HN"]
-    },
-    {
-      "name": "本地与端侧推理",
-      "status": "持续升温",
-      "evidence": "3 类来源",
-      "summary": "Mac 推理服务、微型基础模型和本地优先工作区显示成本、隐私与延迟仍是购买触发点。",
-      "sources": ["Product Hunt", "GitHub", "Show HN"]
-    },
-    {
-      "name": "专业服务工作流产品化",
-      "status": "垂直分化",
+      "name": "Agent 插件与技能供应链",
+      "status": "供给激增",
       "evidence": "2 类来源",
-      "summary": "法律与科研产品不再只卖写作，而是覆盖来源、协作、事项和最终交付。",
-      "sources": ["Product Hunt", "YC"]
+      "summary": "官方与社区插件目录、跨 Agent 上下文和垂直技能库密集出现，缺口转向兼容性、权限和回归治理。",
+      "sources": ["GitHub Trending", "YC Launches"]
     },
     {
-      "name": "电商回归测试缺口",
+      "name": "Small Software 与本地运维",
+      "status": "买家需收窄",
+      "evidence": "3 类来源",
+      "summary": "SSH 运维桌面端、本地 AI 服务器和 YC Small Software 命题支持少用户高价值工具，但通用面板仍拥挤。",
+      "sources": ["Show HN", "GitHub Trending", "YC RFS"]
+    },
+    {
+      "name": "Agent 工具采购与成本凭证",
+      "status": "早期共振",
+      "evidence": "3 类来源",
+      "summary": "Agent 支付卡、能力市场、应用连接层与额度异常讨论显示，下一步不是多一个钱包，而是逐任务授权、收据与审计。",
+      "sources": ["YC Launches", "GitHub Trending", "Show HN"]
+    },
+    {
+      "name": "电商核心应用退化",
       "status": "需求持续",
-      "evidence": "1,222 条评论",
-      "summary": "搜索、过滤和订阅状态切换造成可复现的目录、结账和客服问题。",
+      "evidence": "4 条具体差评",
+      "summary": "搜索应用停用、同义词消失、无关结果和订阅组件无法嵌入都是可回归测试的发布风险。",
       "sources": ["Shopify App Store"]
     },
     {
-      "name": "Physical AI 数据与验收",
-      "status": "资本密集",
+      "name": "Physical AI 现场评测",
+      "status": "资本较重",
       "evidence": "4 类来源",
-      "summary": "全球资金、国内密集融资、开源训练环境和 YC 团队共同把机会推向数据质量与现场验收。",
-      "sources": ["Crunchbase", "36氪 / IT桔子", "GitHub", "YC"]
+      "summary": "真实世界评测发布、仿真环境、YC 物理数据命题和中国硬科技融资共同指向仿真到现场的验收缺口。",
+      "sources": ["YC Launches", "GitHub Trending", "YC RFS", "36氪"]
+    },
+    {
+      "name": "中国深科技从融资走向交付口径",
+      "status": "公司自述待核验",
+      "evidence": "3 篇融资原文",
+      "summary": "端侧 Agent 硬件、量子模拟和太空计算都同时给出融资与订单或部署口径，但尚不能当作经审计收入。",
+      "sources": ["36氪"]
     }
   ],
   "datasets": {
     "launches": [
-      { "name": "Topview Motion Studio", "source": "Product Hunt", "metric": "当前发布", "category": "产品视频", "signal": "把产品 brief、参考图和运动设计技能组合成发布视频。", "url": "https://www.producthunt.com/products/topview-ai" },
-      { "name": "Hyperfocus", "source": "Product Hunt", "metric": "当前发布", "category": "个人计划", "signal": "以目标和日计划为核心的本地 macOS 规划器。", "url": "https://www.producthunt.com/products/hyperfocus-2" },
-      { "name": "Olostep", "source": "Product Hunt", "metric": "当前发布", "category": "Web 数据", "signal": "为 AI 团队提供搜索、抓取、爬取与结构化 API。", "url": "https://www.producthunt.com/products/olostep" },
-      { "name": "Murfy AI", "source": "Product Hunt", "metric": "当前发布", "category": "科研协作", "signal": "覆盖论文写作、引用核验、LaTeX 修复和协作交付。", "url": "https://www.producthunt.com/products/murfy" },
-      { "name": "Referent", "source": "Product Hunt", "metric": "当前发布", "category": "法律工作流", "signal": "把 AI、获客、事项、文件、期限和计费准备放进同一流程。", "url": "https://www.producthunt.com/products/referent" },
-      { "name": "oMLX", "source": "Product Hunt", "metric": "当前发布", "category": "本地推理", "signal": "把 Mac 变成支持批处理和分层 KV 缓存的本地 LLM 服务。", "url": "https://www.producthunt.com/products/omlx" },
-      { "name": "Maritime", "source": "Product Hunt", "metric": "当前发布", "category": "Agent 运行时", "signal": "为每个 Agent 提供隔离、持久、自动休眠唤醒的虚拟机。", "url": "https://www.producthunt.com/products/maritime" },
-      { "name": "Lenz", "source": "Product Hunt", "metric": "本周发布", "category": "事实核查", "signal": "抽取可验证主张并返回来源、争论过程和评分结论。", "url": "https://www.producthunt.com/products/lenz-2" }
+      { "name": "Frontier Computing", "source": "YC Launches", "metric": "10 votes；2026-08-31", "category": "生物计算", "signal": "以生物组织共置存储与计算，定位大模型训练的实验型计算底座。", "url": "https://www.ycombinator.com/launches/TLD-frontier-computing-growing-biological-brains-at-scale" },
+      { "name": "MalwareAnalyzer", "source": "YC Launches", "metric": "1 vote；2026-08-31", "category": "安全分析", "signal": "把静态扫描、真实引爆、交互 VM 和威胁图放进单一分析流程。", "url": "https://www.ycombinator.com/launches/TL7-malwareanalyzer-static-scanning-real-detonation-an-interactive-live-vm-and-a-threat-graph-you-can-pivot-through" },
+      { "name": "Trellus", "source": "YC Launches", "metric": "1 vote；2026-08-31", "category": "销售运营", "signal": "把嵌入式拨号、销售楼层与实时辅导捆绑，价格直接锚定竞品。", "url": "https://www.ycombinator.com/launches/TIe-trellus-embedded-dialing-salesfloor-and-live-coaching-at-half-the-price-of-nooks" },
+      { "name": "Osmaura", "source": "YC Launches", "metric": "7 votes；2026-08-28", "category": "法律增长", "signal": "为律所收窄到获客工作流，而非再造通用法律 AI OS。", "url": "https://www.ycombinator.com/launches/TIG-osmaura-ai-growth-engine-for-law-firms" },
+      { "name": "Rational", "source": "YC Launches", "metric": "3 votes；2026-08-28", "category": "财务运营", "signal": "面向内部会计团队的 AI 员工定位继续垂直到明确职能买家。", "url": "https://www.ycombinator.com/launches/THh-rational-ai-employees-for-accounting-teams" },
+      { "name": "Robocurve", "source": "YC Launches", "metric": "7 votes；2026-08-27", "category": "机器人评测", "signal": "直接以真实世界机器人评测为产品，强调现场而非仅仿真。", "url": "https://www.ycombinator.com/launches/TGj-robocurve-real-world-evaluations-of-physical-ai" },
+      { "name": "Agentcard", "source": "YC Launches", "metric": "32 votes；2026-08-26", "category": "Agent 支付", "signal": "让 Agent 在线采购，随之带来逐任务额度、商户和凭证治理需求。", "url": "https://www.ycombinator.com/launches/TCO-agentcard-cards-for-ai-agents" },
+      { "name": "/dev/fast Review", "source": "YC Launches", "metric": "2 votes；2026-08-25", "category": "代码审阅", "signal": "用可交互可视化、diff 与 Agent 轨迹帮助人理解 AI 生成代码。", "url": "https://www.ycombinator.com/launches/TCS-dev-fast-cursor-for-code-review" }
     ],
     "technical": [
-      { "name": "The load-bearing vocabulary of Claude", "source": "Show HN", "metric": "694 points / 324 comments @ 01:22 UTC", "category": "模型行为", "signal": "少数提示词可能承载非线性的行为控制，提示回归测试需求。", "url": "https://news.ycombinator.com/item?id=49461817" },
-      { "name": "Experiential", "source": "Show HN", "metric": "220 points / 46 comments @ 01:22 UTC", "category": "模型路由", "signal": "开放式路由尝试把真实使用反馈转成模型改进信号。", "url": "https://news.ycombinator.com/item?id=49471407" },
-      { "name": "LatticeDB", "source": "Show HN", "metric": "188 points / 54 comments @ 01:22 UTC", "category": "数据库", "signal": "以 SQLite 式单机体验降低图数据使用门槛。", "url": "https://news.ycombinator.com/item?id=49437049" },
-      { "name": "PicoMQ", "source": "Show HN", "metric": "159 points / 31 comments @ 01:22 UTC", "category": "消息基础设施", "signal": "用 HTTP 与对象存储提供持久流，瞄准低运维消息场景。", "url": "https://news.ycombinator.com/item?id=49421806" },
-      { "name": "Typebase", "source": "Show HN", "metric": "116 points / 30 comments @ 01:22 UTC", "category": "小软件后端", "signal": "单目录 TypeScript 后端呼应低复杂度部署与分享。", "url": "https://news.ycombinator.com/item?id=49447178" },
-      { "name": "Tare", "source": "Show HN", "metric": "88 points / 67 comments @ 01:22 UTC", "category": "AI FinOps", "signal": "本地会话日志仍被用于解释 Claude 配额异常消耗。", "url": "https://news.ycombinator.com/item?id=49467551" },
-      { "name": "Sesame", "source": "Show HN", "metric": "63 points / 85 comments @ 01:22 UTC", "category": "本地安全", "signal": "本地优先密码管理器引出同步、恢复与信任边界讨论。", "url": "https://news.ycombinator.com/item?id=49483038" },
-      { "name": "Restoredrill", "source": "Show HN", "metric": "49 points / 23 comments @ 01:22 UTC", "category": "可靠性", "signal": "持续证明 Postgres 备份能够实际恢复。", "url": "https://news.ycombinator.com/item?id=49465291" },
-      { "name": "RealDiff", "source": "Show HN", "metric": "40 points / 10 comments @ 01:22 UTC", "category": "运行时验证", "signal": "在 PR 中比较实际运行行为，而非只比较源代码文本。", "url": "https://news.ycombinator.com/item?id=49464459" },
-      { "name": "Academa", "source": "Show HN", "metric": "27 points / 23 comments @ 01:22 UTC", "category": "教育内容", "signal": "长篇 STEM 讲座生成把事实、结构与教学质量变成验收问题。", "url": "https://news.ycombinator.com/item?id=49503421" }
+      { "name": "ServerBox", "source": "Show HN", "metric": "47 points / 48 comments @ 01:21 UTC", "category": "远程运维", "signal": "Rust/Tauri 桌面端通过 SSH 管理 Linux 服务器，引出凭证与审计边界讨论。", "url": "https://news.ycombinator.com/item?id=49509679" },
+      { "name": "SlideOps", "source": "Show HN", "metric": "19 points / 5 comments @ 01:21 UTC", "category": "文档漂移", "signal": "从代码仓库生成幻灯片，并在内容偏离代码时显式报警。", "url": "https://news.ycombinator.com/item?id=49508735" },
+      { "name": "49 IDE", "source": "Show HN", "metric": "18 points / 1 comment @ 01:21 UTC", "category": "Agent IDE", "signal": "以二维画布组织 Agent 工作，显示多任务空间界面仍在探索。", "url": "https://news.ycombinator.com/item?id=49514828" },
+      { "name": "KVeritas", "source": "Show HN", "metric": "12 points / 8 comments @ 01:21 UTC", "category": "结果证明", "signal": "让审阅者验证代码确实产生声明结果，而无需重跑完整流程。", "url": "https://news.ycombinator.com/item?id=49505043" },
+      { "name": "Appwrite 2.0", "source": "Show HN", "metric": "5 points / 0 comments @ 01:21 UTC", "category": "应用后端", "signal": "成熟开源后端以大版本发布继续争夺小团队基础设施入口。", "url": "https://news.ycombinator.com/item?id=49513287" },
+      { "name": "Decispher", "source": "Show HN", "metric": "5 points / 0 comments @ 01:21 UTC", "category": "工程上下文", "signal": "为编码 Agent 持久化工程上下文，再次验证上下文可迁移需求。", "url": "https://news.ycombinator.com/item?id=49509142" },
+      { "name": "Three Slicer", "source": "Show HN", "metric": "4 points / 2 comments @ 01:21 UTC", "category": "制造工具", "signal": "把桌面 3D 切片器移到浏览器，降低安装与远程协作摩擦。", "url": "https://news.ycombinator.com/item?id=49508763" },
+      { "name": "License Detector", "source": "Show HN", "metric": "4 points / 0 comments @ 01:21 UTC", "category": "软件供应链", "signal": "快速许可证识别仍被单独产品化，说明生成代码扩大了合规检查面。", "url": "https://news.ycombinator.com/item?id=49510297" }
     ],
     "github": [
-      { "name": "THU-MAIC/OpenMAIC", "source": "GitHub Daily", "metric": "+1,370 stars today", "category": "TypeScript", "signal": "一键多 Agent 互动课堂，显示教育体验层供给快速增长。", "url": "https://github.com/THU-MAIC/OpenMAIC" },
-      { "name": "K-Dense-AI/scientific-agent-skills", "source": "GitHub Daily", "metric": "+1,114 stars today", "category": "Python", "signal": "科研技能库把数据库接入、验证和版本治理推到供应链层。", "url": "https://github.com/K-Dense-AI/scientific-agent-skills" },
-      { "name": "Lakr233/vphone-cli", "source": "GitHub Daily", "metric": "+361 stars today", "category": "Swift", "signal": "命令行管理移动设备环境，说明端侧自动化入口受关注。", "url": "https://github.com/Lakr233/vphone-cli" },
-      { "name": "every-app/open-seo", "source": "GitHub Daily", "metric": "+469 stars today", "category": "TypeScript", "signal": "开源搜索营销工具继续挑战高价数据平台。", "url": "https://github.com/every-app/open-seo" },
-      { "name": "corsairdev/corsair", "source": "GitHub Daily", "metric": "+126 stars today", "category": "TypeScript", "signal": "面向用户授权的应用连接层成为 Agent 产品的基础部件。", "url": "https://github.com/corsairdev/corsair" },
-      { "name": "apache/maka", "source": "GitHub Weekly", "metric": "+1,973 stars this week", "category": "TypeScript", "signal": "本地优先工作区把消息、工具、权限和终止事件记录为追加日志。", "url": "https://github.com/apache/maka" },
-      { "name": "AprilNEA/OpenLogi", "source": "GitHub Weekly", "metric": "+3,406 stars this week", "category": "Rust", "signal": "无账号、无遥测的本地硬件控制替代品验证主权软件偏好。", "url": "https://github.com/AprilNEA/OpenLogi" },
-      { "name": "firecrawl/pdf-inspector", "source": "GitHub Monthly", "metric": "+15,341 stars this month", "category": "文档工具", "signal": "复杂 PDF 的结构检查仍是 Agent 数据入口瓶颈。", "url": "https://github.com/firecrawl/pdf-inspector" },
-      { "name": "TencentCloud/TencentDB-Agent-Memory", "source": "GitHub Monthly", "metric": "+15,913 stars this month", "category": "TypeScript", "signal": "团队级记忆开始强调治理、共享和跨框架装备。", "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory" },
-      { "name": "cactus-compute/needle", "source": "GitHub Monthly", "metric": "+6,450 stars this month", "category": "Python", "signal": "14MB 级端侧模型面向手机、穿戴、家居与机器人。", "url": "https://github.com/cactus-compute/needle" },
-      { "name": "volcengine/OpenViking", "source": "GitHub Monthly", "metric": "+6,903 stars this month", "category": "Python", "signal": "把 Agent 记忆、知识 RAG 和技能统一为可演进上下文数据库。", "url": "https://github.com/volcengine/OpenViking" }
+      { "name": "tt-a1i/archify", "source": "GitHub Daily", "metric": "+3,991 stars today", "category": "JavaScript", "signal": "生成可验证架构、流程与时序图，成为本日增量最高的工程表达工具。", "url": "https://github.com/tt-a1i/archify" },
+      { "name": "K-Dense-AI/scientific-agent-skills", "source": "GitHub Daily", "metric": "+1,980 stars today", "category": "Python", "signal": "165 个验证技能和百余数据库把科研 Agent 推向版本化供应链。", "url": "https://github.com/K-Dense-AI/scientific-agent-skills" },
+      { "name": "Osmantic/ODS", "source": "GitHub Daily", "metric": "+77 stars today", "category": "Python", "signal": "把个人电脑变成推理、语音、Agent、RAG 和图像生成服务器。", "url": "https://github.com/Osmantic/ODS" },
+      { "name": "affaan-m/ECC", "source": "GitHub Daily", "metric": "+512 stars today", "category": "JavaScript", "signal": "把技能、记忆、安全和研究优先实践打包为 Agent harness 优化系统。", "url": "https://github.com/affaan-m/ECC" },
+      { "name": "handsomestWei/patent-disclosure-skill", "source": "GitHub Daily", "metric": "+571 stars today", "category": "Python", "signal": "专利交底、政策与审查答复被封装成中文垂直技能。", "url": "https://github.com/handsomestWei/patent-disclosure-skill" },
+      { "name": "firecrawl/pdf-inspector", "source": "GitHub Daily", "metric": "+228 stars today", "category": "Rust", "signal": "扫描件识别与文本路由仍是文档 Agent 的结构入口。", "url": "https://github.com/firecrawl/pdf-inspector" },
+      { "name": "pollen-robotics/microduck_rl", "source": "GitHub Daily", "metric": "+385 stars today", "category": "Python", "signal": "真实机器人前的强化学习环境为仿真—现场差异提供测试入口。", "url": "https://github.com/pollen-robotics/microduck_rl" },
+      { "name": "anthropics/claude-plugins-community", "source": "GitHub Weekly", "metric": "+1,846 stars this week", "category": "Python", "signal": "社区插件目录镜像显示插件分发进入平台化阶段。", "url": "https://github.com/anthropics/claude-plugins-community" },
+      { "name": "MadsLorentzen/ai-job-search", "source": "GitHub Weekly", "metric": "+5,463 stars this week", "category": "Python", "signal": "本地求职框架覆盖评估、简历、求职信和面试，验证纵向全流程包装。", "url": "https://github.com/MadsLorentzen/ai-job-search" },
+      { "name": "apache/maka", "source": "GitHub Weekly", "metric": "+1,697 stars this week", "category": "TypeScript", "signal": "本地优先工作区把消息、工具、权限与终止事件记录为追加日志。", "url": "https://github.com/apache/maka" },
+      { "name": "cursor/plugins", "source": "GitHub Weekly", "metric": "+1,479 stars this week", "category": "TypeScript", "signal": "官方插件规范与目录强化了跨版本兼容和审核需求。", "url": "https://github.com/cursor/plugins" },
+      { "name": "TencentCloud/TencentDB-Agent-Memory", "source": "GitHub Monthly", "metric": "+15,760 stars this month", "category": "TypeScript", "signal": "团队级治理记忆持续占据月榜，通用 Memory 方向供给已高度拥挤。", "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory" }
     ],
     "market": [
-      { "name": "Fall 2026：Small Software / Multiplayer AI", "source": "YC RFS", "metric": "2 个相关命题", "category": "Agent 协作", "signal": "部署分享、身份权限和多人进入同一 Agent 会话被明确提出。", "url": "https://www.ycombinator.com/rfs" },
-      { "name": "YC 2026 AI Company Directory", "source": "YC Company Directory", "metric": "896 个公开结果", "category": "供给密度", "signal": "Agent FM、Dock、Traceforce 分别切入接管、多人工作区和安全可见性。", "url": "https://www.ycombinator.com/companies/industry/artificial-intelligence" },
-      { "name": "Global Physical AI funding", "source": "Crunchbase News", "metric": "$47.4B / 521 deals in H1 2026", "category": "Physical AI", "signal": "资金接近 2025 下半年的四倍，小团队更适合寻找数据和验收切口。", "url": "https://news.crunchbase.com/venture/physical-ai-funding-startups-robotics-aerospace-h1-2026/" },
-      { "name": "中国灵巧手赛道", "source": "IT桔子 / 36氪", "metric": "74 起 / 47 家 / 约 285.1 亿元", "category": "机器人", "signal": "整机自研与独立供应商并行，资本和产能承诺已经拥挤。", "url": "https://www.36kr.com/p/3936247953898882" },
-      { "name": "深海智人 A 轮", "source": "36氪 / 投资界", "metric": "超 5 亿元", "category": "特种作业", "signal": "融资与公开订单信号显示极端环境机器人需要软硬件一体验收体系。", "url": "https://www.36kr.com/p/3937295227796864" }
+      { "name": "Fall 2026 Small Software / Multiplayer AI / Physical-world data", "source": "YC RFS", "metric": "3 个相关命题", "category": "投资偏好", "signal": "少用户专用软件、多人进入 Agent 会话和物理世界数据被明确提出；这不是订单证明。", "url": "https://www.ycombinator.com/rfs" },
+      { "name": "YC AI Company Directory", "source": "YC Company Directory", "metric": "903 个公开结果", "category": "供给密度", "signal": "结果数较昨日快照继续增加，说明 AI 供给扩张，但不能当作当期新公司数。", "url": "https://www.ycombinator.com/companies/industry/artificial-intelligence" },
+      { "name": "Violoop 端侧 Agent 硬件", "source": "36氪", "metric": "亿元级天使轮及 Pre-A；报道口径 1.2 万人下单", "category": "端侧 Agent", "signal": "深圳团队以 HDMI/USB 接入现有电脑；融资与下单数字均来自报道及公司口径，未独立审计。", "url": "https://www.36kr.com/p/3964125477395971" },
+      { "name": "熵函数 Entropec", "source": "36氪", "metric": "数千万元天使轮；公司预计 2026 年约 3,000 万元订单", "category": "量子模拟", "signal": "以经典超算输出千比特量子模拟，10 月计划商业运营；订单和毛利预测为公司自述。", "url": "https://www.36kr.com/p/3963450689953285" },
+      { "name": "中科密位太空智能计算", "source": "36氪", "metric": "A1 + A2 两轮合计超 1 亿元", "category": "商业航天", "signal": "资金进入在轨计算与智能卫星系统，工程约束包括功耗、散热、抗辐照和通信。", "url": "https://www.36kr.com/p/3958987031133568" }
     ],
     "pain": [
-      { "name": "Search & Discovery：精确 SKU 失真", "source": "Shopify App Store", "metric": "2.7 / 464 reviews；2026-07-08", "category": "站内搜索", "signal": "长期商家称型号或单个 SKU 查询出现约千个无关商品。", "url": "https://apps.shopify.com/search-and-discovery/reviews" },
-      { "name": "Search & Discovery：库存过滤默认值", "source": "Shopify App Store", "metric": "2.7 / 464 reviews；2026-07-06", "category": "商品过滤", "signal": "尺码筛选后仍展示缺货商品，商家无法默认开启可售过滤。", "url": "https://apps.shopify.com/search-and-discovery/reviews" },
-      { "name": "Search & Discovery：过滤器上限", "source": "Shopify App Store", "metric": "25-filter limit；2026-07-02", "category": "复杂目录", "signal": "复杂店铺被迫删减筛选体验或购买第三方方案。", "url": "https://apps.shopify.com/search-and-discovery/reviews" },
-      { "name": "Search & Discovery：同义词功能消失", "source": "Shopify App Store", "metric": "2026-08-19 评论", "category": "搜索配置", "signal": "最新可见评论称同义词组核心功能被意外移除。", "url": "https://apps.shopify.com/search-and-discovery/reviews" },
-      { "name": "Subscriptions：selling plan 阻断加购", "source": "Shopify App Store", "metric": "3.7 / 758 reviews；2026-08-10", "category": "订阅结账", "signal": "商家报告商品加入购物车时持续触发 selling plan 错误。", "url": "https://apps.shopify.com/shopify-subscriptions/reviews" },
-      { "name": "Subscriptions：预测与登录缺口", "source": "Shopify App Store", "metric": "2026-08-02 评论", "category": "订阅运营", "signal": "商家要求现金流预测，并称客户登录困难增加支持成本。", "url": "https://apps.shopify.com/shopify-subscriptions/reviews" },
-      { "name": "Subscriptions：变体切换误订阅", "source": "Shopify App Store", "metric": "9 位误订阅客户；2026-07-20", "category": "购买状态", "signal": "变体变化把一次性购买切到订阅，商家报告客户流失并需定制代码修复。", "url": "https://apps.shopify.com/shopify-subscriptions/reviews" }
+      { "name": "Search & Discovery：应用长时间停用", "source": "Shopify App Store", "metric": "1 star；2026-08-26；总评 2.7 / 464", "category": "可用性", "signal": "使用近三年的商家称应用处于 inactive 且无重新上线日期，无法配置客户搜索。", "url": "https://apps.shopify.com/search-and-discovery/reviews/2337557" },
+      { "name": "Search & Discovery：同义词组消失", "source": "Shopify App Store", "metric": "1 star；2026-08-19；总评 2.7 / 464", "category": "搜索配置", "signal": "评论称核心 synonym groups 功能被无预警移除。", "url": "https://apps.shopify.com/search-and-discovery/reviews/2327635" },
+      { "name": "Search & Discovery：整页无关结果", "source": "Shopify App Store", "metric": "1 star；2026-08-10；总评 2.7 / 464", "category": "搜索质量", "signal": "商家称此前正常的搜索现在返回整页不相关商品。", "url": "https://apps.shopify.com/search-and-discovery/reviews/2316310" },
+      { "name": "Subscriptions：组件无法嵌入店铺", "source": "Shopify App Store", "metric": "1 star；2026-08-26；总评 3.7 / 760", "category": "订阅上线", "signal": "商家称花费两小时并联系支持后仍无法嵌入 widget，造成明确上线时间损失。", "url": "https://apps.shopify.com/shopify-subscriptions/reviews/2337349" }
     ]
   },
   "opportunities": [
     {
       "rank": "01",
-      "score": 88,
-      "category": "Agent Quality",
-      "title": "Agent 行为漂移回放与证据门",
-      "thesis": "在模型、提示词、工具或依赖更新前，重放真实任务并比较事实、工具轨迹、权限和最终行为。",
-      "buyer": "已经把 Agent 放进生产流程的 AI 产品负责人和质量负责人",
-      "wedge": "先支持 50 条脱敏生产轨迹；对一次模型或 system prompt 变更生成可审批差异报告。",
-      "proof": ["Show HN 的 Claude 词汇实验为 694 points / 324 comments 的高讨论快照", "RealDiff 验证运行时变化，Lenz 暴露来源与核查步骤", "Apache Maka 将权限和终止事件写入追加日志"],
-      "risk": "离线回放可能漏掉真实环境副作用；必须提供数据脱敏、稳定 oracle 和人工审批。",
+      "score": 87,
+      "category": "Engineering Evidence",
+      "title": "代码—架构—证据同步发布门",
+      "thesis": "把架构图、发布说明和演示中的每条技术主张映射到当前代码、命令输出与 commit，阻止过期或无法复现的交付物上线。",
+      "buyer": "50—500 人 SaaS、基础设施或受监管软件公司的工程效能负责人和合规负责人",
+      "wedge": "先接一个 GitHub 仓库；每个 PR 只检查 20 条关键主张，生成架构差异、证据 hash 和待人工审批清单。",
+      "proof": ["archify 当日新增 3,991 stars，SlideOps 明确检查幻灯片与代码漂移", "KVeritas 以不重跑为前提验证结果，/dev/fast 将 diff、可视化和 Agent 轨迹交给人审"],
+      "risk": "自动生成的图本身可能错误，误阻塞会失去信任；第一版必须限定主张类型并保留人工签字。",
       "sources": [
-        ["Load-bearing vocabulary", "https://news.ycombinator.com/item?id=49461817"],
-        ["RealDiff", "https://news.ycombinator.com/item?id=49464459"],
-        ["Lenz", "https://www.producthunt.com/products/lenz-2"],
-        ["Apache Maka", "https://github.com/apache/maka"]
+        ["archify", "https://github.com/tt-a1i/archify"],
+        ["SlideOps", "https://news.ycombinator.com/item?id=49508735"],
+        ["KVeritas", "https://news.ycombinator.com/item?id=49505043"],
+        ["/dev/fast Review", "https://www.ycombinator.com/launches/TCS-dev-fast-cursor-for-code-review"]
       ]
     },
     {
       "rank": "02",
-      "score": 86,
-      "category": "Commerce",
-      "title": "电商搜索回归守门员",
-      "thesis": "用真实查询持续检查精确 SKU、同义词、库存过滤和改版前后排序，先于商家发现转化风险。",
-      "buyer": "SKU 超过 1,000 的 Shopify 品牌电商负责人和代理商",
-      "wedge": "导入最近 30 天搜索词，每日运行 100 条查询并给出 20 个可复现失败与修复建议。",
-      "proof": ["官方应用当前 2.7 分、464 条评论，其中 90 条一星", "近期评论分别指向无关结果、SKU 失真、缺货和同义词回归", "GitHub Daily 的 open-seo 显示搜索工具替代供给仍有关注"],
-      "risk": "Shopify 可修复官方搜索；产品必须积累商家查询测试集并逐步跨平台。",
+      "score": 84,
+      "category": "Agent Infrastructure",
+      "title": "Agent 插件与技能兼容性 CI",
+      "thesis": "在插件、技能或 Agent 客户端升级前，用真实任务比较权限请求、工具 schema、上下文迁移和最终工件。",
+      "buyer": "同时支持 Claude Code、Cursor、Codex 等客户端的 Agent 工具厂商和企业 AI 平台团队",
+      "wedge": "固定 10 个脱敏任务、3 个客户端和一个插件；对版本前后输出可审批兼容矩阵与最小复现。",
+      "proof": ["Claude 社区插件、官方插件和 Cursor 插件规范同时进入周榜", "scientific-agent-skills 当日新增 1,980 stars，Skillsync 明确销售跨 Agent 上下文迁移"],
+      "risk": "客户端更新频繁且平台可能自带测试；必须沉淀跨客户端真实失败集，而不是只做静态 schema 校验。",
       "sources": [
-        ["Shopify Search & Discovery reviews", "https://apps.shopify.com/search-and-discovery/reviews"],
-        ["open-seo", "https://github.com/every-app/open-seo"]
+        ["Claude community plugins", "https://github.com/anthropics/claude-plugins-community"],
+        ["Cursor plugins", "https://github.com/cursor/plugins"],
+        ["Scientific agent skills", "https://github.com/K-Dense-AI/scientific-agent-skills"],
+        ["Skillsync", "https://www.ycombinator.com/launches/TBJ-skillsync-move-your-context-across-every-coding-agent"]
       ]
     },
     {
       "rank": "03",
-      "score": 83,
-      "category": "Commerce QA",
-      "title": "订阅结账状态机测试",
-      "thesis": "在主题或订阅配置发布前自动遍历变体、一次性购买、订阅、登录和取消路径，阻止错误状态上线。",
-      "buyer": "使用 Shopify Subscriptions 的 DTC 商家运营负责人和开发代理商",
-      "wedge": "只覆盖一个主题和官方订阅应用，生成带录像、购物车状态和复现步骤的发布前报告。",
-      "proof": ["官方应用当前 3.7 分、758 条评论，其中 148 条一星", "8 月评论报告 selling plan 阻断、登录困难和报表缺口", "一位商家量化报告九位客户被错误切换为订阅"],
-      "risk": "自动化会受主题差异影响；必须把失败压缩成低误报、可重现的检查。",
-      "sources": [["Shopify Subscriptions reviews", "https://apps.shopify.com/shopify-subscriptions/reviews"]]
+      "score": 82,
+      "category": "Commerce Reliability",
+      "title": "Shopify 核心应用退化哨兵",
+      "thesis": "把搜索配置、结果质量与订阅组件嵌入当成外部依赖，每日从真实店铺验证并在平台改动后给出可复现差异。",
+      "buyer": "SKU 超过 1,000 或依赖订阅收入的 Shopify 品牌负责人和开发代理商",
+      "wedge": "只覆盖官方 Search & Discovery 与 Subscriptions；每日跑 50 条真实查询和一次 widget 嵌入检查，附截图与 DOM 差异。",
+      "proof": ["Search & Discovery 当前 2.7 / 464，8 月评论出现应用停用、同义词消失与整页无关结果", "Subscriptions 当前 3.7 / 760，8 月 26 日商家称花费两小时仍无法嵌入组件；open-seo 当日新增 610 stars"],
+      "risk": "平台方可修复单点问题，个性化与主题差异也会制造误报；价值必须来自商家自有回归集和跨版本历史。",
+      "sources": [
+        ["Search inactive review", "https://apps.shopify.com/search-and-discovery/reviews/2337557"],
+        ["Synonym groups review", "https://apps.shopify.com/search-and-discovery/reviews/2327635"],
+        ["Subscription widget review", "https://apps.shopify.com/shopify-subscriptions/reviews/2337349"],
+        ["open-seo", "https://github.com/every-app/open-seo"]
+      ]
     },
     {
       "rank": "04",
-      "score": 81,
-      "category": "Agent Data",
-      "title": "合规 Web 数据来源账本",
-      "thesis": "不是再卖一个抓取 API，而是给 Agent 数据记录授权范围、抓取时间、内容 hash、结构变化和引用可用性。",
-      "buyer": "需要可审计 Web 数据的投研、市场情报与 Agent 产品团队",
-      "wedge": "先服务 20 个公开、授权域名；每次抽取输出字段、来源快照、变化告警和停止原因。",
-      "proof": ["Olostep 当前发布，GitHub Daily 同时出现 Crawl4AI 与 last30days-skill", "Lenz 把来源和核查步骤作为卖点", "Show HN 的 Experiential 尝试用真实反馈改进路由"],
-      "risk": "抓取市场拥挤且受站点条款变化影响；不能绕过登录墙、验证码或限流。",
+      "score": 79,
+      "category": "Agent FinOps",
+      "title": "Agent 工具采购凭证与额度控制",
+      "thesis": "在现有支付卡和工具市场之上，把每次 Agent 支出绑定到任务、授权人、商户、产出和可撤销预算。",
+      "buyer": "运行 10—100 个付费 Agent 的 AI 运营负责人、财务控制人和安全负责人",
+      "wedge": "不发卡；先接一个现有卡发行方和一个工具市场，为每个任务设置上限并生成逐笔证据包与异常队列。",
+      "proof": ["Agentcard 以“让 Agent 购买任何在线商品”发布，Agentmuxer 聚合能力发现、支付和调用", "Corsair 发布页记录 1,537 votes，Tare 的 88 points / 67 comments 快照显示额度消耗解释仍有摩擦"],
+      "risk": "支付平台和 Agent 框架都可能内置预算；若触及发卡、代付或跨境支付，合规成本会迅速上升。",
       "sources": [
-        ["Olostep", "https://www.producthunt.com/products/olostep"],
-        ["Crawl4AI", "https://github.com/unclecode/crawl4ai"],
-        ["Lenz", "https://www.producthunt.com/products/lenz-2"],
-        ["Experiential", "https://news.ycombinator.com/item?id=49471407"]
+        ["Agentcard", "https://www.ycombinator.com/launches/TCO-agentcard-cards-for-ai-agents"],
+        ["Agentmuxer", "https://www.ycombinator.com/launches/TBK-agentmuxer-by-amorphic-labs-openrouter-for-agent-capabilities"],
+        ["Corsair", "https://www.ycombinator.com/launches/TE8-corsair-connect-your-users-to-their-apps"],
+        ["Tare", "https://news.ycombinator.com/item?id=49467551"]
       ]
     },
     {
       "rank": "05",
-      "score": 79,
-      "category": "Agent Runtime",
-      "title": "小团队 Agent 运行与接管台",
-      "thesis": "统一管理本地 Mac 与隔离云机器上的 Agent，处理睡眠、预算、权限、进度和人工接管。",
-      "buyer": "同时运行 5—50 个编码或运营 Agent 的开发代理商与 AI 团队",
-      "wedge": "先支持一台 Mac 和一种隔离 VM；只展示工作中、阻塞、待审批、完成四种状态。",
-      "proof": ["Maritime 当前发布强调每 Agent 持久隔离机器", "oMLX 把 Mac 变成本地推理服务，Apache Maka 保存权限与终止日志", "YC RFS 明确提出 Multiplayer AI 与 Small Software 部署"],
-      "risk": "运行时与云厂商都可能内置控制台；必须跨本地与云并进入审批位置。",
+      "score": 76,
+      "category": "Small Software",
+      "title": "小型 MSP 的 SSH 变更证据包",
+      "thesis": "把一次远程服务器维护从不可见终端会话变成带工单、审批、命令输出、回滚点和客户签收的交付件。",
+      "buyer": "管理 20—300 台 Linux 服务器的 5—30 人 MSP、开发代理商和垂直 SaaS 运维团队",
+      "wedge": "只包裹现有 SSH，不做 RMM；为一种常见变更生成计划、录制、敏感字段遮蔽、回滚与 PDF 签收。",
+      "proof": ["ServerBox 新发布获得 47 points / 48 comments，远程运维的凭证与信任边界引发讨论", "KVeritas 提供结果证明形态，YC Fall 2026 明确提出少数用户的 Small Software"],
+      "risk": "会话包含高敏凭证，且成熟 RMM 能向下扩展；必须默认本地加密、最小权限和可验证删除。",
       "sources": [
-        ["Maritime", "https://www.producthunt.com/products/maritime"],
-        ["oMLX", "https://www.producthunt.com/products/omlx"],
-        ["Apache Maka", "https://github.com/apache/maka"],
+        ["ServerBox", "https://news.ycombinator.com/item?id=49509679"],
+        ["KVeritas", "https://news.ycombinator.com/item?id=49505043"],
         ["YC RFS", "https://www.ycombinator.com/rfs"]
       ]
     },
     {
       "rank": "06",
       "score": 74,
-      "category": "Legal Ops",
-      "title": "小型律所事项证据包",
-      "thesis": "把客户 intake、来源文件、引用、期限、冲突检查和律师审批压成可交付的事项证据包。",
-      "buyer": "5—30 人、处理重复商事事项的小型律所合伙人和运营负责人",
-      "wedge": "只做一种合同审阅事项；交付来源清单、差异、风险问题和律师签字，不自动给最终法律结论。",
-      "proof": ["Referent 当前发布覆盖 intake、事项、文件、期限和计费准备", "YC 2026 目录中 Erinys 与 TovenAI 展示法律和合规服务产品化供给", "Lenz 与 Murfy 都把来源核验纳入专业交付"],
-      "risk": "采购依赖信任与责任边界；必须有人审、权限隔离并避免无证法律服务。",
+      "category": "Physical AI",
+      "title": "Physical AI 现场验收回放器",
+      "thesis": "把仿真任务、现场传感器流、人工接管和失败状态映射到同一验收规范，量化机器人从实验室到交付现场的漂移。",
+      "buyer": "已有付费交付的机器人厂商测试负责人、系统集成商和最终客户验收负责人",
+      "wedge": "只支持一个机器人、一个工序和一种传感器；连续两周比较仿真与现场的成功率、接管与环境变化。",
+      "proof": ["Robocurve 直接以真实世界机器人评测发布，microduck_rl 当日新增 385 stars", "YC RFS 要求新的物理世界数据采集，36氪的太空计算融资原文显示功耗、散热与通信等现场约束"],
+      "risk": "资本较重：硬件接入、现场安全和销售周期都重；没有真实付费伙伴与连续失败样本时应停止。",
       "sources": [
-        ["Referent", "https://www.producthunt.com/products/referent"],
-        ["YC AI Directory", "https://www.ycombinator.com/companies/industry/artificial-intelligence"],
-        ["Murfy", "https://www.producthunt.com/products/murfy"],
-        ["Lenz", "https://www.producthunt.com/products/lenz-2"]
+        ["Robocurve", "https://www.ycombinator.com/launches/TGj-robocurve-real-world-evaluations-of-physical-ai"],
+        ["Microduck RL", "https://github.com/pollen-robotics/microduck_rl"],
+        ["YC RFS", "https://www.ycombinator.com/rfs"],
+        ["中科密位", "https://www.36kr.com/p/3958987031133568"]
       ]
     },
     {
       "rank": "07",
-      "score": 73,
-      "category": "Physical AI / 资本较重",
-      "title": "机器人数据与现场验收工具",
-      "thesis": "为一种传感器或工序做数据质量、漂移、回放和验收，而不是制造通用机器人整机。",
-      "buyer": "灵巧手、工业机器人和特种作业机器人团队的测试与交付负责人",
-      "wedge": "与一个团队连续两周记录一种传感器的失败样本，生成可重复现场验收报告。",
-      "proof": ["Crunchbase 记录 H1 2026 Physical AI $47.4B / 521 笔交易", "IT桔子 / 36氪记录中国灵巧手 74 起融资、47 家公司", "GitHub Daily 出现 Microduck 训练环境，YC 目录出现 Physical AI 数据质量团队"],
-      "risk": "资本、现场接入和销售周期都重；没有真实硬件伙伴时不应启动。",
+      "score": 72,
+      "category": "Scientific Ops",
+      "title": "科学 Agent 技能版本与复现实验包",
+      "thesis": "为一次计算实验冻结技能、数据库、模型、环境和来源，交付可复跑的证据包而不是只交一段 Agent 对话。",
+      "buyer": "使用 Agent 做计算生物、化学或材料分析的 CRO 交付负责人和研究平台负责人",
+      "wedge": "只选一个公开数据集和一种分析；记录技能版本、数据库快照、命令、结果 hash 与引用，交给外部研究者盲复跑。",
+      "proof": ["scientific-agent-skills 当日新增 1,980 stars并声明 165 个验证技能与百余数据库", "Frontier Computing 是 8 月 31 日新发布，KVeritas 将“无需审阅者重跑”作为结果验证定位"],
+      "risk": "今天缺少同等级的付费买方痛点，且实验 oracle 很难统一；若盲复跑不能稳定复现就不应扩品类。",
       "sources": [
-        ["Crunchbase Physical AI", "https://news.crunchbase.com/venture/physical-ai-funding-startups-robotics-aerospace-h1-2026/"],
-        ["36氪 / IT桔子灵巧手观察", "https://www.36kr.com/p/3936247953898882"],
-        ["Microduck RL", "https://github.com/pollen-robotics/microduck_rl"],
-        ["YC AI Directory", "https://www.ycombinator.com/companies/industry/artificial-intelligence"]
+        ["Scientific agent skills", "https://github.com/K-Dense-AI/scientific-agent-skills"],
+        ["Frontier Computing", "https://www.ycombinator.com/launches/TLD-frontier-computing-growing-biological-brains-at-scale"],
+        ["KVeritas", "https://news.ycombinator.com/item?id=49505043"]
       ]
     }
   ]
