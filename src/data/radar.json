@@ -1,222 +1,211 @@
 {
   "meta": {
-    "date": "2026-09-06",
-    "snapshot": "2026.09.06 / 01:20–01:23 UTC",
-    "reportFile": "startup_radar_2026-09-06_zh.md"
+    "date": "2026-09-07",
+    "snapshot": "2026.09.07 / 01:18–01:22 UTC",
+    "reportFile": "startup_radar_2026-09-07_zh.md"
   },
   "signals": [
-    { "source": "Product Hunt", "count": "12", "note": "当前公开首页的 Top Products Launching Today；逐产品 points 截至 01:23 UTC，只作瞬时发布热度", "type": "发布", "url": "https://www.producthunt.com/" },
-    { "source": "Show HN", "count": "829", "note": "公开 Algolia API 中 2026-08-30 00:00 UTC 后的七日匹配；points/comments 截至 01:21 UTC", "type": "技术", "url": "https://hn.algolia.com/api/v1/search_by_date?tags=show_hn&numericFilters=created_at_i%3E1788048000&hitsPerPage=100" },
-    { "source": "GitHub Trending", "count": "51", "note": "Language Any / Spoken Language Any：daily 16、weekly 21、monthly 22，跨窗口去重后 51 个仓库", "type": "开源", "url": "https://github.com/trending?since=daily" },
-    { "source": "YC RFS / Company Directory", "count": "Fall 2026 / 911 AI companies", "note": "公开 RFS 与 AI 公司目录可读；目录数量和公司自述只用于供给密度，不当作订单或审计后业绩", "type": "投资", "url": "https://www.ycombinator.com/rfs" },
-    { "source": "Crunchbase News", "count": "2 个最新公开快照", "note": "核对 9 月 3 日全球月度资金报告与 9 月 4 日美国大额融资周榜；均按 Crunchbase 报告口径", "type": "资本", "url": "https://news.crunchbase.com/venture/biggest-funding-rounds-crusoe-fluidstack-multibillion-dollar-ai-infrastructure/" },
-    { "source": "36氪 / IT桔子", "count": "3 个 9 月 4 日事件 / 受限", "note": "36氪公开页核对记忆张量、星灿智能、日耀光电；IT桔子首页本次无法公开读取，未绕过", "type": "国内", "url": "https://eu.36kr.com/zh" },
-    { "source": "Shopify App Store", "count": "4 个应用 / 5 条问题", "note": "核对 Marketplace Connect、Judge.me、Collective Supplier、Checkout Blocks 的当前评分与近期评论；评论仅代表作者自述", "type": "需求", "url": "https://apps.shopify.com/marketplace-connect/reviews?ratings%5B%5D=1" }
+    { "source": "Product Hunt", "count": "7 个", "note": "公开首页 Top Products Launching Today；页面将本批标为 9 月 6 日发布，points 截至 01:19 UTC，只作瞬时热度", "type": "发布", "url": "https://www.producthunt.com/" },
+    { "source": "Show HN", "count": "834", "note": "公开 Algolia API 中 2026-08-31 00:00 UTC 后的七日匹配；points/comments 截至 01:20 UTC", "type": "技术", "url": "https://hn.algolia.com/api/v1/search?tags=show_hn&numericFilters=created_at_i%3E1788134400&hitsPerPage=100" },
+    { "source": "GitHub Trending", "count": "53", "note": "Language Any / Spoken Language Any：daily 18、weekly 21、monthly 22，跨窗口去重后 53 个仓库", "type": "开源", "url": "https://github.com/trending?since=daily" },
+    { "source": "YC RFS / Company Directory", "count": "Fall 2026 / 911 AI companies", "note": "公开 RFS 与 AI 公司目录可读；RFS 是投资偏好，目录和公司自述只用于供给密度", "type": "投资", "url": "https://www.ycombinator.com/rfs" },
+    { "source": "Dealroom / Crunchbase News", "count": "5 个热门赛道 / 10 笔美国大额融资", "note": "Dealroom 首页公开热点与 Crunchbase 8 月 29 日至 9 月 4 日周榜；页面指标按各自口径，不当作需求或收入证明", "type": "资本", "url": "https://dealroom.co/" },
+    { "source": "36氪 / 工信部 / IT桔子", "count": "4 个中国市场信号 / IT桔子受限", "note": "核对 AI 视频、最新融资索引和工信部创业支持计划；36氪受安全检测的详情页不绕过，IT桔子未采用", "type": "国内", "url": "https://pitchhub.36kr.com/financing-flash" },
+    { "source": "Shopify App Store / Product Hunt Reviews", "count": "4 个产品 / 5 条问题", "note": "核对 Marketplace Connect、Judge.me、Collective Supplier 与 AI Toolbox 当前评分和近期评论；评论仅代表作者自述", "type": "需求", "url": "https://apps.shopify.com/marketplace-connect/reviews?ratings%5B%5D=1" }
   ],
   "themes": [
     {
-      "name": "大目录跨市场发布仍缺独立真相层",
-      "status": "持续强需求信号",
-      "evidence": "2 个日期的商家评论 + 1 个行为差异项目",
-      "summary": "9 月 3 日新增的 10 万+ SKU 商家称 Marketplace Connect 无法加载或发布到 eBay，延续 9 月 1 日的库存延迟；机会是发布前影子对账与差异证据，不是再造连接器。",
+      "name": "大目录跨市场发布需要独立验收层",
+      "status": "持续且增强的需求信号",
+      "evidence": "同日页面新增 1 条一星并有 2 个不同规模商家样本",
+      "summary": "Marketplace Connect 总评从上一期记录的 4.2 降至 4.1、一星由 302 增至 303；9 月 3 日两位商家分别报告 eBay 库存数日不同步和 10 万+ SKU 无法加载或发布。推断是做只读差异证明，而不是再造连接器。",
       "sources": ["Shopify App Store", "Show HN"],
-      "links": [["Marketplace Connect reviews", "https://apps.shopify.com/marketplace-connect/reviews?ratings%5B%5D=1"], ["Twinrun", "https://news.ycombinator.com/item?id=49581181"]]
+      "links": [["Marketplace Connect reviews", "https://apps.shopify.com/marketplace-connect/reviews?ratings%5B%5D=1"], ["Antifailure", "https://news.ycombinator.com/item?id=49591260"]]
     },
     {
-      "name": "Agent 变更控制开始回到仓库",
-      "status": "强发布与开源共振",
-      "evidence": "3 类来源 / 8 个项目",
-      "summary": "Markdown feature flag、少写代码规则、本地 PR 式审阅与多套 skills 同日集中出现；真正缺口是带 owner、失效期和回滚证明的决策记录。",
-      "sources": ["Product Hunt", "GitHub Trending", "YC RFS"],
-      "links": [["dif.sh", "https://www.producthunt.com/products/dif-sh"], ["Ponytail", "https://www.producthunt.com/products/ponytail"], ["YC RFS", "https://www.ycombinator.com/rfs"]]
+      "name": "跨模型聊天正在变成可携带工作记录",
+      "status": "强发布信号、早期用户证据",
+      "evidence": "3 类来源 / 1 个当前用户问题",
+      "summary": "AI Toolbox 将四个 AI 的聊天搜索、导出和续接放到本地；一位当前评论者认可 JSON 复盘长任务但称搜索会漏掉已知值。Supafork 和 YC Multiplayer AI 同时指向跨 harness、跨成员接续，机会是可审计的项目账本而非聊天聚合器。",
+      "sources": ["Product Hunt", "Show HN", "YC RFS"],
+      "links": [["AI Toolbox 3.0", "https://www.producthunt.com/products/chatgpt-toolbox"], ["Supafork", "https://news.ycombinator.com/item?id=49524608"], ["YC Multiplayer AI", "https://www.ycombinator.com/rfs"]]
     },
     {
-      "name": "Agent 学习闭环必须经过回归门",
-      "status": "早期技术共振",
-      "evidence": "4 类来源",
-      "summary": "Reflexio 宣称从生产纠正中学习，ECC 与 FrontierHarness 强调 harness 性能，而 Experiential 用流量优化模型；这些都是供给或发布者结论，尚未证明跨任务稳定改进。",
-      "sources": ["Product Hunt", "GitHub Trending", "Show HN", "YC Company Directory"],
-      "links": [["Reflexio", "https://www.producthunt.com/products/reflexio-2"], ["FrontierHarness Eval", "https://news.ycombinator.com/item?id=49538490"], ["ECC", "https://github.com/affaan-m/ECC"]]
-    },
-    {
-      "name": "生产调试从加日志转向临时只读探针",
-      "status": "高价值高风险",
-      "evidence": "2 类来源 + 事故样本",
-      "summary": "Hyperprobe 允许 Agent 在运行服务放置只读探针，Aura 自动调查生产事故，agent 事故索引继续累积；价值来自一次解决，风险来自敏感数据与线上权限。",
-      "sources": ["Product Hunt", "Show HN"],
-      "links": [["Hyperprobe", "https://www.producthunt.com/products/hyperprobe"], ["Aura", "https://news.ycombinator.com/item?id=49538195"]]
-    },
-    {
-      "name": "技术承诺与代码漂移可以被证明",
-      "status": "强技术形态",
-      "evidence": "3 类来源 / 4 个项目",
-      "summary": "SlideOps 检测演示材料漂移，kveritas 绑定代码与结论，diagram-design 和 archify 推动可验证图；比通用文档生成更窄的机会是逐条承诺的证据链。",
-      "sources": ["Show HN", "GitHub Trending", "YC RFS"],
-      "links": [["SlideOps", "https://news.ycombinator.com/item?id=49508735"], ["kveritas-go", "https://news.ycombinator.com/item?id=49505043"], ["archify", "https://github.com/tt-a1i/archify"]]
-    },
-    {
-      "name": "本地推理竞争转向内存与异构成本",
-      "status": "技术与资本共振",
-      "evidence": "4 类来源",
-      "summary": "Slotstream 在 48GB Mac 运行 104GB 模型获得高讨论，magnitude 提供本地推理服务器，Experiential 做模型路由；同时巨额资金继续涌向云端算力，形成隐私与成本之间的采购选择。",
-      "sources": ["Show HN", "GitHub Trending", "Product Hunt", "Crunchbase News"],
-      "links": [["Slotstream", "https://news.ycombinator.com/item?id=49524447"], ["magnitude", "https://github.com/magnitudedev/magnitude"], ["Crunchbase", "https://news.crunchbase.com/venture/biggest-funding-rounds-crusoe-fluidstack-multibillion-dollar-ai-infrastructure/"]]
-    },
-    {
-      "name": "老龄照护与 Physical AI 资金增加但验证很重",
-      "status": "资本较重",
+      "name": "共享 Agent 的关键不是自主，而是何时加入",
+      "status": "新发布与治理共振",
       "evidence": "3 类来源",
-      "summary": "星灿智能获得新融资并定位老年及行动不便人群，YC 同期点名 aging population 与 physical-world OS，OpenTrail 展示开源现场硬件热度；融资与 points 都不证明安全、照护效果或采购。",
-      "sources": ["36氪", "YC RFS", "Show HN"],
-      "links": [["星灿智能", "https://eu.36kr.com/zh/newsflashes/3968778331353349"], ["YC RFS", "https://www.ycombinator.com/rfs"], ["OpenTrail", "https://news.ycombinator.com/item?id=49567437"]]
+      "summary": "Tadata 明确要求 @ 提及才加入 Slack 对话，maker 称这是为避免工作区噪音；YC 要求多人进入同一 Agent 会话，而 Agent 事故索引继续积累。推断是先卖参与边界、上下文范围和人工接管记录。",
+      "sources": ["Product Hunt", "YC RFS", "Show HN"],
+      "links": [["Tadata", "https://www.producthunt.com/products/tadata"], ["YC Multiplayer AI", "https://www.ycombinator.com/rfs"], ["I Have Been Clawed", "https://news.ycombinator.com/item?id=49532083"]]
+    },
+    {
+      "name": "AI 视频瓶颈从生成速度移到出海验收",
+      "status": "技术、发布与中国市场共振",
+      "evidence": "4 类来源",
+      "summary": "Gemini 和 H3 Max 都用降低长视频处理成本或提高生成吞吐作为卖点；36氪当前中国 AI 剧观察则把本地化叙事、文化适配与内容合规列为出海门槛。小团队机会在逐镜头验收包，不在训练新视频模型。",
+      "sources": ["Product Hunt", "36氪", "Show HN", "Dealroom"],
+      "links": [["Gemini Agentic Video", "https://www.producthunt.com/products/google"], ["H3 Max", "https://www.producthunt.com/products/fal-ai"], ["36氪 AI 剧", "https://eu.36kr.com/zh/p/3972532338536711"], ["Fast Cut", "https://news.ycombinator.com/item?id=49580689"]]
+    },
+    {
+      "name": "Agent-ready 文档需要双读者一致性",
+      "status": "明确供给、需求仍待访谈",
+      "evidence": "3 类来源 / 4 个项目",
+      "summary": "DocsAlot 同时输出人类文档、MCP、llms.txt 与 skill.md；YC Self-Maintaining APIs 要让供应商直接修客户代码，open-science 强调可复现 provenance。推断是验证同一事实在人类页面和 Agent 入口是否一致，而不是再做文档生成器。",
+      "sources": ["Product Hunt", "YC RFS", "GitHub Trending"],
+      "links": [["DocsAlot", "https://www.producthunt.com/products/docsalot-2"], ["YC Self-Maintaining APIs", "https://www.ycombinator.com/rfs"], ["open-science", "https://github.com/aipoch/open-science"]]
+    },
+    {
+      "name": "Agent runtime 采购需要按每次通过计价",
+      "status": "技术与资本共振、买方未验证",
+      "evidence": "4 类来源",
+      "summary": "Kit 把单工具 runtime、ACP、A2A 和子 Agent 编排装入一个二进制；FrontierHarness 报告同模型跨 9 个 harness 的 cost-per-pass 相差 17 倍，magnitude 做硬件自适应本地推理，Gimlet 获 3 亿美元融资。真正可卖的是买方任务上的可复跑采购基准。",
+      "sources": ["Product Hunt", "Show HN", "GitHub Trending", "Crunchbase News"],
+      "links": [["Kit", "https://www.producthunt.com/products/speakeasydev"], ["FrontierHarness", "https://news.ycombinator.com/item?id=49538490"], ["magnitude", "https://github.com/magnitudedev/magnitude"], ["Crunchbase", "https://news.crunchbase.com/venture/biggest-funding-rounds-crusoe-fluidstack-multibillion-dollar-ai-infrastructure/"]]
+    },
+    {
+      "name": "小而确定的工具正在对抗 AI 功能膨胀",
+      "status": "社区偏好信号",
+      "evidence": "3 类来源 / 5 个项目",
+      "summary": "TERMy 以不用 LLM 的终端助手获得七日高讨论，Mador 把响应式状态压到约 80 行，DocsAlot 把 No AI required 写进发布语，FckSignups 收集无需注册的浏览器工具。互动和 Star 只说明偏好，不证明企业付款。",
+      "sources": ["Show HN", "Product Hunt", "GitHub Trending"],
+      "links": [["TERMy", "https://news.ycombinator.com/item?id=49562219"], ["Mador", "https://news.ycombinator.com/item?id=49590738"], ["FckSignups", "https://github.com/BraveOPotato/FckSignups"]]
     }
   ],
   "datasets": {
     "launches": [
-      { "name": "dif.sh", "source": "Product Hunt", "metric": "#1 / 337 points @ 01:23 UTC", "category": "变更控制", "signal": "把 feature flag、实验理由与结果保存为仓库内 Markdown 并走 PR；发布者称 Git 保持真相源。", "url": "https://www.producthunt.com/products/dif-sh" },
-      { "name": "Reflexio", "source": "Product Hunt", "metric": "#2 / 244 points @ 01:23 UTC", "category": "Agent 学习", "signal": "从生产轨迹、失败和人工纠正生成可见、可测试、可逆的行为规则；30%+ 失败下降与 60%+ token 节省均为发布者自述。", "url": "https://www.producthunt.com/products/reflexio-2" },
-      { "name": "Ponytail", "source": "Product Hunt", "metric": "#3 / 194 points @ 01:23 UTC", "category": "代码约束", "signal": "要求编码 Agent 先判断改动是否必要、是否已有实现或可用标准库，再写最少代码。", "url": "https://www.producthunt.com/products/ponytail" },
-      { "name": "Hyperprobe", "source": "Product Hunt", "metric": "#4 / 162 points @ 01:23 UTC", "category": "生产调试", "signal": "让 Agent 向运行服务放置只读探针捕获未记录变量状态，定位本地无法复现的问题。", "url": "https://www.producthunt.com/products/hyperprobe" },
-      { "name": "Experiential Labs", "source": "Product Hunt", "metric": "#6 / 116 points @ 01:23 UTC", "category": "模型路由", "signal": "开源 BYOK/自托管模型网关，宣称利用真实流量优化成本、推荐模型并训练专用模型；效果尚未独立验证。", "url": "https://www.producthunt.com/products/experiential-labs" },
-      { "name": "GitWarren", "source": "Product Hunt", "metric": "#11 / 89 points @ 01:23 UTC", "category": "本地代码审阅", "signal": "直接审阅 working tree 的 committed、staged、unstaged 与 untracked 变更，用 MCP 接入 Agent，无需先 push。", "url": "https://www.producthunt.com/products/gitwarren" }
+      { "name": "AI Toolbox 3.0", "source": "Product Hunt", "metric": "#1 / 325 points @ 01:19 UTC", "category": "工作记录", "signal": "在本地统一搜索、整理和导出 ChatGPT、Claude、Gemini 与 Grok 聊天；40,000+ 用户和五位数 MRR 均为 maker 自述。", "url": "https://www.producthunt.com/products/chatgpt-toolbox" },
+      { "name": "Tadata", "source": "Product Hunt", "metric": "#2 / 278 points @ 01:19 UTC", "category": "共享 Agent", "signal": "常驻 Slack、连接内部工具并执行工作；当前必须显式 @ 才加入对话，安全与效果主要来自 maker 陈述。", "url": "https://www.producthunt.com/products/tadata" },
+      { "name": "Notify.domains", "source": "Product Hunt", "metric": "#3 / 248 points @ 01:19 UTC", "category": "域名监控", "signal": "每日 20+ 次组合 WHOIS、RDAP、拍卖、市场与网站信号，按 24 美元/年提供具体下一步；覆盖与频率为发布者自述。", "url": "https://www.producthunt.com/products/notify-domains" },
+      { "name": "Agentic Video Understanding in Gemini", "source": "Product Hunt", "metric": "#4 / 208 points @ 01:19 UTC", "category": "视频理解", "signal": "让模型自行决定看哪些片段、速度和模态；最高 token、成本和准确率改善是 Google 发布口径，未在本报告复测。", "url": "https://www.producthunt.com/products/google" },
+      { "name": "DocsAlot Visual Editor", "source": "Product Hunt", "metric": "#5 / 167 points @ 01:19 UTC", "category": "Agent-ready 文档", "signal": "视觉编辑、Markdown、组件与版本历史，同时把知识输出给人类和 AI 入口。", "url": "https://www.producthunt.com/products/docsalot-2" },
+      { "name": "H3 Max by fal", "source": "Product Hunt", "metric": "#6 / 132 points @ 01:19 UTC", "category": "视频生成", "signal": "发布者称 5 秒视频约 3 秒生成并在其比较中领先 12 个模型；排名、吞吐和质量均需独立复测。", "url": "https://www.producthunt.com/products/fal-ai" },
+      { "name": "Kit by Speakeasy", "source": "Product Hunt", "metric": "#7 / 113 points @ 01:19 UTC", "category": "Agent runtime", "signal": "一个静态二进制提供终端、ACP、A2A 与子 Agent 编排，并把模型工具面收窄为写入和运行程序。", "url": "https://www.producthunt.com/products/speakeasydev" }
     ],
     "technical": [
-      { "name": "OpenTrail", "source": "Show HN", "metric": "388 points / 118 comments @ 01:21 UTC", "category": "开源现场硬件", "signal": "开源 eInk 自行车码表成为七日最热 Show HN，显示可维修、低功耗现场设备能获得技术社区关注。", "url": "https://news.ycombinator.com/item?id=49567437" },
-      { "name": "Slotstream", "source": "Show HN", "metric": "237 points / 116 comments @ 01:21 UTC", "category": "本地推理", "signal": "作者展示在 48GB Mac 上运行 104GB Qwen3.8-Flash-Next 并报告约 12 tok/s；性能需按其硬件和方法复测。", "url": "https://news.ycombinator.com/item?id=49524447" },
-      { "name": "Weedout", "source": "Show HN", "metric": "182 points / 82 comments @ 01:21 UTC", "category": "内容过滤", "signal": "Safari 扩展隐藏 YouTube 标注为 AI 的视频；高讨论说明用户想控制合成内容暴露，但不证明愿付费。", "url": "https://news.ycombinator.com/item?id=49528895" },
-      { "name": "Moadim.io", "source": "Show HN", "metric": "32 points / 15 comments @ 01:21 UTC", "category": "Agent 调度", "signal": "Agent scheduler 获得中等讨论，说明长任务的时间、触发和可见性仍是独立产品面。", "url": "https://news.ycombinator.com/item?id=49571537" },
-      { "name": "SlideOps", "source": "Show HN", "metric": "23 points / 5 comments @ 01:21 UTC", "category": "材料漂移", "signal": "把演示文稿存入仓库，并在内容与代码不一致时标记漂移。", "url": "https://news.ycombinator.com/item?id=49508735" },
-      { "name": "Twinrun", "source": "Show HN", "metric": "2 points / 0 comments @ 01:21 UTC", "category": "影子运行", "signal": "在同一输入上同时运行新旧代码并比较输出；互动很低，但为高风险迁移提供清晰 MVP 形态。", "url": "https://news.ycombinator.com/item?id=49581181" },
-      { "name": "kveritas-go", "source": "Show HN", "metric": "12 points / 8 comments @ 01:21 UTC", "category": "结果证明", "signal": "让代码输出与公开结论绑定验证材料，减少审阅者完整重跑成本。", "url": "https://news.ycombinator.com/item?id=49505043" },
-      { "name": "Selfship.ai", "source": "Show HN", "metric": "10 points / 10 comments @ 01:21 UTC", "category": "Agent 质量", "signal": "定位持续发现并修复 agentic 应用问题；互动有限，说明供给存在但买家和差异化仍待验证。", "url": "https://news.ycombinator.com/item?id=49522967" }
+      { "name": "OpenTrail", "source": "Show HN", "metric": "408 points / 130 comments @ 01:20 UTC", "category": "开源现场硬件", "signal": "开源 eInk 自行车码表仍是七日最高讨论；热度不证明硬件交付、留存或采购。", "url": "https://news.ycombinator.com/item?id=49567437" },
+      { "name": "TERMy", "source": "Show HN", "metric": "209 points / 45 comments @ 01:20 UTC", "category": "确定性工具", "signal": "不用 LLM 的快速终端助手进入七日第二梯队，说明低延迟、可预测工具仍有社区吸引力。", "url": "https://news.ycombinator.com/item?id=49562219" },
+      { "name": "Kadō", "source": "Show HN", "metric": "67 points / 30 comments @ 01:20 UTC", "category": "行为追踪", "signal": "开源 iOS 习惯追踪器用非二元分数表达连续进展，是 9 月 6 日新增的高互动 Show HN。", "url": "https://news.ycombinator.com/item?id=49586902" },
+      { "name": "Mador", "source": "Show HN", "metric": "65 points / 22 comments @ 01:20 UTC", "category": "轻量前端", "signal": "作者用约 80 行 Proxy state tuple 让 DOM 响应式；讨论说明轻依赖实现受关注，不是商业需求证明。", "url": "https://news.ycombinator.com/item?id=49590738" },
+      { "name": "VODForge", "source": "Show HN", "metric": "33 points / 6 comments @ 01:20 UTC", "category": "本地视频工具", "signal": "免费本地桌面界面管理视频和播放列表下载，反映本地媒体工作流需求与平台条款风险并存。", "url": "https://news.ycombinator.com/item?id=49590354" },
+      { "name": "Keen Bean", "source": "Show HN", "metric": "11 points / 5 comments @ 01:20 UTC", "category": "会议到规格", "signal": "在 Mac 会议过程中同步起草规格，互动有限但给出把口头上下文转成验收工件的窄形态。", "url": "https://news.ycombinator.com/item?id=49584880" },
+      { "name": "Fast Cut", "source": "Show HN", "metric": "8 points / 8 comments @ 01:20 UTC", "category": "Agent 视频工具", "signal": "为 Agent 提供快速视频裁切工具；低 points 说明尚不能把开发者发布等同于需求。", "url": "https://news.ycombinator.com/item?id=49580689" },
+      { "name": "Dsnitch", "source": "Show HN", "metric": "5 points / 1 comment @ 01:20 UTC", "category": "运行时审计", "signal": "通过 eBPF 无配置查看 Docker 出站连接，为 Agent 容器网络验收提供只读实现参考。", "url": "https://news.ycombinator.com/item?id=49586159" },
+      { "name": "Antifailure", "source": "Show HN", "metric": "3 points / 2 comments @ 01:20 UTC", "category": "预发布环境", "signal": "为每个 PR 创建一次性生产副本；互动很低，但与影子对账的可验收形态一致。", "url": "https://news.ycombinator.com/item?id=49591260" }
     ],
     "github": [
-      { "name": "mattpocock/skills", "source": "GitHub Daily", "metric": "+2,692 stars today", "category": "Shell", "signal": "把真实工程技能直接从 .agents 目录发布，强化可安装操作规范的供给。", "url": "https://github.com/mattpocock/skills" },
-      { "name": "DietrichGebert/ponytail", "source": "GitHub Daily", "metric": "+2,845 stars today", "category": "JavaScript", "signal": "以少写新代码作为 Agent 约束；日榜热度不能替代维护成本改善证据。", "url": "https://github.com/DietrichGebert/ponytail" },
-      { "name": "affaan-m/ECC", "source": "GitHub Daily", "metric": "+1,314 stars today", "category": "JavaScript", "signal": "聚合 harness 性能、记忆、安全和 research-first 工作流，说明 Agent 配置层快速拥挤。", "url": "https://github.com/affaan-m/ECC" },
-      { "name": "cathrynlavery/diagram-design", "source": "GitHub Daily", "metric": "+855 stars today", "category": "HTML", "signal": "提供 38 类可导出的 HTML/SVG 技术图，强调编辑规范与可验证结构。", "url": "https://github.com/cathrynlavery/diagram-design" },
-      { "name": "humanlayer/skills", "source": "GitHub Daily", "metric": "+442 stars today", "category": "TypeScript", "signal": "又一套 Agent skills 进入日榜，证明供给旺盛而非某套规则已成为标准。", "url": "https://github.com/humanlayer/skills" },
-      { "name": "magnitudedev/magnitude", "source": "GitHub Daily", "metric": "+674 stars today", "category": "TypeScript", "signal": "按本机硬件运行模型并接入现有 Agent，为本地推理验收提供供给背景。", "url": "https://github.com/magnitudedev/magnitude" },
-      { "name": "tt-a1i/archify", "source": "GitHub Weekly", "metric": "+19,480 stars this week", "category": "JavaScript", "signal": "可验证架构、流程和生命周期图持续高热，通用出图本身已很拥挤。", "url": "https://github.com/tt-a1i/archify" },
-      { "name": "tailscale/tailcat", "source": "GitHub Weekly", "metric": "+3,187 stars this week", "category": "Go", "signal": "绕过控制面的点对点数据工具受关注，映射小型软件安全分享与连接需求。", "url": "https://github.com/tailscale/tailcat" },
-      { "name": "handsomestWei/patent-disclosure-skill", "source": "GitHub Weekly", "metric": "+1,996 stars this week", "category": "Python", "signal": "中文专利挖掘、交底书和审查答复被封装成技能，显示垂直可验收工件比通用聊天更具体。", "url": "https://github.com/handsomestWei/patent-disclosure-skill" },
-      { "name": "volcengine/OpenViking", "source": "GitHub Monthly", "metric": "+7,811 stars this month", "category": "Python", "signal": "把记忆、知识 RAG 与 skills 统一为 Agent 上下文数据库；与国内记忆融资共同说明供给加速。", "url": "https://github.com/volcengine/OpenViking" },
-      { "name": "apache/maka", "source": "GitHub Monthly", "metric": "+3,614 stars this month", "category": "TypeScript", "signal": "Agent workspace 保存完整操作记录，为审计和回放产品提供开源基线。", "url": "https://github.com/apache/maka" },
-      { "name": "cursor/plugins", "source": "GitHub Monthly", "metric": "+4,411 stars this month", "category": "TypeScript", "signal": "官方插件规范和插件集合进入月榜，平台化会压缩独立通用插件的差异空间。", "url": "https://github.com/cursor/plugins" }
+      { "name": "mattpocock/skills", "source": "GitHub Daily", "metric": "+2,207 stars today", "category": "Shell", "signal": "真实工程 skills 继续高增，说明可安装规则供给旺盛而非某套规则已获企业采用。", "url": "https://github.com/mattpocock/skills" },
+      { "name": "affaan-m/ECC", "source": "GitHub Daily", "metric": "+1,485 stars today", "category": "JavaScript", "signal": "聚合 harness、记忆、安全和研究工作流，强化 Agent 配置层拥挤信号。", "url": "https://github.com/affaan-m/ECC" },
+      { "name": "blader/humanizer", "source": "GitHub Daily", "metric": "+748 stars today", "category": "Python", "signal": "去除 AI 写作痕迹的 skill 高增，反映输出接受度焦虑，同时带来规避透明披露的风险。", "url": "https://github.com/blader/humanizer" },
+      { "name": "BraveOPotato/FckSignups", "source": "GitHub Daily", "metric": "+436 stars today", "category": "TypeScript", "signal": "收集无需注册、浏览器内运行的开源工具，显示低摩擦和本地处理的开发者偏好。", "url": "https://github.com/BraveOPotato/FckSignups" },
+      { "name": "aipoch/open-science", "source": "GitHub Daily", "metric": "+146 stars today", "category": "TypeScript", "signal": "本地优先科研工作台强调模型无关、notebook、数据连接与可复现 provenance。", "url": "https://github.com/aipoch/open-science" },
+      { "name": "OpenWhispr/openwhispr", "source": "GitHub Daily", "metric": "+121 stars today", "category": "JavaScript", "signal": "本地与 BYOK 语音转写继续进入日榜，隐私是定位但不是已验证采购理由。", "url": "https://github.com/OpenWhispr/openwhispr" },
+      { "name": "magnitudedev/magnitude", "source": "GitHub Weekly", "metric": "+1,961 stars this week", "category": "TypeScript", "signal": "按本机硬件选择并运行模型，为 runtime 采购基准提供开源实现背景。", "url": "https://github.com/magnitudedev/magnitude" },
+      { "name": "THU-MAIC/OpenMAIC", "source": "GitHub Weekly", "metric": "+9,193 stars this week", "category": "TypeScript", "signal": "多 Agent 互动课堂高增，证明教育演示热度，不证明教学效果或学校采购。", "url": "https://github.com/THU-MAIC/OpenMAIC" },
+      { "name": "debpalash/VoiceStudio", "source": "GitHub Weekly", "metric": "+7,513 stars this week", "category": "Python", "signal": "全本地语音克隆、配音、转写与有声书工具高增，通用生成工具供给进一步拥挤。", "url": "https://github.com/debpalash/VoiceStudio" },
+      { "name": "K-Dense-AI/scientific-agent-skills", "source": "GitHub Weekly", "metric": "+4,718 stars this week", "category": "Python", "signal": "165 个科研 skills 与 100+ 数据库的作者口径显示垂直 Agent 工具链供给迅速扩张。", "url": "https://github.com/K-Dense-AI/scientific-agent-skills" },
+      { "name": "semantica-agi/semantica", "source": "GitHub Monthly", "metric": "+10,145 stars this month", "category": "Python", "signal": "以图结构承载上下文和可问责 AI，说明通用上下文基础设施已非空白市场。", "url": "https://github.com/semantica-agi/semantica" },
+      { "name": "cactus-compute/needle", "source": "GitHub Monthly", "metric": "+7,069 stars this month", "category": "Python", "signal": "14MB 小模型面向手机、穿戴、智能家居和机器人，边缘推理热度高但现场质量需复测。", "url": "https://github.com/cactus-compute/needle" },
+      { "name": "apache/maka", "source": "GitHub Monthly", "metric": "+3,647 stars this month", "category": "TypeScript", "signal": "保留 Agent 完整操作记录的 workspace，为共享会话审计提供开源基线。", "url": "https://github.com/apache/maka" }
     ],
     "market": [
-      { "name": "全球风险资金在少数大额交易中集中", "source": "Crunchbase News", "metric": "2026-08：$42B / 1,500+ companies / +122% YoY", "category": "全球资本", "signal": "Crunchbase 称 8 月资金环比 7 月的 560 亿美元下降 25%，但同比上升 122%；数据截至 9 月 2 日且早期轮次存在滞后。", "url": "https://news.crunchbase.com/venture/global-funding-billion-dollar-deals-august-2026/" },
-      { "name": "AI 基础设施占据美国大额融资榜首", "source": "Crunchbase News", "metric": "$3B Crusoe / $1.5B Fluidstack / $300M Gimlet", "category": "算力资本", "signal": "8 月 29 日至 9 月 4 日美国大额融资榜前三类项目集中在数据中心、GPU 基础设施与异构推理；这是资本供给，不是小团队需求证明。", "url": "https://news.crunchbase.com/venture/biggest-funding-rounds-crusoe-fluidstack-multibillion-dollar-ai-infrastructure/" },
-      { "name": "记忆张量", "source": "36氪", "metric": "Pre-A+ / 两个月内第二轮", "category": "AI 记忆", "signal": "36氪称本轮由东方富海领投，距亿元级 Pre-A 约两个月；轮次与投资方为媒体口径，未披露本轮金额。", "url": "https://eu.36kr.com/zh/newsflashes/3968724365783558" },
-      { "name": "星灿智能", "source": "36氪", "metric": "数千万元天使++轮", "category": "养老与具身", "signal": "公司面向老年及行动不便人群，宣称构建硬件、系统、数据与订阅闭环；融资不证明量产、安全或订阅留存。", "url": "https://eu.36kr.com/zh/newsflashes/3968778331353349" },
-      { "name": "日耀光电", "source": "36氪", "metric": "数千万元 Pre-A", "category": "钙钛矿", "signal": "资金投向 SAM 材料中试线、在线检测装备与大尺寸组件试验线，显示先进制造仍围绕量产检测缺口融资。", "url": "https://www.36kr.com/newsflashes/3968459959710211" }
+      { "name": "Dealroom 热门赛道集中于 Agent 与人形机器人", "source": "Dealroom", "metric": "AI agents：320 startups / $14B / +182%；humanoid：84 / $6.2B / +140%", "category": "全球市场", "signal": "首页公开 Hot sectors momentum 的当日展示；未公开页面指标方法和基期，因此只作相对拥挤度信号。", "url": "https://dealroom.co/" },
+      { "name": "美国大额融资继续由 AI 基础设施主导", "source": "Crunchbase News", "metric": "$3B Crusoe / $1.5B Fluidstack / $300M Gimlet", "category": "算力资本", "signal": "8 月 29 日至 9 月 4 日美国十大已披露融资周榜前三类集中于数据中心、GPU 与异构推理；周榜存在报告滞后。", "url": "https://news.crunchbase.com/venture/biggest-funding-rounds-crusoe-fluidstack-multibillion-dollar-ai-infrastructure/" },
+      { "name": "Gimlet Labs", "source": "36氪 / Crunchbase News", "metric": "$300M Series B / $3B valuation", "category": "异构推理", "signal": "两处公开报道均称 a16z 领投、方向是跨不同芯片分配推理负载；融资证明资本供给，不证明单位经济或客户需求。", "url": "https://36kr.com/newsflashes/3969862414266633" },
+      { "name": "人工智能中小企业创业支持计划", "source": "工信部", "metric": "2026-2028 / 9 月 4 日发布", "category": "中国政策", "signal": "官方通知设定三年创业支持安排；36氪摘要给出培育 1 万家以上科技和创新型中小企业等目标，目标不等于已兑现资源。", "url": "https://www.miit.gov.cn/jgsj/qyj/wjfb/art/2026/art_86c400b4473849818629663a94a6d44b.html" },
+      { "name": "中国 AI 剧资本与出海叙事升温", "source": "36氪", "metric": "9 月 7 日行业观察 / 多笔 7-8 月融资", "category": "中国内容科技", "signal": "文章汇总可灵、生数、爱诗等资本动作，并把本土化叙事、文化适配和内容合规列为出海门槛；数字多为媒体与受访者口径。", "url": "https://eu.36kr.com/zh/p/3972532338536711" }
     ],
     "pain": [
-      { "name": "Marketplace Connect：10 万+ SKU 无法加载或发布", "source": "Shopify App Store", "metric": "1 star；2026-09-03；总评 4.2 / 2,097", "category": "大目录发布", "signal": "使用三天的商家称为使 10 万+ SKU 目录接入 eBay 已花数日，应用极慢或不加载，最终未能上传产品并迁移到竞品。", "url": "https://apps.shopify.com/marketplace-connect/reviews?ratings%5B%5D=1" },
-      { "name": "Judge.me：评论请求提醒一个月未发送", "source": "Shopify App Store", "metric": "1 star；2026-09-04；页面总评 5.0 / 46,390", "category": "营销自动化验收", "signal": "使用三年多的商家称设置两次提醒后超过一个月仍未发送，并难以找到提醒间隔配置；这是单一评论者陈述。", "url": "https://apps.shopify.com/judgeme/reviews?ratings%5B%5D=1" },
-      { "name": "Judge.me：星级组件缺少明显评论入口", "source": "Shopify App Store", "metric": "同一 1 star 评论；2026-09-04", "category": "前台行为", "signal": "评论者称店铺显示星级与评论数，却找不到让顾客点击阅读评论的入口，需要客服引导配置。", "url": "https://apps.shopify.com/judgeme/reviews?ratings%5B%5D=1" },
-      { "name": "Shopify Collective：自动加入零售商与通知过载", "source": "Shopify App Store", "metric": "4 star；2026-09-04；总评 4.5 / 769", "category": "合作方准入", "signal": "使用两年多的供应商称自动广告塞满收件箱、需要频繁筛查零售商，希望平台不要自动添加并加强网站审核。", "url": "https://apps.shopify.com/collective-supplier/reviews?page=1&sort_by=newest" },
-      { "name": "Checkout Blocks：checkout 与 order page 预期不一致", "source": "Shopify App Store", "metric": "2026-09-04；总评 4.2 / 212", "category": "功能资格", "signal": "使用约一小时的商家称只能把 block 放在订单页而非 checkout；页面说明完整 checkout 定制限 Shopify Plus，可能是套餐资格或文案理解差异。", "url": "https://apps.shopify.com/checkout-blocks" }
+      { "name": "Marketplace Connect：eBay 库存数日不同步且无修复时间", "source": "Shopify App Store", "metric": "1 star；2026-09-03；总评 4.1 / 2,097", "category": "库存可靠性", "signal": "使用约两年的商家称 eBay 库存同步数日不可用，两次联系支持得到仍在处理但没有时间表；这是单一评论者陈述。", "url": "https://apps.shopify.com/marketplace-connect/reviews?ratings%5B%5D=1" },
+      { "name": "Marketplace Connect：10 万+ SKU 无法加载或发布", "source": "Shopify App Store", "metric": "1 star；2026-09-03；303 条一星", "category": "大目录发布", "signal": "使用三天的商家称为接入 eBay 花费数日，应用很慢或不加载，最终未能上传产品并转向竞品。", "url": "https://apps.shopify.com/marketplace-connect/reviews?ratings%5B%5D=1" },
+      { "name": "AI Toolbox：搜索漏值、上下文计量不可靠", "source": "Product Hunt Reviews", "metric": "当前评论；2026-09-07 快照；4.9 / 11 reviews", "category": "工作记录检索", "signal": "使用约一个月的评论者称 JSON 导出有助于复盘长任务，但搜索有时找不到聊天中的已知值，context meter 充其量是估算。", "url": "https://www.producthunt.com/products/chatgpt-toolbox" },
+      { "name": "Judge.me：提醒一个月未发送且关键设置难找", "source": "Shopify App Store", "metric": "1 star；2026-09-04；总评 5.0 / 46,456", "category": "营销自动化验收", "signal": "使用三年多的商家称设置两次提醒后超过一个月仍未发送，测试链接和提醒间隔都需客服引导才能找到。", "url": "https://apps.shopify.com/judgeme/reviews?ratings%5B%5D=1" },
+      { "name": "Shopify Collective：自动加入零售商与通知过载", "source": "Shopify App Store", "metric": "4 star；2026-09-04；总评 4.5 / 768", "category": "合作方准入", "signal": "使用两年多的供应商称自动广告塞满收件箱、需要反复筛查零售商，希望平台不要自动添加并加强站点审核。", "url": "https://apps.shopify.com/collective-supplier/reviews?page=1&sort_by=newest" }
     ]
   },
   "opportunities": [
     {
       "rank": "01",
-      "score": 89,
+      "score": 90,
       "category": "Commerce Reliability",
-      "title": "大目录 Marketplace 发布前影子对账",
-      "thesis": "在 Shopify 向 eBay/Walmart 发布前，用相同输入执行只读影子映射，抽样比较 SKU、价格、库存、类目与授权状态；只交付可复现差异包，不替代渠道连接器。",
+      "title": "大目录 Marketplace 发布与库存影子对账",
+      "thesis": "在 Shopify 向 eBay 发布或同步前后，用只读快照比较 SKU、库存、价格、类目、图片和授权，把不可见的连接器故障变成可复现差异包。",
       "buyer": "SKU 超过 50,000、同时经营至少两个 Marketplace 的 Shopify 商家运营负责人，以及管理这类商家的电商代理商",
-      "wedge": "先只接 Shopify 导出与 eBay 当前 listing；每天抽样 500 个高销量 SKU，用 Twinrun 式新旧映射比较生成预发布差异报告，不做自动写入或冻结。",
-      "proof": ["9 月 3 日一星评论者称 10 万+ SKU 目录使应用极慢或无法加载，花数日仍无法发布 eBay；9 月 1 日长期用户此前已报告同步需数日", "Twinrun 展示同输入运行新旧代码并比较输出的窄产品形态，适合把连接器升级风险转为可验收差异"],
-      "risk": "评论可能集中于一次平台事故，导出与平台 API 自身也会延迟；若抽样规则漏掉长尾商品，会制造虚假的安全感。",
-      "sources": [
-        ["Marketplace Connect reviews", "https://apps.shopify.com/marketplace-connect/reviews?ratings%5B%5D=1"],
-        ["Twinrun", "https://news.ycombinator.com/item?id=49581181"]
-      ]
+      "wedge": "先只接 Shopify CSV 与 eBay listing 导出；每天比较 500 个高销量 SKU 和全部零库存 SKU，生成差异、时间戳和人工确认状态，不自动写回。",
+      "proof": ["9 月 3 日一位使用约两年的商家报告 eBay 库存数日不同步且支持没有时间表；另一位 10 万+ SKU 商家花数日仍无法发布", "当日页面总评从上一期记录的 4.2 降至 4.1、一星数由 302 增至 303；Antifailure 展示按 PR 创建一次性生产副本的验收形态"],
+      "risk": "评论可能集中于同一平台事故；CSV 与 marketplace 导出也可能滞后，抽样会漏掉长尾，且 Shopify 或连接器可增加原生健康页。",
+      "sources": [["Marketplace Connect reviews", "https://apps.shopify.com/marketplace-connect/reviews?ratings%5B%5D=1"], ["Antifailure", "https://news.ycombinator.com/item?id=49591260"]]
     },
     {
       "rank": "02",
       "score": 86,
-      "category": "Agent Engineering",
-      "title": "AI 生成变更的可逆决策账本",
-      "thesis": "把 Agent 新增的 feature flag、依赖、配置和代码路径绑定到一个仓库内决策对象：为什么需要、谁批准、何时失效、如何证明可回滚。",
-      "buyer": "每周合并 20 个以上 Agent 辅助 PR、已有 on-call 或变更审查制度的 20—200 人软件团队工程负责人",
-      "wedge": "只覆盖 Agent 新增的 feature flag；PR 检查 owner、失效日、成功指标与 rollback test，缺任一项即给出审阅提示，不代替 CI 或代码评审。",
-      "proof": ["dif.sh 当前 #1，把 feature flag 与实验理由存为仓库内 Markdown；Ponytail #3 强调先判断是否需要写新代码，GitWarren #11 提供 working tree 本地审阅", "GitHub 日榜同时出现多套 skills，YC Self-Maintaining APIs 又要求供应方把变化应用到客户代码，说明自动变更速度正超过人工上下文"],
-      "risk": "GitHub、LaunchDarkly 或 dif.sh 可内置核心字段；若团队本来没有 flag 清理与回滚纪律，额外元数据会变成无人维护的文档。",
-      "sources": [
-        ["dif.sh", "https://www.producthunt.com/products/dif-sh"],
-        ["Ponytail", "https://www.producthunt.com/products/ponytail"],
-        ["GitWarren", "https://www.producthunt.com/products/gitwarren"],
-        ["YC Self-Maintaining APIs", "https://www.ycombinator.com/rfs"]
-      ]
+      "category": "AI Work Continuity",
+      "title": "跨模型项目续接与可审计工作账本",
+      "thesis": "把用户主动导出的多模型聊天压成一个可审阅项目状态：已决定、未解决、证据链接、负责人和下一步，并对每次续接产生 diff，而不是保存另一堆聊天。",
+      "buyer": "同时使用至少三种 AI、按客户项目交付研究或软件成果的 10—100 人咨询、代理和产品团队 AI 运营负责人",
+      "wedge": "只接用户导出的 Markdown/JSON，不抓取平台；选一个项目的 20 段聊天，人工确认 30 条决策和未结项，输出带来源锚点的 canonical ledger 与下一次 handoff 包。",
+      "proof": ["AI Toolbox 当前 #1；maker 自述 40,000+ 用户和五位数 MRR，一位当前评论者明确称 JSON 导出有助于复盘长任务但搜索会漏已知值", "Supafork 做跨 harness 会话分享，YC Multiplayer AI 指出只读 transcript 难以共同接续长期 Agent 工作"],
+      "risk": "浏览器平台会内置搜索和项目功能；聊天可能包含客户机密，摘要会遗漏否定条件，且平台导出格式变化会提高维护成本。",
+      "sources": [["AI Toolbox 3.0", "https://www.producthunt.com/products/chatgpt-toolbox"], ["Supafork", "https://news.ycombinator.com/item?id=49524608"], ["YC Multiplayer AI", "https://www.ycombinator.com/rfs"]]
     },
     {
       "rank": "03",
-      "score": 82,
-      "category": "Agent Quality",
-      "title": "人工纠正到行为规则的回归发布门",
-      "thesis": "从真实用户纠正中提出可读规则，但只有在买方自己的固定任务集上证明失败下降、成本未恶化且可一键撤回后，才允许进入生产。",
-      "buyer": "每周收到 50 条以上人工纠正、已保存 agent trace 与验收结果的客服或运营 AI 产品负责人",
-      "wedge": "导入最近 50 条人工纠正，人工归并为最多 10 条候选规则；在 30 个冻结任务上 A/B 回放三次，只交付通过率、token、回退和冲突报告。",
-      "proof": ["Reflexio 当前 #2，明确把生产失败和纠正转为可见、可测试、可逆学习；其失败和 token 改善数字仍是发布者自述", "FrontierHarness 七日快照 81 points / 56 comments，作者称同模型在 9 个 harness 的每次通过成本相差 17 倍；ECC 与 Experiential 又从配置和流量路由侧进入榜单"],
-      "risk": "小样本和 Agent 非确定性会把偶然波动当学习；规则可能改善一个客户却伤害另一个客户，必须按租户隔离并保留人工否决。",
-      "sources": [
-        ["Reflexio", "https://www.producthunt.com/products/reflexio-2"],
-        ["FrontierHarness Eval", "https://news.ycombinator.com/item?id=49538490"],
-        ["ECC", "https://github.com/affaan-m/ECC"],
-        ["Experiential Labs", "https://www.producthunt.com/products/experiential-labs"]
-      ]
+      "score": 83,
+      "category": "AI Video Operations",
+      "title": "AI 短剧出海的逐镜头本地化验收包",
+      "thesis": "在生成之后、发行之前，对字幕、配音、人物称谓、剧情连续性、文化禁忌和平台规则逐镜头出具证据清单，把“本地化”变成可验收交付。",
+      "buyer": "每月向两个以上海外市场发行 20 集以上 AI 短剧的中国工作室、发行商和本地化服务商内容运营负责人",
+      "wedge": "只做 10 集、每集 2 分钟、一个英语市场；自动抽帧和对齐台词，双语编辑人工确认 50 个高风险镜头，不生成视频、不替代法律审核。",
+      "proof": ["Gemini Agentic Video 与 H3 Max 当前分别 #4、#6，都强调降低长视频处理成本或提高生成吞吐，具体提升为发布者口径", "36氪 9 月 7 日行业观察称中国 AI 剧资本升温，同时把本地化叙事、文化适配和内容合规列为出海门槛；Fast Cut 提供 Agent 可调用的视频裁切形态"],
+      "risk": "资本较重方向：媒体数字和个案可能夸大市场，文化判断难标准化，平台规则变化快，错误放行会造成版权、合规或品牌损失。",
+      "sources": [["Gemini Agentic Video", "https://www.producthunt.com/products/google"], ["H3 Max", "https://www.producthunt.com/products/fal-ai"], ["36氪 AI 剧", "https://eu.36kr.com/zh/p/3972532338536711"], ["Fast Cut", "https://news.ycombinator.com/item?id=49580689"]]
     },
     {
       "rank": "04",
-      "score": 80,
-      "category": "Revenue Enablement",
-      "title": "技术承诺—代码—演示材料漂移证明",
-      "thesis": "把售前 deck、架构图、benchmark 和安全问卷中的每条可验证承诺链接到测试、配置或版本；代码变化后只标记失去证据的句子。",
-      "buyer": "每月处理 10 份以上企业安全问卷或定制技术演示的 AI 基础设施公司销售工程负责人和产品市场负责人",
-      "wedge": "选择一个 20 页销售 deck 与 30 条技术承诺，手工绑定测试或代码位置；每个 PR 只输出新增漂移和可点击证据，不自动重写营销文本。",
-      "proof": ["SlideOps 将 slides 放进仓库并标记与代码的漂移，kveritas-go 尝试证明代码确实产出公开结论", "diagram-design 日榜新增 855 stars、archify 周榜新增 19,480 stars，YC Self-Maintaining APIs 也把外部变化与客户代码连接起来"],
-      "risk": "自然语言承诺与实现并非一一对应，误报会迅速失去销售团队信任；通用代码托管或文档平台也能吸收基础 diff。",
-      "sources": [
-        ["SlideOps", "https://news.ycombinator.com/item?id=49508735"],
-        ["kveritas-go", "https://news.ycombinator.com/item?id=49505043"],
-        ["diagram-design", "https://github.com/cathrynlavery/diagram-design"],
-        ["archify", "https://github.com/tt-a1i/archify"]
-      ]
+      "score": 81,
+      "category": "Agent Governance",
+      "title": "Slack Agent 的参与边界与人工接管记录",
+      "thesis": "先不做更自主的同事；明确 Agent 何时能加入、能读取哪段上下文、谁能批准工具动作，以及人何时接管，并把每次边界变化留成可审计记录。",
+      "buyer": "已在 Slack 部署一个以上内部 Agent、处理销售或支持信息的 50—500 人公司安全与内部平台负责人",
+      "wedge": "只代理一个 Slack bot：默认仅响应 @ 提及、最多读取当前 thread、所有外部写操作禁用；输出参与理由、上下文范围、模型/工具和 handoff 时间。",
+      "proof": ["Tadata 当前 #2，maker 明确称现在必须 @ 才加入对话，是为避免工作区噪音；用户现场提问也集中在数据安全", "YC Multiplayer AI 要多人进入和重定向同一长期会话；I Have Been Clawed 汇总编码 Agent 事故，apache/maka 保存完整操作记录"],
+      "risk": "Slack、Agent 平台或身份供应商可原生覆盖；日志本身包含敏感上下文，策略过严会让 Agent 没用，过松则扩大数据泄露和误操作。",
+      "sources": [["Tadata", "https://www.producthunt.com/products/tadata"], ["YC Multiplayer AI", "https://www.ycombinator.com/rfs"], ["I Have Been Clawed", "https://news.ycombinator.com/item?id=49532083"], ["apache/maka", "https://github.com/apache/maka"]]
     },
     {
       "rank": "05",
-      "score": 77,
-      "category": "B2B Commerce",
-      "title": "Shopify 供应商合作方准入收件箱",
-      "thesis": "将 Collective 的新零售商连接、价格表权限、退货条件和补货状态集中成供应商可批准的每日队列，先解决谁能看什么和谁需要响应。",
-      "buyer": "通过 Shopify Collective 向 20 家以上零售商供货、由 1—5 人电商团队管理渠道的品牌运营负责人",
-      "wedge": "不等待深度 API：先接通知邮箱和每周 CSV，生成去重后的零售商档案、域名/条款核对清单与 approve/deny 建议，所有动作由人回到 Shopify 执行。",
-      "proof": ["9 月 4 日使用两年多的供应商称自动广告塞满收件箱、需要频繁筛查零售商，并明确要求更好的网站审核", "8 月 25 日另一供应商在同一页面要求公开、邀请制、需批准和指定零售商等不同价格表权限，并要求可关闭通知"],
-      "risk": "这是少量评论且平台可直接增加审批和通知设置；如果 Collective 不提供足够导出，手工回填会限制产品规模。",
-      "sources": [
-        ["Shopify Collective Supplier reviews", "https://apps.shopify.com/collective-supplier/reviews?page=1&sort_by=newest"],
-        ["YC Cloud for Small Software", "https://www.ycombinator.com/rfs"]
-      ]
+      "score": 79,
+      "category": "Developer Infrastructure",
+      "title": "人类文档—Agent 入口的一致性契约",
+      "thesis": "把 API 的人类文档、OpenAPI、llms.txt、MCP tool 和 skill 示例视为同一承诺的多种表示；每次发布只报告参数、权限、错误和弃用说明的漂移。",
+      "buyer": "每月发布两次以上、同时维护 API 文档和 MCP/Agent 接口的 B2B API 公司开发者体验负责人",
+      "wedge": "只覆盖 20 个高调用端点和 30 个示例；从真实 staging 响应生成基线，对人类页面、OpenAPI 与一个 Agent 入口做三方 diff，不自动改文档。",
+      "proof": ["DocsAlot 当前 #5，明确同时面向 humans 与 AI systems，并提供 MCP、llms.txt 和 skill.md", "YC Self-Maintaining APIs 把未通知的外部 API 变化列为停机来源并希望供应商直接更新客户代码；open-science 日榜强调可复现 provenance"],
+      "risk": "文档平台能快速内置结构 diff；真实接口行为受权限和数据状态影响，误报会令开发者忽略告警，自动生成示例也可能掩盖破坏性变化。",
+      "sources": [["DocsAlot", "https://www.producthunt.com/products/docsalot-2"], ["YC Self-Maintaining APIs", "https://www.ycombinator.com/rfs"], ["open-science", "https://github.com/aipoch/open-science"]]
     },
     {
       "rank": "06",
-      "score": 73,
-      "category": "Private AI Infrastructure",
-      "title": "本地大模型内存—吞吐—质量验收包",
-      "thesis": "针对必须本地处理数据的团队，用其真实五类任务比较量化、内存卸载和云端基线，交付可复跑的质量、速度、峰值内存与每千任务成本。",
-      "buyer": "因客户数据、源码或合规要求评估 Mac/工作站本地推理的法律、医疗和软件团队技术负责人",
-      "wedge": "只支持一台 Apple Silicon 工作站、一个 70B+ 模型和五类固定任务；两周交付容器、测量脚本与采购建议，不开发新的推理服务器。",
-      "proof": ["Slotstream 的 48GB Mac 运行 104GB 模型展示获得 237 points / 116 comments，说明内存卸载路径受到强技术关注", "magnitude 日榜新增 674 stars，Experiential 当前 #6 做模型成本路由；Crunchbase 同期榜首是 30 亿美元和 15 亿美元 AI 基础设施融资，云端资本密度很高"],
-      "risk": "技术与设备投入较重：模型和硬件更新快，单机结果难外推；开源运行时可迅速吸收优化，咨询式验收也可能难形成高毛利软件。",
-      "sources": [
-        ["Slotstream", "https://news.ycombinator.com/item?id=49524447"],
-        ["magnitude", "https://github.com/magnitudedev/magnitude"],
-        ["Experiential Labs", "https://www.producthunt.com/products/experiential-labs"],
-        ["Crunchbase biggest rounds", "https://news.crunchbase.com/venture/biggest-funding-rounds-crusoe-fluidstack-multibillion-dollar-ai-infrastructure/"]
-      ]
+      "score": 75,
+      "category": "Agent Procurement",
+      "title": "Agent runtime 的 cost-per-pass 采购基准",
+      "thesis": "不用通用 benchmark 选 runtime；在买方自己的冻结任务上比较 harness、模型和本地/云配置，按成功一次的成本、延迟、权限面和可复跑性签收。",
+      "buyer": "每月 Agent 推理支出超过 10,000 美元、正在评估两个以上 coding/research runtime 的软件团队内部平台负责人",
+      "wedge": "固定 30 个历史任务、三种 runtime、每组重复三次；交付 pass、美元/通过、人工干预分钟和工具权限 diff，不开发新的 runtime。",
+      "proof": ["Kit 当前 #7 把单工具 runtime、ACP、A2A 和编排放进静态二进制；magnitude 周榜新增 1,961 stars 做硬件自适应本地推理", "FrontierHarness 作者报告同模型在 9 个 harness 的 cost-per-pass 相差 17 倍；Crunchbase 记录 Gimlet 3 亿美元 B 轮和更大的基础设施融资"],
+      "risk": "买方历史任务可能泄露源码且很快过期；三次重复不足以消除非确定性，runtime 更新会令报告迅速失效，咨询项目也不一定形成软件复购。",
+      "sources": [["Kit", "https://www.producthunt.com/products/speakeasydev"], ["FrontierHarness", "https://news.ycombinator.com/item?id=49538490"], ["magnitude", "https://github.com/magnitudedev/magnitude"], ["Crunchbase", "https://news.crunchbase.com/venture/biggest-funding-rounds-crusoe-fluidstack-multibillion-dollar-ai-infrastructure/"]]
+    },
+    {
+      "rank": "07",
+      "score": 71,
+      "category": "Commerce QA",
+      "title": "评论请求的投递与前台落点证明",
+      "thesis": "在营销自动化启用前，用种子收件人和真实主题预览证明提醒实际送达、链接打开正确评论页、星级组件可点击，而不是相信已保存的配置。",
+      "buyer": "每月发送 5,000 封以上评论请求、依赖 Shopify 评价应用的 DTC 品牌 CRM 或电商运营负责人",
+      "wedge": "只验一个模板和两次提醒：10 个种子邮箱、三种设备，记录计划/实际时间、跳转 URL、退信和 storefront 点击路径；只报告不代发。",
+      "proof": ["9 月 4 日使用三年多的 Judge.me 商家称设置两次提醒后超过一个月仍未发送，且测试链接和提醒间隔入口难找", "同一评论还称前台显示星级和数量却找不到评论入口；Marketplace Connect 的同步故障说明 Shopify 生态配置成功不等于外部行为成功"],
+      "risk": "需求证据集中于一个评论者，邮件送达受商家域名和收件方影响；Judge.me 或 Shopify 可补充原生 seed test，独立产品防御性较弱。",
+      "sources": [["Judge.me reviews", "https://apps.shopify.com/judgeme/reviews?ratings%5B%5D=1"], ["Marketplace Connect reviews", "https://apps.shopify.com/marketplace-connect/reviews?ratings%5B%5D=1"]]
     }
   ]
 }
