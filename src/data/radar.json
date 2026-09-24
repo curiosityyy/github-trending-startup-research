@@ -1,90 +1,66 @@
 {
   "meta": {
-    "date": "2026-09-23",
-    "snapshot": "2026-09-23T01:25:02Z；汇总时刻；HN及Trending请求起点01:21:08 UTC，PH feed采集01:21:52 UTC；网页可能含缓存",
-    "reportFile": "startup_radar_2026-09-23_zh.md"
+    "date": "2026-09-24",
+    "snapshot": "2026-09-24T01:22:30Z；汇总时刻；HN、Trending、PH feed请求起点01:18:15 UTC；网页可能含缓存",
+    "reportFile": "startup_radar_2026-09-24_zh.md"
   },
   "signals": [
     {
       "source": "Product Hunt",
-      "count": "当前首页 / 50条feed / 6个产品页",
-      "note": "六款精选全部替换；feed顶层为09-22 PDT。首页当前发布不等于UTC 09-23首次上线；保留feed原始published，不采票数。",
+      "count": "当前首页 / 50条feed / 6款精选",
+      "note": "feed顶层推进至09-23 PDT；六款相对上期全部替换。原始published不等于本轮上榜日；另重读Xem与Anomalo，未计为今日精选。",
       "type": "发布",
       "url": "https://www.producthunt.com/"
     },
     {
       "source": "Show HN / Algolia",
       "count": "827条匹配 / 返回100条 / 审阅前45条 / 精选5项",
-      "note": "固定七日窗口09-16 01:21:08至09-23 01:21:08 UTC；精选均为相对上一期新覆盖，其中4项09-22发帖。points/comments仅为API快照。",
+      "note": "固定七日窗口09-17 01:18:15至09-24 01:18:15 UTC；3项09-23发帖，5项均为相对上期新覆盖；票评为请求起点快照。",
       "type": "技术",
-      "url": "https://hn.algolia.com/api/v1/search?tags=show_hn&numericFilters=created_at_i%3E%3D1789521668%2Ccreated_at_i%3C%3D1790126468&hitsPerPage=100"
+      "url": "https://hn.algolia.com/api/v1/search?tags=show_hn&numericFilters=created_at_i%3E%3D1789607895%2Ccreated_at_i%3C%3D1790212695&hitsPerPage=100"
     },
     {
       "source": "GitHub Trending",
-      "count": "daily 8 / weekly 20 / monthly 21",
-      "note": "Language Any、Spoken Language Any；49个跨窗行未去重，精选10个仓库。窗口stars不可相加；近期上榜不等于新建。",
+      "count": "daily 17 / weekly 20 / monthly 21",
+      "note": "Language Any、Spoken Language Any；58个跨窗行未去重，精选10库含7个相对上期新覆盖；窗口stars不相加。",
       "type": "开源",
       "url": "https://github.com/trending?since=daily"
     },
     {
       "source": "YC RFS / Company Directory",
-      "count": "Fall 2026 / Browser Use档案",
-      "note": "RFS最新可见仍为Fall 2026；目录索引无正文，读取公开公司页。新覆盖Browser Use，历史launch及宣传使用量不计今日需求。",
+      "count": "Fall 2026 / Browser Use档案复查",
+      "note": "RFS版本未变；目录索引无正文，已读取Browser Use公开公司页；不是新融资或新增客户。",
       "type": "投资",
       "url": "https://www.ycombinator.com/rfs"
     },
     {
       "source": "Crunchbase News",
-      "count": "09-22 Baselayer融资报道",
-      "note": "公开报道为$35M Series A、M13领投；这是媒体披露，未独立核实到账或客户收入。使用新闻页，未访问付费数据库。",
+      "count": "2篇09-23报道与观点",
+      "note": "大额A轮统计与Agent安全客座观点分别标注；只读公开新闻，未访问付费数据库。",
       "type": "资本",
-      "url": "https://news.crunchbase.com/ai/verifying-ai-agents-baselayer-35m-raise/"
+      "url": "https://news.crunchbase.com/"
     },
     {
       "source": "36氪 / IT桔子",
-      "count": "2条09-22中国融资 / IT桔子受限",
-      "note": "龙讯旷腾亿元级B1轮、华超神控2亿元Pre-A轮，正文可读；IT桔子HTTP 412后停止。均属披露金额，资本密集。",
+      "count": "2条09-22中国融资 / IT桔子412",
+      "note": "新增覆盖庆为航空与冰辰量子；相对时间列表可能缓存，采用详情绝对日期。IT桔子412后停止。",
       "type": "国内",
       "url": "https://pitchhub.36kr.com/financing-flash"
     },
     {
-      "source": "Shopify App Store / HN / PH",
-      "count": "4个一星评论页 / 2类新覆盖缺口",
-      "note": "商家投诉按原日期复查；Judge.me新增可见09-21低分但任务不明，不提高需求分。另记录MCP测试用例设计提问、Clueprint作者自身资源残留问题，非独立采购证明。",
+      "source": "Shopify App Store / HN",
+      "count": "4个一星页面 / 7项具体问题",
+      "note": "4项旧投诉复查，另补卸载陈述与两类社区缺口；总体评分与评论数不是事故数，不推断修复结果。",
       "type": "需求",
-      "url": "https://apps.shopify.com/judgeme/reviews?ratings%5B%5D=1"
+      "url": "https://apps.shopify.com/klaviyo-email-marketing/reviews?ratings%5B%5D=1"
     }
   ],
   "themes": [
     {
-      "name": "客户路径验收需要覆盖页面结果",
-      "status": "商家陈述及回复 + 新监测供给",
-      "evidence": "PageFly旧投诉涉及发布差异；Judge.me存在提醒和评价入口陈述；Pulsetic发布RUM。",
-      "summary": "推断先签收一次店铺变更的关键路径；性能遥测与业务功能验收不同，不能互相替代。",
-      "sources": [
-        "Shopify App Store",
-        "Product Hunt"
-      ],
-      "links": [
-        [
-          "PageFly",
-          "https://apps.shopify.com/pagefly/reviews?ratings%5B%5D=1"
-        ],
-        [
-          "Judge.me",
-          "https://apps.shopify.com/judgeme/reviews?ratings%5B%5D=1"
-        ],
-        [
-          "Pulsetic RUM",
-          "https://www.producthunt.com/products/pulsetic"
-        ]
-      ]
-    },
-    {
-      "name": "对账先确认数据口径与来源",
-      "status": "旧商家投诉 + 厂商新发布；关联为推断",
-      "evidence": "Marketplace Connect投诉价格和库存同步；Anomalo主张区分业务变化与坏数据，并展示查询逻辑。",
-      "summary": "推断先做同一导出时刻的差异签收；无法由异常检测产品证明同步事故根因。",
+      "name": "对账需要可复核的数据口径",
+      "status": "旧商家陈述 + 本周产品供给",
+      "evidence": "Marketplace Connect同步投诉与Anomalo数据异常分析并列。",
+      "summary": "推断先交付单渠道差异签收；两者并不证明同一根因，也未增加独立买方。",
       "sources": [
         "Shopify App Store",
         "Product Hunt"
@@ -101,10 +77,43 @@
       ]
     },
     {
-      "name": "邮件迁移要保留流程与发送约束",
-      "status": "商家退出陈述 + 同类产品供给",
-      "evidence": "Klaviyo商家称需重建流程；Xem提供自动化、模板和自带SMTP或托管发送。",
-      "summary": "推断验收授权资料、退订与触发映射；开源不自动解决发送商审核，也不代表已能无损迁移。",
+      "name": "店铺退出也需要验收",
+      "status": "旧事故新覆盖 + 开源供给 + 公司目录",
+      "evidence": "Klaviyo卸载陈述补充PageFly与Judge.me交付问题；BrowserSkill和Browser Use提供浏览器操作供给。",
+      "summary": "推断覆盖一次安装或卸载的前后对照；页面自动化不能自动判责。",
+      "sources": [
+        "Shopify App Store",
+        "GitHub Trending",
+        "YC Company Directory"
+      ],
+      "links": [
+        [
+          "PageFly",
+          "https://apps.shopify.com/pagefly/reviews?ratings%5B%5D=1"
+        ],
+        [
+          "Judge.me",
+          "https://apps.shopify.com/judgeme/reviews?ratings%5B%5D=1"
+        ],
+        [
+          "Klaviyo卸载评论",
+          "https://apps.shopify.com/klaviyo-email-marketing/reviews?ratings%5B%5D=1"
+        ],
+        [
+          "BrowserSkill",
+          "https://github.com/Tencent/BrowserSkill"
+        ],
+        [
+          "Browser Use目录",
+          "https://www.ycombinator.com/companies/browser-use"
+        ]
+      ]
+    },
+    {
+      "name": "邮件迁移保留语义而非只搬联系人",
+      "status": "旧商家陈述 + 本周产品页重读",
+      "evidence": "Klaviyo退出投诉与Xem自动化、SMTP及审核要求相邻。",
+      "summary": "推断先验收授权导出、触发与退订映射；审核要求仍适用，未证明无损迁移。",
       "sources": [
         "Shopify App Store",
         "Product Hunt"
@@ -121,73 +130,80 @@
       ]
     },
     {
-      "name": "Agent运行环境需要可归属与可回收",
-      "status": "作者自述 + 沙箱开源供给；无采购证明",
-      "evidence": "Clueprint作者描述遗留worktree和服务；Drop作者发布rootless沙箱并说明配置挂载。",
-      "summary": "推断以项目owner和退出验收切入；隔离、资源回收是不同问题，不能由一个推断另一个已解决。",
+      "name": "任务完成要有状态和产物证据",
+      "status": "社区具体提问 + 作者确认 + 新产品供给",
+      "evidence": "Sigabrt作者确认长任务状态缺口；AgentScore主张多维质量评分。",
+      "summary": "推断在现有监控上补业务成功条件；心跳、质量评分和可恢复备份是不同证据。",
       "sources": [
-        "Product Hunt",
         "Show HN",
+        "Product Hunt"
+      ],
+      "links": [
+        [
+          "Sigabrt讨论",
+          "https://news.ycombinator.com/item?id=49765354"
+        ],
+        [
+          "Sigabrt官网",
+          "https://sigabrt.dev/"
+        ],
+        [
+          "AgentScore",
+          "https://www.producthunt.com/products/latitude-4"
+        ]
+      ]
+    },
+    {
+      "name": "生成视频之后仍需修改签收",
+      "status": "当期用户反馈 + 厂商发布 + 开源供给",
+      "evidence": "RxFilm讨论暴露进度可见性和剪辑耗时；Pactto提供评审房间，video-use提供Agent编辑。",
+      "summary": "推断先把反馈绑定到镜头和版本；没有证明用户需要另一个平台。",
+      "sources": [
+        "Show HN",
+        "Product Hunt",
         "GitHub Trending"
       ],
       "links": [
         [
-          "Clueprint",
-          "https://www.producthunt.com/products/clueprint"
+          "RxFilm讨论",
+          "https://news.ycombinator.com/item?id=49815095"
         ],
         [
-          "Drop",
-          "https://news.ycombinator.com/item?id=49801329"
+          "RxFilm仓库",
+          "https://github.com/rxtech-lab/film-workflow"
         ],
         [
-          "Google ax",
-          "https://github.com/google/ax"
+          "Pactto",
+          "https://www.producthunt.com/products/pactto-replay"
+        ],
+        [
+          "video-use",
+          "https://github.com/browser-use/video-use"
         ]
       ]
     },
     {
-      "name": "跨客户端工具交付要有业务验收标准",
-      "status": "社区提问 + 产品供给 + 投资观点",
-      "evidence": "MCPJam讨论有人不清楚该测什么；Plane发布可分配任务的Agents；YC仍提出分享与权限难题。",
-      "summary": "推断交付特定SaaS的验收用例，而非新测试平台；跨客户端模拟需要与实际客户行为区分。",
+      "name": "客服安全宜收窄到可验收动作",
+      "status": "厂商主张 + 客座观点 + 投资主题；无买方确认",
+      "evidence": "Koreshield与Jev State分别提供操作检查和对话测试；Crunchbase观点强调具体控制点。",
+      "summary": "推断做单一客服流程回归服务；不把产品数量或并购预期当支付意愿。",
       "sources": [
-        "Show HN",
         "Product Hunt",
+        "Crunchbase News",
         "YC RFS"
       ],
       "links": [
         [
-          "MCPJam讨论",
-          "https://news.ycombinator.com/item?id=49745351"
+          "Koreshield",
+          "https://www.producthunt.com/products/koreshield"
         ],
         [
-          "Plane Agents",
-          "https://www.producthunt.com/products/planehq"
+          "Jev State",
+          "https://www.producthunt.com/products/jev-state"
         ],
         [
-          "YC RFS",
-          "https://www.ycombinator.com/rfs"
-        ]
-      ]
-    },
-    {
-      "name": "决策解释需要独立于规则及测量假设",
-      "status": "作者技术主张 + 公开基准 + 投资观点",
-      "evidence": "AI·rete·RAG将规则裁决与文字解释分开；JevBench公开延迟调整假设和选项顺序敏感性。",
-      "summary": "推断先检验一个低风险工单分类器；确定性规则可能写错，模型概率与解释也不是因果或合规证明。",
-      "sources": [
-        "Show HN",
-        "GitHub",
-        "YC RFS"
-      ],
-      "links": [
-        [
-          "AI·rete·RAG",
-          "https://news.ycombinator.com/item?id=49803683"
-        ],
-        [
-          "JevBench",
-          "https://github.com/fstandhartinger/jevbench"
+          "Crunchbase观点",
+          "https://news.crunchbase.com/ma/emerging-map-ai-agentic-security-sagie/"
         ],
         [
           "YC RFS",
@@ -199,377 +215,409 @@
   "datasets": {
     "launches": [
       {
-        "name": "Anomalo Analyst",
-        "source": "Product Hunt 当前首页 + feed + 产品页",
-        "metric": "当前发布区；feed published 2026-09-09T15:10:12-07:00",
-        "category": "数据核验",
-        "signal": "厂商称只读监测数据仓库并展示分析SQL；未验证异常检测效果、根因结论或客户采用。",
-        "url": "https://www.producthunt.com/products/anomalo",
-        "snapshotAt": "2026-09-23T01:25:02Z",
-        "publishedAt": "2026-09-09T15:10:12-07:00",
-        "discoveryUrl": "https://www.producthunt.com/",
+        "name": "Solid",
+        "source": "Product Hunt 当前发布 / 产品页",
+        "metric": "当前榜单；feed published 2026-09-20T23:01:40-07:00",
+        "category": "长期任务",
+        "signal": "厂商称Agent可配置机器、账户和预算并执行长期任务；未验证授权边界、费用控制或完成率。",
+        "url": "https://www.producthunt.com/products/solid-3",
+        "snapshotAt": "2026-09-24T01:18:15Z",
+        "publishedAt": "2026-09-20T23:01:40-07:00",
+        "feedUpdatedAt": "2026-09-23T18:03:27-07:00",
         "feedUrl": "https://www.producthunt.com/feed"
       },
       {
-        "name": "SereneDB",
-        "source": "Product Hunt 当前首页 + feed + 产品页",
-        "metric": "当前发布区；feed published 2026-09-14T20:26:57-07:00",
-        "category": "搜索与分析",
-        "signal": "厂商定位为全文搜索与分析一体数据库，主张兼容Postgres和Elastic客户端；未复现性能或迁移兼容性，不沿用速度倍数。",
-        "url": "https://www.producthunt.com/products/serenedb-krummelanke",
-        "snapshotAt": "2026-09-23T01:25:02Z",
-        "publishedAt": "2026-09-14T20:26:57-07:00",
-        "discoveryUrl": "https://www.producthunt.com/",
+        "name": "Pactto",
+        "source": "Product Hunt 当前发布 / 产品页",
+        "metric": "当前榜单；feed published 2026-05-13T18:15:40-07:00",
+        "category": "创意协作",
+        "signal": "厂商主张持久化创意评审房间、反馈记录与实时修改；产品页为第三轮发布，不是新成立公司。",
+        "url": "https://www.producthunt.com/products/pactto-replay",
+        "snapshotAt": "2026-09-24T01:18:15Z",
+        "publishedAt": "2026-05-13T18:15:40-07:00",
+        "feedUpdatedAt": "2026-09-23T18:09:56-07:00",
         "feedUrl": "https://www.producthunt.com/feed"
       },
       {
-        "name": "Plane Agents",
-        "source": "Product Hunt 当前首页 + feed + 产品页",
-        "metric": "当前发布区；feed published 2026-09-21T08:36:35-07:00",
-        "category": "工作交接",
-        "signal": "页面为Plane第二轮发布，Agent可接收任务、提及、事件和定时触发；未测试权限继承或完成率。",
-        "url": "https://www.producthunt.com/products/planehq",
-        "snapshotAt": "2026-09-23T01:25:02Z",
-        "publishedAt": "2026-09-21T08:36:35-07:00",
-        "discoveryUrl": "https://www.producthunt.com/",
+        "name": "AgentScore",
+        "source": "Product Hunt 当前发布 / 产品页",
+        "metric": "当前榜单；feed published 2026-09-15T02:04:32-07:00",
+        "category": "Agent评估",
+        "signal": "Latitude本轮发布每日质量评分，覆盖结果、可靠性、成本、速度和安全；分数有效性及与客户验收的一致性未实测。",
+        "url": "https://www.producthunt.com/products/latitude-4",
+        "snapshotAt": "2026-09-24T01:18:15Z",
+        "publishedAt": "2026-09-15T02:04:32-07:00",
+        "feedUpdatedAt": "2026-09-23T18:10:35-07:00",
         "feedUrl": "https://www.producthunt.com/feed"
       },
       {
-        "name": "Pulsetic RUM",
-        "source": "Product Hunt 当前首页 + feed + 产品页",
-        "metric": "当前发布区；feed published 2026-09-14T05:52:58-07:00",
-        "category": "真实用户监测",
-        "signal": "新发布介绍按页面、设备等观察性能和JavaScript错误；厂商定位不能证明具体店铺故障或收入损失。",
-        "url": "https://www.producthunt.com/products/pulsetic",
-        "snapshotAt": "2026-09-23T01:25:02Z",
-        "publishedAt": "2026-09-14T05:52:58-07:00",
-        "discoveryUrl": "https://www.producthunt.com/",
+        "name": "Jev State",
+        "source": "Product Hunt 当前发布 / 产品页",
+        "metric": "当前榜单；feed published 2026-09-22T11:53:46-07:00",
+        "category": "流程回归",
+        "signal": "作者主张将对话保存为测试，并导出TypeScript与工作流JSON；开源和可运行不等于业务正确。",
+        "url": "https://www.producthunt.com/products/jev-state",
+        "snapshotAt": "2026-09-24T01:18:15Z",
+        "publishedAt": "2026-09-22T11:53:46-07:00",
+        "feedUpdatedAt": "2026-09-23T16:02:31-07:00",
         "feedUrl": "https://www.producthunt.com/feed"
       },
       {
-        "name": "Xem",
-        "source": "Product Hunt 当前首页 + feed + 产品页",
-        "metric": "当前发布区；feed published 2026-09-21T20:41:09-07:00",
-        "category": "邮件营销",
-        "signal": "页面称开源工作区支持模板、联系人、自动化，可自带SMTP或用SES托管发送；后者需要域名验证和工作区批准，未测试迁移。",
-        "url": "https://www.producthunt.com/products/xem",
-        "snapshotAt": "2026-09-23T01:25:02Z",
-        "publishedAt": "2026-09-21T20:41:09-07:00",
-        "discoveryUrl": "https://www.producthunt.com/",
+        "name": "Koreshield",
+        "source": "Product Hunt 当前发布 / 产品页",
+        "metric": "当前榜单；feed published 2026-09-22T05:47:36-07:00",
+        "category": "客服安全",
+        "signal": "厂商称检查客服输入、检索文档和工具调用，并记录决策；尚无本期独立攻击检出率或采购证据。",
+        "url": "https://www.producthunt.com/products/koreshield",
+        "snapshotAt": "2026-09-24T01:18:15Z",
+        "publishedAt": "2026-09-22T05:47:36-07:00",
+        "feedUpdatedAt": "2026-09-23T16:02:31-07:00",
         "feedUrl": "https://www.producthunt.com/feed"
       },
       {
-        "name": "Clueprint",
-        "source": "Product Hunt 当前首页 + feed + 产品页",
-        "metric": "当前发布区；feed published 2026-09-03T08:00:46-07:00",
-        "category": "本地资源管理",
-        "signal": "作者称按项目与分支展示服务、worktree等，清理前重验并归档；是现成供给，未验证清理安全性。",
-        "url": "https://www.producthunt.com/products/clueprint",
-        "snapshotAt": "2026-09-23T01:25:02Z",
-        "publishedAt": "2026-09-03T08:00:46-07:00",
-        "discoveryUrl": "https://www.producthunt.com/",
+        "name": "Dub Program Marketplace",
+        "source": "Product Hunt 当前发布 / 产品页",
+        "metric": "当前榜单；feed published 2026-09-22T07:30:21-07:00",
+        "category": "合作分发",
+        "signal": "本轮发布SaaS联盟计划浏览与申请入口；列出的品牌及产品定位不能证明合作转化或佣金收入。",
+        "url": "https://www.producthunt.com/products/dub",
+        "snapshotAt": "2026-09-24T01:18:15Z",
+        "publishedAt": "2026-09-22T07:30:21-07:00",
+        "feedUpdatedAt": "2026-09-23T16:08:06-07:00",
         "feedUrl": "https://www.producthunt.com/feed"
       }
     ],
     "technical": [
       {
-        "name": "Drop",
-        "source": "Show HN / 作者原帖",
-        "metric": "153 points / 53 comments；09-22发帖",
-        "category": "Linux沙箱",
-        "signal": "作者称以namespace隔离、独立可写home及可选gVisor支持本地开发；官网403，按原帖记录，不声称已独立验证隔离强度。",
-        "url": "https://news.ycombinator.com/item?id=49801329",
-        "snapshotAt": "2026-09-23T01:21:08Z",
-        "publishedAt": "2026-09-22T13:52:47Z",
-        "points": 153,
-        "comments": 53,
-        "projectUrl": "https://droprun.sh/",
-        "apiUrl": "https://hn.algolia.com/api/v1/items/49801329"
+        "name": "ForensicDbg",
+        "source": "Show HN / Algolia",
+        "metric": "27 points / 4 comments；2026-09-23T19:15:55Z",
+        "category": "崩溃诊断",
+        "signal": "作者发布Windows x64/x86事后调试器及MCP接口；评论者指出WinDbg已有丰富能力。官网工具不可读，依据作者原帖，不采纳其消除幻觉的宣传。",
+        "url": "https://news.ycombinator.com/item?id=49821086",
+        "snapshotAt": "2026-09-24T01:18:15Z",
+        "publishedAt": "2026-09-23T19:15:55Z",
+        "points": 27,
+        "comments": 4,
+        "projectUrl": "https://www.forensicdbg.com",
+        "discussionApiUrl": "https://hn.algolia.com/api/v1/items/49821086",
+        "queryUrl": "https://hn.algolia.com/api/v1/search?tags=show_hn&numericFilters=created_at_i%3E%3D1789607895%2Ccreated_at_i%3C%3D1790212695&hitsPerPage=100"
       },
       {
-        "name": "JevBench",
-        "source": "Show HN / GitHub README",
-        "metric": "61 points / 13 comments；09-22发帖",
-        "category": "决策模型评估",
-        "signal": "README披露延迟负载调整属于假设，记录选项顺序敏感性；本期不复述综合排名，不把英文离线题集当业务验收。",
-        "url": "https://news.ycombinator.com/item?id=49800574",
-        "snapshotAt": "2026-09-23T01:21:08Z",
-        "publishedAt": "2026-09-22T13:01:03Z",
-        "points": 61,
-        "comments": 13,
-        "projectUrl": "https://github.com/fstandhartinger/jevbench",
-        "apiUrl": "https://hn.algolia.com/api/v1/items/49800574"
+        "name": "RxFilm Studio",
+        "source": "Show HN / Algolia",
+        "metric": "19 points / 14 comments；2026-09-23T12:28:40Z",
+        "category": "视频工作流",
+        "signal": "作者提供AI视频工作区；用户cs1996报告生成卡住，作者称正排查并承认进度入口需改善。官网工具不可读，已读公开仓库及原帖，未实测。",
+        "url": "https://news.ycombinator.com/item?id=49815095",
+        "snapshotAt": "2026-09-24T01:18:15Z",
+        "publishedAt": "2026-09-23T12:28:40Z",
+        "points": 19,
+        "comments": 14,
+        "projectUrl": "https://filmstudio.rxlab.app",
+        "discussionApiUrl": "https://hn.algolia.com/api/v1/items/49815095",
+        "queryUrl": "https://hn.algolia.com/api/v1/search?tags=show_hn&numericFilters=created_at_i%3E%3D1789607895%2Ccreated_at_i%3C%3D1790212695&hitsPerPage=100"
       },
       {
-        "name": "AI·rete·RAG",
-        "source": "Show HN / 作者原帖",
-        "metric": "34 points / 2 comments；09-22发帖",
-        "category": "规则与解释",
-        "signal": "作者称规则引擎决定结果，RAG只生成解释，规则草稿需复核；仅MCP客户端开源，平台与引擎未开源。官网403，未实测。",
-        "url": "https://news.ycombinator.com/item?id=49803683",
-        "snapshotAt": "2026-09-23T01:21:08Z",
-        "publishedAt": "2026-09-22T16:15:06Z",
-        "points": 34,
-        "comments": 2,
-        "projectUrl": "https://ai-rete-rag.com/",
-        "apiUrl": "https://hn.algolia.com/api/v1/items/49803683"
+        "name": "Ive Sent It",
+        "source": "Show HN / Algolia",
+        "metric": "18 points / 22 comments；2026-09-23T12:36:01Z",
+        "category": "文件交付",
+        "signal": "官网与作者主张签名回执及下载控制；评论质疑扫描机密文件及信任边界。平台回执不能自动证明法律送达、收件人理解或端到端加密。",
+        "url": "https://news.ycombinator.com/item?id=49815168",
+        "snapshotAt": "2026-09-24T01:18:15Z",
+        "publishedAt": "2026-09-23T12:36:01Z",
+        "points": 18,
+        "comments": 22,
+        "projectUrl": "https://ivesentit.com",
+        "discussionApiUrl": "https://hn.algolia.com/api/v1/items/49815168",
+        "queryUrl": "https://hn.algolia.com/api/v1/search?tags=show_hn&numericFilters=created_at_i%3E%3D1789607895%2Ccreated_at_i%3C%3D1790212695&hitsPerPage=100"
       },
       {
-        "name": "InstinctFlash",
-        "source": "Show HN / 项目README",
-        "metric": "23 points / 2 comments；09-22发帖",
-        "category": "机器人推理",
-        "signal": "README将运行时、精度与采样步数变化分列；headline加速包含步数改变，不能当等质量纯运行时加速。未运行硬件或仿真。",
-        "url": "https://news.ycombinator.com/item?id=49802789",
-        "snapshotAt": "2026-09-23T01:21:08Z",
-        "publishedAt": "2026-09-22T15:20:06Z",
-        "points": 23,
-        "comments": 2,
-        "projectUrl": "https://github.com/General-Instinct/InstinctFlash",
-        "apiUrl": "https://hn.algolia.com/api/v1/items/49802789"
+        "name": "Npunlock",
+        "source": "Show HN / Algolia",
+        "metric": "63 points / 12 comments；2026-09-22T12:58:02Z",
+        "category": "边缘计算",
+        "signal": "README限定实验性Windows x64、Meteor Lake/NPU3720及特定张量布局；09-23更新记录独立混合精度分支，不推断支持全部Intel NPU。",
+        "url": "https://news.ycombinator.com/item?id=49800513",
+        "snapshotAt": "2026-09-24T01:18:15Z",
+        "publishedAt": "2026-09-22T12:58:02Z",
+        "points": 63,
+        "comments": 12,
+        "projectUrl": "https://github.com/hsfzxjy/npunlock",
+        "discussionApiUrl": "https://hn.algolia.com/api/v1/items/49800513",
+        "queryUrl": "https://hn.algolia.com/api/v1/search?tags=show_hn&numericFilters=created_at_i%3E%3D1789607895%2Ccreated_at_i%3C%3D1790212695&hitsPerPage=100"
       },
       {
-        "name": "MCPJam",
-        "source": "Show HN / 作者原帖 / 官网",
-        "metric": "12 points / 9 comments；09-17发帖",
-        "category": "跨客户端验收",
-        "signal": "提供MCP调试、工作流评估和CI；社区提问聚焦如何确定验收内容。厂商模拟及客户数主张不作为独立效果证据。",
-        "url": "https://news.ycombinator.com/item?id=49745351",
-        "snapshotAt": "2026-09-23T01:21:08Z",
-        "publishedAt": "2026-09-17T19:23:47Z",
-        "points": 12,
-        "comments": 9,
-        "projectUrl": "https://www.mcpjam.com/",
-        "apiUrl": "https://hn.algolia.com/api/v1/items/49745351"
+        "name": "Sigabrt",
+        "source": "Show HN / Algolia",
+        "metric": "81 points / 35 comments；2026-09-19T10:47:59Z",
+        "category": "任务监测",
+        "signal": "作者提供缺失心跳告警及实验性只读SSH界面；原帖承认尚无start状态和显式fail事件，长任务仅能延长宽限期。",
+        "url": "https://news.ycombinator.com/item?id=49765354",
+        "snapshotAt": "2026-09-24T01:18:15Z",
+        "publishedAt": "2026-09-19T10:47:59Z",
+        "points": 81,
+        "comments": 35,
+        "projectUrl": "https://sigabrt.dev",
+        "discussionApiUrl": "https://hn.algolia.com/api/v1/items/49765354",
+        "queryUrl": "https://hn.algolia.com/api/v1/search?tags=show_hn&numericFilters=created_at_i%3E%3D1789607895%2Ccreated_at_i%3C%3D1790212695&hitsPerPage=100"
       }
     ],
     "github": [
       {
         "name": "dream-num/univer",
-        "source": "GitHub Trending / daily",
-        "metric": "+255 stars / daily",
+        "source": "GitHub Trending · daily",
+        "metric": "+1,142 stars / daily",
         "category": "办公运行时",
-        "signal": "榜单定位电子表格、文档等办公运行时；未验证格式兼容或权限。",
+        "signal": "榜单定位为表格、文档等办公运行时；格式兼容、权限与客户部署未核验。",
         "url": "https://github.com/dream-num/univer",
-        "snapshotAt": "2026-09-23T01:21:08Z",
+        "snapshotAt": "2026-09-24T01:18:15Z",
         "window": "daily",
-        "windowStars": 255,
-        "discoveryUrl": "https://github.com/trending?since=daily"
+        "windowStars": 1142,
+        "trendingUrl": "https://github.com/trending?since=daily"
       },
       {
         "name": "google/ax",
-        "source": "GitHub Trending / daily",
-        "metric": "+2,305 stars / daily",
+        "source": "GitHub Trending · daily",
+        "metric": "+1,543 stars / daily",
         "category": "Agent编排",
-        "signal": "榜单定位开放Agent编排运行时；供给信号，不是任务可靠性证明。",
+        "signal": "榜单定位开放Agent编排运行时；关注不代表长期任务可靠或有采购预算。",
         "url": "https://github.com/google/ax",
-        "snapshotAt": "2026-09-23T01:21:08Z",
+        "snapshotAt": "2026-09-24T01:18:15Z",
         "window": "daily",
-        "windowStars": 2305,
-        "discoveryUrl": "https://github.com/trending?since=daily"
+        "windowStars": 1543,
+        "trendingUrl": "https://github.com/trending?since=daily"
       },
       {
-        "name": "mvt-project/mvt",
-        "source": "GitHub Trending / daily",
-        "metric": "+441 stars / daily",
-        "category": "移动取证",
-        "signal": "榜单定位移动设备潜在入侵迹象检查；没有本期攻击检出率或客户采购证据。",
-        "url": "https://github.com/mvt-project/mvt",
-        "snapshotAt": "2026-09-23T01:21:08Z",
+        "name": "agent-substrate/substrate",
+        "source": "GitHub Trending · daily",
+        "metric": "+558 stars / daily",
+        "category": "Agent基础设施",
+        "signal": "榜单描述为Agent Substrate核心系统；本期只确认上榜，不推断沙箱安全或功能完备。",
+        "url": "https://github.com/agent-substrate/substrate",
+        "snapshotAt": "2026-09-24T01:18:15Z",
         "window": "daily",
-        "windowStars": 441,
-        "discoveryUrl": "https://github.com/trending?since=daily"
+        "windowStars": 558,
+        "trendingUrl": "https://github.com/trending?since=daily"
       },
       {
-        "name": "browser-use/video-use",
-        "source": "GitHub Trending / daily",
-        "metric": "+191 stars / daily",
-        "category": "视频编辑",
-        "signal": "榜单定位用编码Agent编辑视频；未实测素材质量和编辑可逆性。",
-        "url": "https://github.com/browser-use/video-use",
-        "snapshotAt": "2026-09-23T01:21:08Z",
+        "name": "superdesigndev/treg",
+        "source": "GitHub Trending · daily",
+        "metric": "+506 stars / daily",
+        "category": "工具路由",
+        "signal": "榜单定位Agent工具路由；未测试工具授权、计费或故障切换。",
+        "url": "https://github.com/superdesigndev/treg",
+        "snapshotAt": "2026-09-24T01:18:15Z",
         "window": "daily",
-        "windowStars": 191,
-        "discoveryUrl": "https://github.com/trending?since=daily"
+        "windowStars": 506,
+        "trendingUrl": "https://github.com/trending?since=daily"
       },
       {
-        "name": "alibaba/open-code-review",
-        "source": "GitHub Trending / weekly",
-        "metric": "+12,590 stars / weekly",
-        "category": "代码审查",
-        "signal": "榜单描述确定性流水线与LLM结合；未复核准确率和实际漏洞检出。",
-        "url": "https://github.com/alibaba/open-code-review",
-        "snapshotAt": "2026-09-23T01:21:08Z",
+        "name": "cloudflare/quiche",
+        "source": "GitHub Trending · weekly",
+        "metric": "+707 stars / weekly",
+        "category": "网络基础设施",
+        "signal": "榜单描述QUIC与HTTP/3实现；本期不做性能及协议符合性判断。",
+        "url": "https://github.com/cloudflare/quiche",
+        "snapshotAt": "2026-09-24T01:18:15Z",
         "window": "weekly",
-        "windowStars": 12590,
-        "discoveryUrl": "https://github.com/trending?since=weekly"
+        "windowStars": 707,
+        "trendingUrl": "https://github.com/trending?since=weekly"
       },
       {
-        "name": "cloudflare/security-audit-skill",
-        "source": "GitHub Trending / weekly",
-        "metric": "+15,381 stars / weekly",
-        "category": "安全核查",
-        "signal": "榜单描述多阶段审计与机器可读结果；独立核验效果仍需实测。",
-        "url": "https://github.com/cloudflare/security-audit-skill",
-        "snapshotAt": "2026-09-23T01:21:08Z",
+        "name": "Fission-AI/OpenSpec",
+        "source": "GitHub Trending · weekly",
+        "metric": "+1,538 stars / weekly",
+        "category": "规格驱动开发",
+        "signal": "榜单定位面向编码助手的规格驱动开发；规格存在不代表需求完整或验收通过。",
+        "url": "https://github.com/Fission-AI/OpenSpec",
+        "snapshotAt": "2026-09-24T01:18:15Z",
         "window": "weekly",
-        "windowStars": 15381,
-        "discoveryUrl": "https://github.com/trending?since=weekly"
+        "windowStars": 1538,
+        "trendingUrl": "https://github.com/trending?since=weekly"
       },
       {
-        "name": "Tencent/WeKnora",
-        "source": "GitHub Trending / weekly",
-        "metric": "+5,303 stars / weekly",
-        "category": "知识检索",
-        "signal": "榜单定位文档RAG、推理Agent与Wiki；重读供给，不推断付费需求。",
-        "url": "https://github.com/Tencent/WeKnora",
-        "snapshotAt": "2026-09-23T01:21:08Z",
+        "name": "stablyai/orca",
+        "source": "GitHub Trending · weekly",
+        "metric": "+6,435 stars / weekly",
+        "category": "并行开发",
+        "signal": "榜单定位多Agent开发环境，支持桌面、移动和远端；并行供给不是协作效率证明。",
+        "url": "https://github.com/stablyai/orca",
+        "snapshotAt": "2026-09-24T01:18:15Z",
         "window": "weekly",
-        "windowStars": 5303,
-        "discoveryUrl": "https://github.com/trending?since=weekly"
+        "windowStars": 6435,
+        "trendingUrl": "https://github.com/trending?since=weekly"
+      },
+      {
+        "name": "Tencent/BrowserSkill",
+        "source": "GitHub Trending · monthly",
+        "metric": "+5,647 stars / monthly",
+        "category": "浏览器自动化",
+        "signal": "榜单定位CLI与扩展控制浏览器；本期没有运行浏览器或访问登录内容。",
+        "url": "https://github.com/Tencent/BrowserSkill",
+        "snapshotAt": "2026-09-24T01:18:15Z",
+        "window": "monthly",
+        "windowStars": 5647,
+        "trendingUrl": "https://github.com/trending?since=monthly"
+      },
+      {
+        "name": "debpalash/VoiceStudio",
+        "source": "GitHub Trending · monthly",
+        "metric": "+23,623 stars / monthly",
+        "category": "本地音视频",
+        "signal": "榜单定位本地语音、配音和转录工具；未复现质量，不沿用语言数量与替代效果主张。",
+        "url": "https://github.com/debpalash/VoiceStudio",
+        "snapshotAt": "2026-09-24T01:18:15Z",
+        "window": "monthly",
+        "windowStars": 23623,
+        "trendingUrl": "https://github.com/trending?since=monthly"
       },
       {
         "name": "google-research/timesfm",
-        "source": "GitHub Trending / monthly",
-        "metric": "+5,496 stars / monthly",
+        "source": "GitHub Trending · monthly",
+        "metric": "+5,563 stars / monthly",
         "category": "时序模型",
-        "signal": "榜单定位预训练时序模型；不由模型热度推断库存预测效果。",
+        "signal": "榜单定位预训练时序模型；不由热度推断库存预测或业务准确率。",
         "url": "https://github.com/google-research/timesfm",
-        "snapshotAt": "2026-09-23T01:21:08Z",
+        "snapshotAt": "2026-09-24T01:18:15Z",
         "window": "monthly",
-        "windowStars": 5496,
-        "discoveryUrl": "https://github.com/trending?since=monthly"
-      },
-      {
-        "name": "magnitudedev/magnitude",
-        "source": "GitHub Trending / monthly",
-        "metric": "+3,360 stars / monthly",
-        "category": "本地推理",
-        "signal": "榜单描述硬件分析、模型推荐及本地运行；未核验速度、能耗与兼容性。",
-        "url": "https://github.com/magnitudedev/magnitude",
-        "snapshotAt": "2026-09-23T01:21:08Z",
-        "window": "monthly",
-        "windowStars": 3360,
-        "discoveryUrl": "https://github.com/trending?since=monthly"
-      },
-      {
-        "name": "tech-leads-club/agent-skills",
-        "source": "GitHub Trending / monthly",
-        "metric": "+1,721 stars / monthly",
-        "category": "技能注册表",
-        "signal": "榜单自称安全验证的技能注册表；未审计其验证过程，不等同供应链担保。",
-        "url": "https://github.com/tech-leads-club/agent-skills",
-        "snapshotAt": "2026-09-23T01:21:08Z",
-        "window": "monthly",
-        "windowStars": 1721,
-        "discoveryUrl": "https://github.com/trending?since=monthly"
+        "windowStars": 5563,
+        "trendingUrl": "https://github.com/trending?since=monthly"
       }
     ],
     "market": [
       {
-        "name": "Baselayer：身份验证向Agent延伸",
+        "name": "全球大额A轮集中于AI",
         "source": "Crunchbase News",
-        "metric": "09-22报道；$35M Series A；M13领投",
+        "metric": "09-23报道；年内至少114笔≥1亿美元A轮",
         "category": "全球资本",
-        "signal": "媒体称融资支持身份技术扩展到AI Agent；未披露估值。融资只作竞争与资本信号，未独立核验到账或收入。",
-        "url": "https://news.crunchbase.com/ai/verifying-ai-agents-baselayer-35m-raise/",
-        "snapshotAt": "2026-09-23T01:25:02Z",
-        "publishedAt": "2026-09-22"
+        "signal": "Crunchbase统计口径称其中逾70%投向AI。是数据库样本及媒体分析，不代表中位创业公司容易融资，也不是今日新增114笔。",
+        "url": "https://news.crunchbase.com/venture/megaround-seriesa-ai-chips-robotics-2026/",
+        "snapshotAt": "2026-09-24T01:22:30Z",
+        "publishedAt": "2026-09-23"
       },
       {
-        "name": "龙讯旷腾：AI4S干湿闭环",
+        "name": "Agent安全的具体控制点",
+        "source": "Crunchbase News 客座观点",
+        "metric": "09-23文章；观点而非新融资",
+        "category": "市场结构",
+        "signal": "客座作者将身份、数据权限、工具流量及审计列为不同控制点。属于市场判断，不能当已签采购或确定并购退出路径。",
+        "url": "https://news.crunchbase.com/ma/emerging-map-ai-agentic-security-sagie/",
+        "snapshotAt": "2026-09-24T01:22:30Z",
+        "publishedAt": "2026-09-23"
+      },
+      {
+        "name": "庆为航空：飞控与座舱",
         "source": "36氪快讯",
-        "metric": "页面2026-09-22 10:28；亿元级B1轮",
+        "metric": "09-22 10:24；超5000万元新一轮融资",
         "category": "中国资本",
-        "signal": "报道称资金用于团队、干湿闭环及商务体系；保留亿元级口径，不换算精确金额。实验设施与研发交付资本密集。",
-        "url": "https://www.36kr.com/newsflashes/3993962486742022",
-        "snapshotAt": "2026-09-23T01:25:02Z",
-        "publishedAt": "2026-09-22 10:28（页面原时区未标注）"
+        "signal": "报道资金将用于电传飞控计算平台、智能座舱研发与适航；保留超5000万元口径，不把目录轮次当公告确认。资本密集，未核验到账。",
+        "url": "https://www.36kr.com/newsflashes/3993941225913088",
+        "snapshotAt": "2026-09-24T01:22:30Z",
+        "publishedAt": "2026-09-22 10:24（页面原时区未标注）"
       },
       {
-        "name": "华超神控：非侵入脑机接口",
-        "source": "36氪快讯",
-        "metric": "页面2026-09-22 12:28；2亿元Pre-A轮",
+        "name": "冰辰量子：冷原子上游设备",
+        "source": "36氪首发",
+        "metric": "09-22 09:13；两轮数千万元级天使系列融资",
         "category": "中国资本",
-        "signal": "报道称红杉中国、云启资本联合领投，投向研发、人才、临床与AI设施；本轮2亿元与累计近3亿元不同，未核验到账。资本密集。",
-        "url": "https://www.36kr.com/newsflashes/3994079888391168",
-        "snapshotAt": "2026-09-23T01:25:02Z",
-        "publishedAt": "2026-09-22 12:28（页面原时区未标注）"
+        "signal": "报道公司推进冷原子系统标准化；两轮披露不是单轮精确金额。订单和性能为受访企业陈述，本期不核定收入或技术效果。资本密集。",
+        "url": "https://www.36kr.com/p/3993888512801792",
+        "snapshotAt": "2026-09-24T01:22:30Z",
+        "publishedAt": "2026-09-22 09:13（页面原时区未标注）"
       },
       {
-        "name": "YC Fall 2026：小软件与自维护API",
+        "name": "YC Fall 2026：多人AI与小软件",
         "source": "YC Requests for Startups",
-        "metric": "今日重读；最新可见Fall 2026",
+        "metric": "当前最新可见Fall 2026；今日复查",
         "category": "投资观点",
-        "signal": "公开主题仍包括分享权限、多人Agent及API变更交付；版本未变，不算新增融资或客户订单。",
+        "signal": "关注共享Agent会话、小软件部署与权限问题；版本未变，不当作本期新增需求或融资。",
         "url": "https://www.ycombinator.com/rfs",
-        "snapshotAt": "2026-09-23T01:25:02Z"
+        "snapshotAt": "2026-09-24T01:22:30Z"
       },
       {
-        "name": "Browser Use：浏览器Agent公司档案",
+        "name": "Browser Use公司目录复查",
         "source": "YC Company Directory",
-        "metric": "Winter 2025 / Active；本期新覆盖",
+        "metric": "Winter 2025 / Active；今日复查",
         "category": "公司供给",
-        "signal": "公开档案定位浏览器自动化；目录Active是页面状态，旧launch、招聘及使用量宣传均不当作今日收入。",
+        "signal": "档案定位浏览器Agent；Active仅为目录状态，旧launch、招聘和宣传使用量不计本期收入。",
         "url": "https://www.ycombinator.com/companies/browser-use",
-        "snapshotAt": "2026-09-23T01:25:02Z"
+        "snapshotAt": "2026-09-24T01:22:30Z"
       }
     ],
     "pain": [
       {
-        "name": "Marketplace Connect：价格和库存同步失配",
+        "name": "Marketplace Connect：库存与价格同步失配",
         "source": "Shopify App Store 一星筛选页",
-        "metric": "整体4.1 / 2,116条；09-09投诉、09-12编辑",
+        "metric": "整体4.1 / 2,117条；09-09、09-12旧投诉",
         "category": "渠道对账",
-        "signal": "TFTOYS.CA、Alternate Worlds Magic和PSYNE CO. SHOP描述eBay连接或库存价格问题；今日复查旧事故，可能同一故障，不知是否已修复。",
+        "signal": "TFTOYS.CA、Alternate Worlds Magic及PSYNE CO. SHOP陈述eBay连接与同步问题；今日复查，可能同一故障，未确认修复状态。",
         "url": "https://apps.shopify.com/marketplace-connect/reviews?ratings%5B%5D=1",
-        "snapshotAt": "2026-09-23T01:25:02Z"
+        "snapshotAt": "2026-09-24T01:22:30Z",
+        "evidenceType": "商家陈述；旧事件重读"
       },
       {
-        "name": "PageFly：页面上线与配置交付返工",
+        "name": "PageFly：配置交付与线上页面差异",
         "source": "Shopify App Store 一星筛选页",
-        "metric": "整体4.9 / 5,895条；08-27、09-10评论",
+        "metric": "整体4.9 / 5,894条；08-27、09-10评论",
         "category": "发布验收",
-        "signal": "VAN VOTZ称编辑器与线上不一致；FishOn Vision称配置返工。09-13厂商承认需求澄清不足。浏览结果标为昨日缓存，不能当新事故。",
+        "signal": "VAN VOTZ称编辑器与线上不一致；FishOn Vision称配置返工，09-13厂商承认需求澄清不足。总数比昨日低1，原因未知，不推断删评。",
         "url": "https://apps.shopify.com/pagefly/reviews?ratings%5B%5D=1",
-        "snapshotAt": "2026-09-23T01:25:02Z"
+        "snapshotAt": "2026-09-24T01:22:30Z",
+        "evidenceType": "商家陈述及厂商回复；旧事件重读"
       },
       {
-        "name": "Klaviyo：账号退出后的流程重建",
+        "name": "Klaviyo：退出后重建营销流程",
         "source": "Shopify App Store 一星筛选页",
-        "metric": "整体4.7 / 3,317条；09-19评论、09-21回复",
+        "metric": "整体4.7 / 3,319条；09-19评论、09-21回复",
         "category": "营销迁移",
-        "signal": "Thrift Goblin称账号终止后需重建flows和模板；厂商为中断致歉并称合规团队跟进。未证明恢复，迁移需遵守接收服务规则。",
+        "signal": "Thrift Goblin称账号终止后重建流程与模板；厂商称合规团队跟进，未见恢复证明。新服务仍有可接受使用规则。",
         "url": "https://apps.shopify.com/klaviyo-email-marketing/reviews?ratings%5B%5D=1",
-        "snapshotAt": "2026-09-23T01:25:02Z"
+        "snapshotAt": "2026-09-24T01:22:30Z",
+        "evidenceType": "商家陈述及厂商回复；旧事件重读"
       },
       {
-        "name": "Judge.me：提醒与评价入口验收",
+        "name": "Judge.me：评价入口与提醒排程",
         "source": "Shopify App Store 一星筛选页",
-        "metric": "整体5.0 / 47,319条；09-04评论、09-11回复",
+        "metric": "整体5.0 / 47,382条；09-04评论、09-11回复",
         "category": "客户路径",
-        "signal": "CuraCator称提醒及入口异常；厂商称已转外部表单、调度问题已上报。09-21 Wildaro新增可见低分未说明具体任务，不据此加需求分。",
+        "signal": "CuraCator称提醒及入口异常；厂商称已改外部表单并上报调度问题。09-21 Wildaro低分未指明任务，不计具体新增缺口。",
         "url": "https://apps.shopify.com/judgeme/reviews?ratings%5B%5D=1",
-        "snapshotAt": "2026-09-23T01:25:02Z"
+        "snapshotAt": "2026-09-24T01:22:30Z",
+        "evidenceType": "商家陈述及厂商回复；旧事件重读"
       },
       {
-        "name": "Clueprint：并行工作后的资源残留",
-        "source": "Product Hunt 作者帖",
-        "metric": "feed 09-03；本次当前发布区重读",
-        "category": "本地资源",
-        "signal": "作者描述worktree和开发服务堆积影响自用电脑；已有清理产品回应。相关提问被标注Likely AI，不计独立客户，未见付费证明。",
-        "url": "https://www.producthunt.com/products/clueprint",
-        "snapshotAt": "2026-09-23T01:25:02Z"
+        "name": "Klaviyo：卸载后店铺异常",
+        "source": "Shopify App Store 一星筛选页",
+        "metric": "09-17评论、09-18回复；本期新覆盖",
+        "category": "退出验收",
+        "signal": "Dr Gus Nutrition称卸载后需Shopify团队处理代码问题；厂商称高级支持跟进。本期未取得日志，因果及最终修复均未知，不宣称插件确实损坏店铺。",
+        "url": "https://apps.shopify.com/klaviyo-email-marketing/reviews?ratings%5B%5D=1",
+        "snapshotAt": "2026-09-24T01:22:30Z",
+        "evidenceType": "商家陈述；旧事件新覆盖"
       },
       {
-        "name": "MCPJam：不知道该设计哪些验收项",
-        "source": "Show HN 讨论",
-        "metric": "09-17主题；本期新覆盖评论",
-        "category": "测试设计",
-        "signal": "用户vigjam提问如何建立更强eval、确定应检查内容；作者建议覆盖请求链及业务结果。只是技术痛点陈述，身份、损失和预算未核实。",
-        "url": "https://news.ycombinator.com/item?id=49745351",
-        "snapshotAt": "2026-09-23T01:25:02Z",
-        "discussionApiUrl": "https://hn.algolia.com/api/v1/items/49745351"
+        "name": "RxFilm Studio：任务卡住且进度不明显",
+        "source": "Show HN 用户与作者对话",
+        "metric": "09-23主题；cs1996反馈与作者回复",
+        "category": "创意交付",
+        "signal": "用户称生成卡住、希望显示进度；作者称进度入口已存在但应改善，并正在排查卡住原因。没有核实其付费身份或损失。",
+        "url": "https://news.ycombinator.com/item?id=49815095",
+        "snapshotAt": "2026-09-24T01:22:30Z",
+        "evidenceType": "当期社区问题；未经独立复现",
+        "discussionApiUrl": "https://hn.algolia.com/api/v1/items/49815095"
+      },
+      {
+        "name": "Sigabrt：长任务与未执行难区分",
+        "source": "Show HN 用户与作者对话",
+        "metric": "09-19主题；作者确认功能边界",
+        "category": "任务监测",
+        "signal": "用户询问执行时间超过心跳周期如何处理；作者承认没有running/start状态，延长宽限会推迟告警。此为具体产品边界，不是生产事故统计。",
+        "url": "https://news.ycombinator.com/item?id=49765354",
+        "snapshotAt": "2026-09-24T01:22:30Z",
+        "evidenceType": "社区提问及作者确认",
+        "discussionApiUrl": "https://hn.algolia.com/api/v1/items/49765354"
       }
     ]
   },
@@ -591,8 +639,8 @@
       "buyer": "假设多渠道Shopify商家的运营负责人使用，店主付款。",
       "wedge": "一个店、一个外部渠道、最多1万SKU；只读授权导出并由运营签认差异。",
       "proof": [
-        "Marketplace Connect仍有可定位的商家损失陈述，但本次没有新的独立同步事故，需求24分不变。",
-        "Anomalo新发布提供邻近数据核验供给；没有证明同步故障同因，跨源9分不变。"
+        "今日重读Marketplace Connect商家投诉；未发现新的独立同步事故或修复证明，需求24分保持。",
+        "Anomalo本周产品页重新核查，仍是邻近数据核验供给；未实测，不提高跨源9分。"
       ],
       "risk": "正常同步延迟可能产生误报；厂商修复或现成ERP可能已足够。",
       "sources": [
@@ -622,15 +670,15 @@
         "defensibility": 6
       },
       "category": "Commerce Acceptance",
-      "title": "Shopify变更后的客户路径验收",
-      "thesis": "验收一次发布后的页面、评价入口及提醒配置，并保留可复跑结果。",
+      "title": "Shopify上线与卸载后的客户路径验收",
+      "thesis": "把安装、配置及卸载都当成需要签收的店铺变更，保存变更前后的可复查证据。",
       "buyer": "假设Shopify实施代理交付负责人使用，品牌负责人签收并付款。",
-      "wedge": "一个授权测试店、一次变更、12条路径；对照页面与配置，不向真实客户发送测试邮件。",
+      "wedge": "一个授权测试店、一次计划上线或卸载、12条页面与评价路径；冻结主题版本和配置，不向真实客户发送测试消息。",
       "proof": [
-        "PageFly及Judge.me旧投诉和回复支持交付摩擦；新低分缺少具体任务，需求23分不提高。",
-        "Pulsetic RUM说明真实浏览器遥测已有供给；遥测与功能签收不同，跨源维持10分。"
+        "PageFly和Judge.me旧投诉继续支持交付摩擦；新覆盖Klaviyo卸载异常陈述，但因果未证实，需求23分不提高。",
+        "今日月榜BrowserSkill及YC Browser Use档案说明浏览器执行已有供给；不能据此认定业务验收可靠，跨源10分保持。"
       ],
-      "risk": "配置、主题与访客身份会改变结果；现成工具可能已覆盖，且无法自动判责。",
+      "risk": "多应用、主题及配置交互难以判责；商家指控不能替代日志，原厂支持可能已解决。",
       "sources": [
         [
           "PageFly",
@@ -641,11 +689,19 @@
           "https://apps.shopify.com/judgeme/reviews?ratings%5B%5D=1"
         ],
         [
-          "Pulsetic RUM",
-          "https://www.producthunt.com/products/pulsetic"
+          "Klaviyo卸载评论",
+          "https://apps.shopify.com/klaviyo-email-marketing/reviews?ratings%5B%5D=1"
+        ],
+        [
+          "BrowserSkill",
+          "https://github.com/Tencent/BrowserSkill"
+        ],
+        [
+          "Browser Use目录",
+          "https://www.ycombinator.com/companies/browser-use"
         ]
       ],
-      "experiment": "两周为3家代理各检查一次计划变更，以300美元假设报价，负责人盲审漏测路径。",
+      "experiment": "两周为3家代理各验收一次计划变更，记录前后差异、误报和负责人签认；假设报价300美元。",
       "stop": "没有可复现且客户认可的遗漏，或不足2家愿把签收纳入报价则停止。",
       "distribution": "面向主题及电商应用实施代理，以其已有项目验收附件进入。",
       "defensibility": "按版本、配置和身份标注的反例库；单纯截图难以防御。"
@@ -667,8 +723,8 @@
       "buyer": "假设品牌邮件营销负责人使用，电商负责人批准预算。",
       "wedge": "一对邮件工具、3条流程、10个测试联系人；只用授权导出，在测试环境检查，不代发营销。",
       "proof": [
-        "Klaviyo旧投诉及09-21回复未证明账号恢复，需求20分不变。",
-        "Xem新发布与邮件工作流直接相邻，跨源由7升10；其SMTP及审核要求表明自托管仍有边界。"
+        "今日重读Klaviyo的09-19投诉及09-21回复，没有新的恢复结果或买家，需求20分不变。",
+        "Xem本周发布页仍可读，包含自动化与发送审核要求；继续作为同工作流供给，跨源10分不变。"
       ],
       "risk": "无法取得的资料不能重建；发送商规则、送达率和既有代理服务可能使迁移收益不足。",
       "sources": [
@@ -688,123 +744,131 @@
     },
     {
       "rank": "04",
-      "score": 70,
+      "score": 72,
+      "scoreBreakdown": {
+        "demand": 18,
+        "buyer": 18,
+        "crossSource": 8,
+        "validation": 14,
+        "distribution": 8,
+        "defensibility": 6
+      },
+      "category": "Job Acceptance",
+      "title": "长任务的开始、完成与结果验收",
+      "thesis": "从一个定时导出或备份任务切入，区分未执行、仍运行与结果不合格。",
+      "buyer": "假设维护客户自动化的小型服务商使用并付款，客户运维负责人确认成功标准。",
+      "wedge": "一个现有调度器、5个任务；包装start/success/fail及产物存在、行数或恢复抽检，不建设新监控平台。",
+      "proof": [
+        "Sigabrt用户提问与作者回复明确没有start/running语义；邻近评论强调仅本机失败邮件无法覆盖主机停机，需求18分但未核实付费。",
+        "AgentScore按多个维度报告Agent质量，表明验收工具供给增加；与cron任务仅邻近，跨源只给8分。"
+      ],
+      "risk": "现成监控配置可能足够；重复任务、时区与超时会误报，完成信号也不保证产物可用。",
+      "sources": [
+        [
+          "Sigabrt讨论",
+          "https://news.ycombinator.com/item?id=49765354"
+        ],
+        [
+          "Sigabrt官网",
+          "https://sigabrt.dev/"
+        ],
+        [
+          "AgentScore",
+          "https://www.producthunt.com/products/latitude-4"
+        ]
+      ],
+      "experiment": "两周在2家服务商的测试任务注入未启动、超时、空产物各3例；比较告警与人工基线，报价假设每次400美元。",
+      "stop": "现有工具无需定制即可解决，或没有2家愿支付配置验收费则停止。",
+      "distribution": "通过维护脚本和备份的服务商寻找前20位技术负责人。",
+      "defensibility": "客户签认的产物不变量、运行窗口和故障用例；心跳实现本身无壁垒。"
+    },
+    {
+      "rank": "05",
+      "score": 69,
       "scoreBreakdown": {
         "demand": 16,
+        "buyer": 18,
+        "crossSource": 10,
+        "validation": 13,
+        "distribution": 7,
+        "defensibility": 5
+      },
+      "category": "Creative Acceptance",
+      "title": "产品演示视频的修改清单与版本签收",
+      "thesis": "把一轮反馈绑定到具体镜头和输出版本，先验证减少返工是否值得付费。",
+      "buyer": "假设小型SaaS营销负责人付款，外包视频制作人执行，品牌负责人签收。",
+      "wedge": "一条60秒内演示片、两轮修改、10项预先确认要求；人工标注镜头、字幕和素材版本，复用现成剪辑工具。",
+      "proof": [
+        "RxFilm用户报告等待中无法看清进度，另一评论者称演示片剪辑耗时；都是社区陈述，没有可核实金额，需求16分。",
+        "Pactto发布持久评审房间，GitHub video-use日榜提供编辑工具；版本签收预算仍是推断，跨源10分。"
+      ],
+      "risk": "生成质量和素材权利可能主导成本；Pactto或剪辑软件已有功能，额外签收步骤可能增加负担。",
+      "sources": [
+        [
+          "RxFilm讨论",
+          "https://news.ycombinator.com/item?id=49815095"
+        ],
+        [
+          "RxFilm仓库",
+          "https://github.com/rxtech-lab/film-workflow"
+        ],
+        [
+          "Pactto",
+          "https://www.producthunt.com/products/pactto-replay"
+        ],
+        [
+          "video-use",
+          "https://github.com/browser-use/video-use"
+        ]
+      ],
+      "experiment": "两周与3个已有制作计划的团队各完成一次修改签收，比较漏改数、返工轮次和总耗时；报价假设200美元。",
+      "stop": "减少的返工时间不足以覆盖签收成本，或不足2家愿付费则停止。",
+      "distribution": "产品演示制作工作室及SaaS营销代理，先寻找已有项目而非新建视频社区。",
+      "defensibility": "按客户批准的镜头、品牌规则与版本绑定的反例库；生成接口不是壁垒。"
+    },
+    {
+      "rank": "06",
+      "score": 67,
+      "scoreBreakdown": {
+        "demand": 12,
         "buyer": 18,
         "crossSource": 11,
         "validation": 14,
         "distribution": 6,
-        "defensibility": 5
+        "defensibility": 6
       },
-      "category": "MCP Acceptance",
-      "title": "单一SaaS工作流的跨客户端验收包",
-      "thesis": "把不明确的业务目标拆成可判定用例，再复用已有测试工具。",
-      "buyer": "假设向企业交付MCP集成的SaaS工程负责人付款，产品负责人签收。",
-      "wedge": "一个MCP服务、两个获授权客户端、10条工单检索或指派用例；记录输入、工具轨迹与预期结果，仅用沙箱。",
+      "category": "Support Tool Acceptance",
+      "title": "客服工具调用的政策回归验收",
+      "thesis": "将客服操作条件变成可复跑用例，检查检索内容能否诱导越权工具调用。",
+      "buyer": "假设为电商品牌部署客服自动化的集成商付款，品牌客服负责人批准规则。",
+      "wedge": "一个测试客服工作流、30条脱敏或合成用例；检验查询、升级人工及退款建议的权限条件，仅在沙箱记录拟执行动作。",
       "proof": [
-        "MCPJam讨论中用户明确不知道该测什么，但没有可核实损失或预算，需求只给16分。",
-        "Plane Agents提供工作分配供给，YC讨论分享权限；两者不是同一客户的需求证明。"
+        "Koreshield发布输入、文档和工具调用检查；Jev State发布对话转测试，均是供给主张，没有本机会独立买方损失，需求仅12分。",
+        "Crunchbase客座文章主张聚焦具体控制点，YC讨论共享权限；资本观点与产品发布构成跨源观察，不构成采购确认。"
       ],
-      "risk": "现成MCPJam已覆盖不少工作，客户可能只需配置；模型模拟用户未必代表真实行为。",
+      "risk": "规则本身可能错误；平台内置安全与测试可能足够，不能把通过合成用例当成安全保证。",
       "sources": [
         [
-          "MCPJam讨论",
-          "https://news.ycombinator.com/item?id=49745351"
+          "Koreshield",
+          "https://www.producthunt.com/products/koreshield"
         ],
         [
-          "MCPJam官网",
-          "https://www.mcpjam.com/"
+          "Jev State",
+          "https://www.producthunt.com/products/jev-state"
         ],
         [
-          "Plane Agents",
-          "https://www.producthunt.com/products/planehq"
+          "Crunchbase观点",
+          "https://news.crunchbase.com/ma/emerging-map-ai-agentic-security-sagie/"
         ],
         [
           "YC RFS",
           "https://www.ycombinator.com/rfs"
         ]
       ],
-      "experiment": "两周请3家集成商各提供一条已有流程，将业务验收与schema检查比较；报价假设400美元。",
-      "stop": "没有现有测试漏掉且产品owner确认的失败，或不足2家愿付费则停止。",
-      "distribution": "已有MCP交付的SaaS实施伙伴与开发者社区，寻找前20位集成负责人。",
-      "defensibility": "客户确认的业务不变量及跨客户端反例；测试执行器本身已有竞争。"
-    },
-    {
-      "rank": "05",
-      "score": 67,
-      "scoreBreakdown": {
-        "demand": 14,
-        "buyer": 17,
-        "crossSource": 10,
-        "validation": 14,
-        "distribution": 7,
-        "defensibility": 5
-      },
-      "category": "Agent Environment",
-      "title": "并行Agent项目退出的资源签收",
-      "thesis": "先归属资源与工作成果，再由owner批准回收，避免清理未交付工作。",
-      "buyer": "假设使用共享开发机的小型软件团队，工程负责人付款。",
-      "wedge": "一台授权Linux开发机、两个项目；只读列出进程、端口、worktree及归属，生成退出清单，回收由人工执行。",
-      "proof": [
-        "Clueprint作者明确描述自用资源堆积，但已有Mac工具，不能当普遍付费需求，需求14分。",
-        "Drop提供Linux隔离供给，Google ax进入日榜；隔离与资源回收是邻近而非相同需求。"
-      ],
-      "risk": "原生工具或简单脚本可能足够；归属判断错误会影响共享任务，不能自动删除。",
-      "sources": [
-        [
-          "Clueprint",
-          "https://www.producthunt.com/products/clueprint"
-        ],
-        [
-          "Drop",
-          "https://news.ycombinator.com/item?id=49801329"
-        ],
-        [
-          "Google ax",
-          "https://github.com/google/ax"
-        ]
-      ],
-      "experiment": "两周观察2个团队的10次任务退出，人工标记资源owner与需要保留的成果；报价假设300美元。",
-      "stop": "不能可靠确认归属、没有重复排查成本，或双方均不愿付费则停止。",
-      "distribution": "并行Agent工具社区及为小团队维护开发环境的顾问。",
-      "defensibility": "经owner确认的任务与资源生命周期记录；单机资源列表无明显壁垒。"
-    },
-    {
-      "rank": "06",
-      "score": 63,
-      "scoreBreakdown": {
-        "demand": 10,
-        "buyer": 17,
-        "crossSource": 10,
-        "validation": 14,
-        "distribution": 6,
-        "defensibility": 6
-      },
-      "category": "Decision Evaluation",
-      "title": "工单分类的选项顺序与弃权验收",
-      "thesis": "冻结样本后改变标签顺序和表达，检验分类建议是否稳健。",
-      "buyer": "假设中小企业客服自动化集成商使用，项目交付负责人付款。",
-      "wedge": "一个低风险工单路由任务、200条脱敏人工标签、独立留出集；检查顺序扰动、错误成本与弃权，不自动退款或更改权限。",
-      "proof": [
-        "JevBench README记录选项顺序敏感性与测量假设，只证明该评估值得检查；没有本机会买方支出，需求10分。",
-        "AI·rete·RAG作者把规则与解释分开；其医疗金融demo不作为本实验能力或合规背书。"
-      ],
-      "risk": "小样本与不一致标签会误导；固定规则或平台评估可能已足够，难形成独立预算。",
-      "sources": [
-        [
-          "JevBench",
-          "https://github.com/fstandhartinger/jevbench"
-        ],
-        [
-          "AI·rete·RAG",
-          "https://news.ycombinator.com/item?id=49803683"
-        ]
-      ],
-      "experiment": "两周与2家集成商比较规则基线和模型，在冻结留出集上记录每类错误及人工回流；报价假设300美元。",
-      "stop": "无法预先约定可接受错误成本，或规则基线足够且没人愿付费则停止。",
-      "distribution": "客服工作流实施代理，以既有项目验收而非售卖新模型进入。",
-      "defensibility": "业务标签协议与版本回归样本；公共基准不能成为独占壁垒。"
+      "experiment": "两周请2家集成商确认规则，冻结留出用例，报告误拦截、越权与转人工率；报价假设400美元。",
+      "stop": "无法获得业务owner签认，或没有现有测试遗漏且买方愿付费的案例则停止。",
+      "distribution": "已有客服自动化交付项目的实施伙伴，访谈前20位交付负责人。",
+      "defensibility": "客户签认的业务条件与版本回归集；通用注入样本无法独占。"
     }
   ]
 }
