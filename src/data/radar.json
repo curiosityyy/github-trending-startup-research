@@ -1,153 +1,305 @@
 {
   "meta": {
-    "date": "2026-10-22",
-    "snapshot": "2026-10-22T01:22:38Z；公开证据整理时点；HN指标01:19:40Z、GitHub指标01:19:49Z；页面缓存与事件日另列",
-    "reportFile": "startup_radar_2026-10-22_zh.md"
+    "date": "2026-10-23",
+    "snapshot": "2026-10-23T01:24:07Z；公开证据整理时点；HN/GitHub指标2026-10-23T01:19:58Z；事件日与页面缓存另列",
+    "reportFile": "startup_radar_2026-10-23_zh.md"
   },
   "signals": [
     {
       "source": "Product Hunt",
-      "count": "当前批次 / 5款全新换选",
-      "note": "首页和产品页可读；BAND徽章为10-21，部分作者评论早于今天，不据Launching today断定UTC首发日；不保留动态票数。",
+      "count": "当前批次 / 5款换选",
+      "note": "首页与产品页对应；保留当前Launching today口径，不断言UTC首发日，不保留动态票数。",
       "type": "发布",
       "url": "https://www.producthunt.com/",
-      "snapshotAt": "2026-10-22T01:22:38Z"
+      "snapshotAt": "2026-10-23T01:24:07Z"
     },
     {
       "source": "Show HN / Algolia",
-      "count": "929匹配 / 100返回 / 5项选样",
-      "note": "窗口2026-10-15T01:19:40Z至10-22T01:19:40Z；相关度接口目的性选样；讨论页工具不可读，功能改核项目原文。",
+      "count": "943匹配 / 100返回 / 5项选样",
+      "note": "窗口2026-10-16T01:19:58Z至10-23T01:19:58Z；相关度查询的目的性样本，2项10-22发布；不是完整七日排行。",
       "type": "技术社区",
-      "url": "https://hn.algolia.com/api/v1/search?tags=show_hn&numericFilters=created_at_i%3E%3D1792027180%2Ccreated_at_i%3C%3D1792631980&hitsPerPage=100",
-      "snapshotAt": "2026-10-22T01:22:38Z"
+      "url": "https://hn.algolia.com/api/v1/search?tags=show_hn&numericFilters=created_at_i%3E%3D1792113598%2Ccreated_at_i%3C%3D1792718398&hitsPerPage=100",
+      "snapshotAt": "2026-10-23T01:24:07Z"
     },
     {
       "source": "GitHub Trending",
-      "count": "daily 12 / weekly 16 / monthly 20",
-      "note": "三窗均为Language Any与Spoken Language Any；48条跨窗未去重行，精选10库；匿名HTTP成功读取。",
+      "count": "daily 9 / weekly 15 / monthly 20",
+      "note": "三窗均确认Language Any、Spoken Language Any；44条跨窗未去重行，精选9库；指标采集01:19:58Z。",
       "type": "技术趋势",
       "url": "https://github.com/trending?since=daily",
-      "snapshotAt": "2026-10-22T01:22:38Z"
+      "snapshotAt": "2026-10-23T01:24:07Z"
     },
     {
       "source": "YC Directory / RFS",
-      "count": "Fall 2026 / 2个新选档案",
-      "note": "目录根页空白，公开开发工具分类和Hue、Agent Relay档案可读；RFS最新可见Fall 2026。",
+      "count": "2份档案 / Fall 2026复核",
+      "note": "目录根页无可读正文，行业分类与Alkera AI、Speko公开档案可读；RFS不是本日新公告。",
       "type": "投资命题",
       "url": "https://www.ycombinator.com/rfs",
-      "snapshotAt": "2026-10-22T01:22:38Z"
+      "snapshotAt": "2026-10-23T01:24:07Z"
     },
     {
       "source": "Crunchbase News",
-      "count": "10-21投资人采访",
-      "note": "使用公开采访检查资本偏好与采购门槛；非今日融资，不使用付费数据库。",
-      "type": "全球市场",
-      "url": "https://news.crunchbase.com/venture/ai-edtech-healthcare-reach-capital-qa-kim/",
-      "snapshotAt": "2026-10-22T01:22:38Z"
+      "count": "10-22新融资采访",
+      "note": "公开报道Slingshot种子轮；设计伙伴与创始团队关联，不能算独立需求验证。未使用付费数据库。",
+      "type": "全球资本",
+      "url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/",
+      "snapshotAt": "2026-10-23T01:24:07Z"
     },
     {
       "source": "36氪",
-      "count": "2条中国融资摘要",
-      "note": "乙太科技与睿质科技；详情均触发安全检测后停止，仅采用列表摘要，金额未明示币种。",
+      "count": "2条新选融资摘要",
+      "note": "芯际无限、星忆智能；详情工具不可读，仅采用公开摘要；保留相对时间和金额币种限制。",
       "type": "中国资本",
       "url": "https://pitchhub.36kr.com/financing-flash",
-      "snapshotAt": "2026-10-22T01:22:38Z"
+      "snapshotAt": "2026-10-23T01:24:07Z"
     },
     {
       "source": "IT桔子",
       "count": "412访问限制",
-      "note": "主页返回412后停止；不推测融资记录，以36氪公开摘要补充中国覆盖。",
+      "note": "主页返回412，停止访问；未获得可引用记录，以36氪补充中国覆盖。",
       "type": "访问限制",
       "url": "https://www.itjuzi.com/",
-      "snapshotAt": "2026-10-22T01:22:38Z"
+      "snapshotAt": "2026-10-23T01:24:07Z"
     },
     {
       "source": "Shopify App Store",
-      "count": "2款主样本 / 5条具体反馈",
-      "note": "Inbox 4.6/5806，Subscriptions 3.7/865；单评星级未显示；包含10月新反馈及明确标日期的9月补充，保留官方反证。",
+      "count": "2款应用 / 5条具体反馈",
+      "note": "搜索2.6/511、翻译4.4/1399；搜索反馈为10月，翻译反馈为9月补充。评级是读取页面快照；单评星级未显示。",
       "type": "需求",
-      "url": "https://apps.shopify.com/inbox/reviews",
-      "snapshotAt": "2026-10-22T01:22:38Z"
+      "url": "https://apps.shopify.com/search-and-discovery/reviews",
+      "snapshotAt": "2026-10-23T01:24:07Z"
+    }
+  ],
+  "themes": [
+    {
+      "name": "搜索升级需要业务相关性验收",
+      "status": "商家反馈 + 相邻测试供给",
+      "evidence": "搜索评论给出具体失准情形；heal.dev与Reticle提供运行验证思路。",
+      "summary": "推断先用店主确认的查询集验收。运行成功不等于检索相关；测试产品不能直接证明搜索商家有预算。",
+      "sources": [
+        "Shopify App Store",
+        "Shopify Help Center",
+        "Product Hunt",
+        "Show HN"
+      ],
+      "links": [
+        [
+          "投诉",
+          "https://apps.shopify.com/search-and-discovery/reviews"
+        ],
+        [
+          "当前规则",
+          "https://help.shopify.com/en/manual/online-store/storefront-search/search-and-discovery-modify-search"
+        ],
+        [
+          "运行复现",
+          "https://www.producthunt.com/products/heal-dev"
+        ],
+        [
+          "社区项目",
+          "https://github.com/reticlehq/reticle"
+        ]
+      ]
+    },
+    {
+      "name": "多语言交付需核对实际模板与路由",
+      "status": "旧商家投诉 + 官方反证 + 相邻发布",
+      "evidence": "翻译应用有模板与语言路由反馈；官方提供通知编辑预览；Resend发布邮件工作流。",
+      "summary": "推断检查店铺现有模板的多语言结果，先复现旧问题；Resend不证明能修复Shopify内部翻译。",
+      "sources": [
+        "Shopify App Store",
+        "Shopify Help Center",
+        "Product Hunt"
+      ],
+      "links": [
+        [
+          "反馈",
+          "https://apps.shopify.com/translate-and-adapt/reviews"
+        ],
+        [
+          "已有预览",
+          "https://help.shopify.com/en/manual/international/languages/checkout-and-notifications"
+        ],
+        [
+          "相邻邮件供给",
+          "https://www.producthunt.com/products/resend"
+        ]
+      ]
+    },
+    {
+      "name": "数字出处比自动生成报表更值得验收",
+      "status": "评论经历 + 两类厂商供给",
+      "evidence": "DeepCell关注跨文件数字，Alkera关注血缘；Graphify上榜提示可查询关系的供给。",
+      "summary": "推断只核对已导出的月报与源表，不造新Office格式；图谱边不等于财务口径正确。",
+      "sources": [
+        "Product Hunt",
+        "YC Company Directory",
+        "GitHub Trending"
+      ],
+      "links": [
+        [
+          "发布及评论",
+          "https://www.producthunt.com/products/deepcell"
+        ],
+        [
+          "数据血缘",
+          "https://www.ycombinator.com/companies/alkera-ai"
+        ],
+        [
+          "图谱供给",
+          "https://github.com/Graphify-Labs/graphify"
+        ]
+      ]
+    },
+    {
+      "name": "邮件共享工作流需要明确交接归属",
+      "status": "具体替代流程 + 投资命题；需求弱",
+      "evidence": "Resend评论提到已有Zap流程并问并发回复；YC Multiplayer AI关注多人参与同一工作。",
+      "summary": "推断回放线程交接、人工接管和重复事件；问题尚未确认为缺陷，避免再造通用收件箱。",
+      "sources": [
+        "Product Hunt",
+        "YC RFS"
+      ],
+      "links": [
+        [
+          "评论",
+          "https://www.producthunt.com/products/resend"
+        ],
+        [
+          "多人命题",
+          "https://www.ycombinator.com/rfs"
+        ]
+      ]
+    },
+    {
+      "name": "语音关键字段要按业务条件测",
+      "status": "多源供给一致；独立客户投诉不足",
+      "evidence": "Kugel Ear强调不确定词追问，Speko强调按语言测试；VoiceStudio提供本地语音路线。",
+      "summary": "推断验收姓名、地址和订单号的确认流程。模型平均成绩不是业务正确率，同一厂商跨站不重复算证据。",
+      "sources": [
+        "Product Hunt",
+        "YC Company Directory",
+        "GitHub Trending"
+      ],
+      "links": [
+        [
+          "不确定词",
+          "https://www.producthunt.com/products/kugelaudio"
+        ],
+        [
+          "场景测量",
+          "https://www.ycombinator.com/companies/speko"
+        ],
+        [
+          "本地路线",
+          "https://github.com/debpalash/VoiceStudio"
+        ]
+      ]
+    },
+    {
+      "name": "本地推理选型要区分估算与测量",
+      "status": "社区供给 + GitHub趋势；采购证据弱",
+      "evidence": "llmspeed明确含估算，siltop展示本机观测；本地语音项目出现在周月榜。",
+      "summary": "推断先在客户已有机器跑指定负载，检验持续延迟与资源瓶颈；两个社区项目不是两份客户订单。",
+      "sources": [
+        "Show HN",
+        "项目官网与GitHub",
+        "GitHub Trending"
+      ],
+      "links": [
+        [
+          "估算边界",
+          "https://llmspeed.dev/"
+        ],
+        [
+          "测量工具",
+          "https://github.com/CLoaKY233/siltop"
+        ],
+        [
+          "本地负载供给",
+          "https://github.com/debpalash/VoiceStudio"
+        ]
+      ]
     }
   ],
   "datasets": {
     "launches": [
       {
-        "name": "BAND for Developers",
+        "name": "DeepCell",
         "source": "Product Hunt",
-        "metric": "当前Launching today；非确认UTC首发日；徽章2026-10-21",
-        "category": "多Agent协作",
-        "signal": "发布方描述共享工作空间、交换上下文和任务交接；评论追问上下文不完整会否导致互相误判，尚非已复现故障。",
-        "url": "https://www.producthunt.com/products/band",
-        "snapshotAt": "2026-10-22T01:22:38Z",
+        "metric": "当前Launching today；不等同2026-10-23 UTC首次发布",
+        "category": "跨文档数据一致性",
+        "signal": "作者描述用同一文件关联模型、文字和幻灯片，并导出Office格式；评论指出导出后数字又变为静态，协作能力仍在路线图。",
+        "url": "https://www.producthunt.com/products/deepcell",
+        "snapshotAt": "2026-10-23T01:24:07Z",
         "evidenceType": "当前发布供给；作者自述或评论疑问，未实测",
         "links": [
           [
-            "当前榜单",
+            "当前批次",
             "https://www.producthunt.com/"
           ]
         ]
       },
       {
-        "name": "NativeShip",
+        "name": "heal.dev",
         "source": "Product Hunt",
-        "metric": "当前Launching today；非确认UTC首发日",
-        "category": "原生集成发布",
-        "signal": "从已有API生成和维护n8n节点，使用客户自己的GitHub/npm发布；ready for verification不代表已经通过n8n审核。",
-        "url": "https://www.producthunt.com/products/nativeship",
-        "snapshotAt": "2026-10-22T01:22:38Z",
+        "metric": "当前Launching today；不等同2026-10-23 UTC首次发布",
+        "category": "运行时缺陷复现",
+        "signal": "发布方称建立外部服务被替身替代的沙箱，运行应用并复现问题后再报告；未独立测试误报、覆盖率或安全性。",
+        "url": "https://www.producthunt.com/products/heal-dev",
+        "snapshotAt": "2026-10-23T01:24:07Z",
         "evidenceType": "当前发布供给；作者自述或评论疑问，未实测",
         "links": [
           [
-            "当前榜单",
+            "当前批次",
             "https://www.producthunt.com/"
           ]
         ]
       },
       {
-        "name": "Flagsmith Experiments",
+        "name": "Resend Inboxes",
         "source": "Product Hunt",
-        "metric": "当前Launching today；非确认UTC首发日",
-        "category": "实验与数据仓库",
-        "signal": "作者宣布public beta，把特性开关与实验指标连接；当前称支持ClickHouse、Databricks，其他仓库为后续计划。未复测统计效果。",
-        "url": "https://www.producthunt.com/products/flagsmith",
-        "snapshotAt": "2026-10-22T01:22:38Z",
+        "metric": "当前Launching today；不等同2026-10-23 UTC首次发布",
+        "category": "共享收件箱",
+        "signal": "当前新发布定位共享收件箱、Agent连接与工作流；一位评论者称已有Zap替代流程，并追问人与Agent同时回复的处理。问题不等于已证实产品故障。",
+        "url": "https://www.producthunt.com/products/resend",
+        "snapshotAt": "2026-10-23T01:24:07Z",
         "evidenceType": "当前发布供给；作者自述或评论疑问，未实测",
         "links": [
           [
-            "当前榜单",
+            "当前批次",
             "https://www.producthunt.com/"
           ]
         ]
       },
       {
-        "name": "Triage by Chodeberg",
+        "name": "Kugel Ear",
         "source": "Product Hunt",
-        "metric": "当前Launching today；非确认UTC首发日",
-        "category": "故障复现",
-        "signal": "发布页称在干净环境重放用户报告并筛出可再次触发的错误；没有本期客户复现率或付费证据。",
-        "url": "https://www.producthunt.com/products/triage-by-chodeberg",
-        "snapshotAt": "2026-10-22T01:22:38Z",
+        "metric": "当前Launching today；不等同2026-10-23 UTC首次发布",
+        "category": "语音不确定性",
+        "signal": "本次发布为语音转文字：标出不确定词及候选拼写供追问；不是产品总页旧有TTS介绍。准确率为厂商自测，本期不采纳数字。",
+        "url": "https://www.producthunt.com/products/kugelaudio",
+        "snapshotAt": "2026-10-23T01:24:07Z",
         "evidenceType": "当前发布供给；作者自述或评论疑问，未实测",
         "links": [
           [
-            "当前榜单",
+            "当前批次",
             "https://www.producthunt.com/"
           ]
         ]
       },
       {
-        "name": "TwinMind for Desktop",
+        "name": "Archivist",
         "source": "Product Hunt",
-        "metric": "当前Launching today；非确认UTC首发日",
-        "category": "会议转录与口述",
-        "signal": "当前发布聚焦桌面转录及光标处口述；评论希望保留原始口述以核对人名数字，作者表示加入待办。不把需求建议写成已实现功能。",
-        "url": "https://www.producthunt.com/products/twinmind",
-        "snapshotAt": "2026-10-22T01:22:38Z",
+        "metric": "当前Launching today；不等同2026-10-23 UTC首次发布",
+        "category": "素材交付",
+        "signal": "本次为已有产品重新发布：命名规则、按客户归集和分享链接；作者说明视频使用抽帧判断，不能据此保证完整理解视频。Mac应用仍标为即将推出。",
+        "url": "https://www.producthunt.com/products/archivist",
+        "snapshotAt": "2026-10-23T01:24:07Z",
         "evidenceType": "当前发布供给；作者自述或评论疑问，未实测",
         "links": [
           [
-            "当前榜单",
+            "当前批次",
             "https://www.producthunt.com/"
           ]
         ]
@@ -155,121 +307,121 @@
     ],
     "technical": [
       {
-        "name": "Sumi.css",
+        "name": "TypeUI Micro Interactions",
         "source": "Show HN / Algolia",
-        "metric": "2026-10-21T12:50:33Z；72 points / 18 comments；2026-10-22T01:19:40Z快照",
-        "category": "轻量前端",
-        "signal": "仓库自述为极简、classless-first CSS框架；是轻量工具供给，不证明可替代完整设计系统。",
-        "url": "https://news.ycombinator.com/item?id=50180039",
-        "snapshotAt": "2026-10-22T01:19:40Z",
-        "evidenceType": "七日内发布；指标来自Algolia，功能来自项目原文",
+        "metric": "2026-10-22T18:32:57Z；68 points / 42 comments；2026-10-23T01:19:58Z快照",
+        "category": "前端交互样例",
+        "signal": "官网提供交互预览及实现提示词，部分提示词需解锁；样例数量与热度不证明交付质量。",
+        "url": "https://news.ycombinator.com/item?id=50199290",
+        "snapshotAt": "2026-10-23T01:19:58Z",
+        "evidenceType": "七日内发布；票评来自Algolia，功能来自项目原文",
         "links": [
           [
             "项目原文",
-            "https://github.com/vladocar/Sumi.css"
+            "https://www.typeui.sh/micro-interactions"
           ],
           [
             "七日查询",
-            "https://hn.algolia.com/api/v1/search?tags=show_hn&numericFilters=created_at_i%3E%3D1792027180%2Ccreated_at_i%3C%3D1792631980&hitsPerPage=100"
+            "https://hn.algolia.com/api/v1/search?tags=show_hn&numericFilters=created_at_i%3E%3D1792113598%2Ccreated_at_i%3C%3D1792718398&hitsPerPage=100"
           ]
         ],
-        "publishedAt": "2026-10-21T12:50:33Z"
+        "publishedAt": "2026-10-22T18:32:57Z"
       },
       {
-        "name": "Omnara",
+        "name": "Stackdome",
         "source": "Show HN / Algolia",
-        "metric": "2026-10-21T16:44:53Z；20 points / 8 comments；2026-10-22T01:19:40Z快照",
-        "category": "自托管Agent运行",
-        "signal": "仓库描述托管Agent平台，支持自托管；README明确本地默认配置不安全，生产须另配，不能将可自托管等同安全验证。",
-        "url": "https://news.ycombinator.com/item?id=50183892",
-        "snapshotAt": "2026-10-22T01:19:40Z",
-        "evidenceType": "七日内发布；指标来自Algolia，功能来自项目原文",
+        "metric": "2026-10-22T15:43:08Z；8 points / 0 comments；2026-10-23T01:19:58Z快照",
+        "category": "应用交付",
+        "signal": "仓库描述整套应用部署、备份、预览环境与回滚，云版本标为alpha；未运行或验证可用性。",
+        "url": "https://news.ycombinator.com/item?id=50196969",
+        "snapshotAt": "2026-10-23T01:19:58Z",
+        "evidenceType": "七日内发布；票评来自Algolia，功能来自项目原文",
         "links": [
           [
             "项目原文",
-            "https://github.com/omnara-ai/omnara"
+            "https://github.com/axernel-labs/stackdome"
           ],
           [
             "七日查询",
-            "https://hn.algolia.com/api/v1/search?tags=show_hn&numericFilters=created_at_i%3E%3D1792027180%2Ccreated_at_i%3C%3D1792631980&hitsPerPage=100"
+            "https://hn.algolia.com/api/v1/search?tags=show_hn&numericFilters=created_at_i%3E%3D1792113598%2Ccreated_at_i%3C%3D1792718398&hitsPerPage=100"
           ]
         ],
-        "publishedAt": "2026-10-21T16:44:53Z"
+        "publishedAt": "2026-10-22T15:43:08Z"
       },
       {
-        "name": "Penmentor",
+        "name": "Reticle",
         "source": "Show HN / Algolia",
-        "metric": "2026-10-20T15:10:54Z；64 points / 7 comments；2026-10-22T01:19:40Z快照",
-        "category": "手写数学反馈",
-        "signal": "作者希望直接在手写页标注错误与提示；README说明演示录像的笔迹和模型答案为固定示例，不能把录像当实时准确性证据。",
-        "url": "https://news.ycombinator.com/item?id=50167604",
-        "snapshotAt": "2026-10-22T01:19:40Z",
-        "evidenceType": "七日内发布；指标来自Algolia，功能来自项目原文",
+        "metric": "2026-10-20T10:20:33Z；11 points / 6 comments；2026-10-23T01:19:58Z快照",
+        "category": "运行结果验收",
+        "signal": "仓库描述开发环境SDK读取请求和状态，返回通过、失败或无法判断；关联云项目后的同步配置需单独评估，不把本地判定泛化为零外传。",
+        "url": "https://news.ycombinator.com/item?id=50163896",
+        "snapshotAt": "2026-10-23T01:19:58Z",
+        "evidenceType": "七日内发布；票评来自Algolia，功能来自项目原文",
         "links": [
           [
             "项目原文",
-            "https://github.com/AbdullahAlhariri/penmentor"
+            "https://github.com/reticlehq/reticle"
           ],
           [
             "七日查询",
-            "https://hn.algolia.com/api/v1/search?tags=show_hn&numericFilters=created_at_i%3E%3D1792027180%2Ccreated_at_i%3C%3D1792631980&hitsPerPage=100"
+            "https://hn.algolia.com/api/v1/search?tags=show_hn&numericFilters=created_at_i%3E%3D1792113598%2Ccreated_at_i%3C%3D1792718398&hitsPerPage=100"
           ]
         ],
-        "publishedAt": "2026-10-20T15:10:54Z"
+        "publishedAt": "2026-10-20T10:20:33Z"
       },
       {
-        "name": "Pug",
+        "name": "llmspeed",
         "source": "Show HN / Algolia",
-        "metric": "2026-10-20T14:26:24Z；10 points / 1 comments；2026-10-22T01:19:40Z快照",
-        "category": "产品事件分析",
-        "signal": "官网描述事件、用户档案、漏斗及留存分析，支持自托管；页面演示数字不记为实际客户数据。",
-        "url": "https://news.ycombinator.com/item?id=50166960",
-        "snapshotAt": "2026-10-22T01:19:40Z",
-        "evidenceType": "七日内发布；指标来自Algolia，功能来自项目原文",
+        "metric": "2026-10-17T04:36:53Z；329 points / 86 comments；2026-10-23T01:19:58Z快照",
+        "category": "本地推理选型",
+        "signal": "官网明确混合社区测量、相近配置推导和规格预测，仅针对单设备短提示；模拟体感不能当指定工作负载的基准。",
+        "url": "https://news.ycombinator.com/item?id=50127979",
+        "snapshotAt": "2026-10-23T01:19:58Z",
+        "evidenceType": "七日内发布；票评来自Algolia，功能来自项目原文",
         "links": [
           [
             "项目原文",
-            "https://pug.sh/"
+            "https://llmspeed.dev/"
           ],
           [
             "七日查询",
-            "https://hn.algolia.com/api/v1/search?tags=show_hn&numericFilters=created_at_i%3E%3D1792027180%2Ccreated_at_i%3C%3D1792631980&hitsPerPage=100"
+            "https://hn.algolia.com/api/v1/search?tags=show_hn&numericFilters=created_at_i%3E%3D1792113598%2Ccreated_at_i%3C%3D1792718398&hitsPerPage=100"
           ]
         ],
-        "publishedAt": "2026-10-20T14:26:24Z"
+        "publishedAt": "2026-10-17T04:36:53Z"
       },
       {
-        "name": "Weatherdeck",
+        "name": "siltop",
         "source": "Show HN / Algolia",
-        "metric": "2026-10-16T18:54:22Z；9 points / 0 comments；2026-10-22T01:19:40Z快照",
-        "category": "只读工作状态",
-        "signal": "仓库描述接收来源主动上报的只读状态板；作者明确其不是告警系统，未上报的状态不可见，且属于pre-1.0业余项目。",
-        "url": "https://news.ycombinator.com/item?id=50122767",
-        "snapshotAt": "2026-10-22T01:19:40Z",
-        "evidenceType": "七日内发布；指标来自Algolia，功能来自项目原文",
+        "metric": "2026-10-17T07:01:07Z；17 points / 26 comments；2026-10-23T01:19:58Z快照",
+        "category": "本机资源观测",
+        "signal": "仓库描述Apple Silicon的CPU、GPU、功耗和温度观测；取不到的数据显示缺失，部分功耗读数带年龄。未复测准确性或资源开销。",
+        "url": "https://news.ycombinator.com/item?id=50128654",
+        "snapshotAt": "2026-10-23T01:19:58Z",
+        "evidenceType": "七日内发布；票评来自Algolia，功能来自项目原文",
         "links": [
           [
             "项目原文",
-            "https://github.com/Moshik21/weatherdeck"
+            "https://github.com/CLoaKY233/siltop"
           ],
           [
             "七日查询",
-            "https://hn.algolia.com/api/v1/search?tags=show_hn&numericFilters=created_at_i%3E%3D1792027180%2Ccreated_at_i%3C%3D1792631980&hitsPerPage=100"
+            "https://hn.algolia.com/api/v1/search?tags=show_hn&numericFilters=created_at_i%3E%3D1792113598%2Ccreated_at_i%3C%3D1792718398&hitsPerPage=100"
           ]
         ],
-        "publishedAt": "2026-10-16T18:54:22Z"
+        "publishedAt": "2026-10-17T07:01:07Z"
       }
     ],
     "github": [
       {
-        "name": "vllm-project/vllm",
+        "name": "php/php-src",
         "source": "GitHub Trending · Language Any / Spoken Language Any",
-        "metric": "daily +441 stars",
-        "category": "推理服务",
-        "signal": "榜单描述LLM推理与服务引擎；未测试吞吐量或成本。",
-        "url": "https://github.com/vllm-project/vllm",
-        "snapshotAt": "2026-10-22T01:19:49Z",
-        "evidenceType": "三窗榜单观察；不是收入、采用量或仓库创建时间",
+        "metric": "daily +287 stars",
+        "category": "语言基础设施",
+        "signal": "榜单描述PHP解释器；成熟项目重新上榜，不是新产品发布。",
+        "url": "https://github.com/php/php-src",
+        "snapshotAt": "2026-10-23T01:19:58Z",
+        "evidenceType": "榜单观察；窗口增量不是收入或UTC自然日增量",
         "links": [
           [
             "daily榜",
@@ -278,34 +430,14 @@
         ]
       },
       {
-        "name": "stablyai/orca",
+        "name": "fastapi/fastapi",
         "source": "GitHub Trending · Language Any / Spoken Language Any",
-        "metric": "daily +1,541 stars / weekly +8,705 stars",
-        "category": "Agent工作台",
-        "signal": "榜单描述多Agent工作台及桌面、移动、远程运行；未核验付费采用。",
-        "url": "https://github.com/stablyai/orca",
-        "snapshotAt": "2026-10-22T01:19:49Z",
-        "evidenceType": "三窗榜单观察；不是收入、采用量或仓库创建时间",
-        "links": [
-          [
-            "daily榜",
-            "https://github.com/trending?since=daily"
-          ],
-          [
-            "weekly榜",
-            "https://github.com/trending?since=weekly"
-          ]
-        ]
-      },
-      {
-        "name": "headroomlabs-ai/headroom",
-        "source": "GitHub Trending · Language Any / Spoken Language Any",
-        "metric": "daily +474 stars",
-        "category": "上下文压缩",
-        "signal": "榜单描述压缩工具输出、日志和检索片段；不引用未经复测的节省比例或同等答案承诺。",
-        "url": "https://github.com/headroomlabs-ai/headroom",
-        "snapshotAt": "2026-10-22T01:19:49Z",
-        "evidenceType": "三窗榜单观察；不是收入、采用量或仓库创建时间",
+        "metric": "daily +101 stars",
+        "category": "API框架",
+        "signal": "榜单描述Python API框架；不采用未经复测的性能宣传。",
+        "url": "https://github.com/fastapi/fastapi",
+        "snapshotAt": "2026-10-23T01:19:58Z",
+        "evidenceType": "榜单观察；窗口增量不是收入或UTC自然日增量",
         "links": [
           [
             "daily榜",
@@ -314,82 +446,70 @@
         ]
       },
       {
-        "name": "supabase/supabase",
+        "name": "cloudflare/security-audit-skill",
         "source": "GitHub Trending · Language Any / Spoken Language Any",
-        "metric": "daily +504 stars",
-        "category": "数据库开发平台",
-        "signal": "榜单描述基于Postgres的应用开发平台；成熟仓库上榜不等于今日发布。",
-        "url": "https://github.com/supabase/supabase",
-        "snapshotAt": "2026-10-22T01:19:49Z",
-        "evidenceType": "三窗榜单观察；不是收入、采用量或仓库创建时间",
-        "links": [
-          [
-            "daily榜",
-            "https://github.com/trending?since=daily"
-          ]
-        ]
-      },
-      {
-        "name": "twentyhq/twenty",
-        "source": "GitHub Trending · Language Any / Spoken Language Any",
-        "metric": "daily +112 stars",
-        "category": "客户关系管理",
-        "signal": "榜单定位开源CRM；不能从stars推导销售团队迁移意愿。",
-        "url": "https://github.com/twentyhq/twenty",
-        "snapshotAt": "2026-10-22T01:19:49Z",
-        "evidenceType": "三窗榜单观察；不是收入、采用量或仓库创建时间",
-        "links": [
-          [
-            "daily榜",
-            "https://github.com/trending?since=daily"
-          ]
-        ]
-      },
-      {
-        "name": "akitaonrails/ai-memory",
-        "source": "GitHub Trending · Language Any / Spoken Language Any",
-        "metric": "daily +286 stars / weekly +2,833 stars",
-        "category": "跨工具记忆交接",
-        "signal": "榜单描述编码CLI长期记忆及不同Agent厂商之间交接；交接正确性未验证。",
-        "url": "https://github.com/akitaonrails/ai-memory",
-        "snapshotAt": "2026-10-22T01:19:49Z",
-        "evidenceType": "三窗榜单观察；不是收入、采用量或仓库创建时间",
+        "metric": "daily +2,979 stars / monthly +18,566 stars",
+        "category": "安全检查供给",
+        "signal": "榜单描述多阶段审计和机器可读发现；不能将项目自述的独立验证当本次安全审计。",
+        "url": "https://github.com/cloudflare/security-audit-skill",
+        "snapshotAt": "2026-10-23T01:19:58Z",
+        "evidenceType": "榜单观察；窗口增量不是收入或UTC自然日增量",
         "links": [
           [
             "daily榜",
             "https://github.com/trending?since=daily"
           ],
           [
-            "weekly榜",
-            "https://github.com/trending?since=weekly"
+            "monthly榜",
+            "https://github.com/trending?since=monthly"
           ]
         ]
       },
       {
-        "name": "ruvnet/ruflo",
+        "name": "Graphify-Labs/graphify",
         "source": "GitHub Trending · Language Any / Spoken Language Any",
-        "metric": "weekly +3,590 stars",
-        "category": "Agent执行框架",
-        "signal": "榜单描述多Agent工作流、记忆与集成；不采纳宣传中的领先性判断。",
-        "url": "https://github.com/ruvnet/ruflo",
-        "snapshotAt": "2026-10-22T01:19:49Z",
-        "evidenceType": "三窗榜单观察；不是收入、采用量或仓库创建时间",
+        "metric": "daily +1,408 stars",
+        "category": "代码与资料图谱",
+        "signal": "榜单描述把代码、SQL、配置和文档组成可查询图谱；未核验关系提取正确性。",
+        "url": "https://github.com/Graphify-Labs/graphify",
+        "snapshotAt": "2026-10-23T01:19:58Z",
+        "evidenceType": "榜单观察；窗口增量不是收入或UTC自然日增量",
         "links": [
           [
-            "weekly榜",
-            "https://github.com/trending?since=weekly"
+            "daily榜",
+            "https://github.com/trending?since=daily"
           ]
         ]
       },
       {
-        "name": "cursor/plugins",
+        "name": "anthropics/knowledge-work-plugins",
         "source": "GitHub Trending · Language Any / Spoken Language Any",
-        "metric": "weekly +2,049 stars / monthly +5,135 stars",
-        "category": "插件生态",
-        "signal": "榜单描述插件规范和官方插件；这属于平台供给，不能视为未被满足的市场。",
-        "url": "https://github.com/cursor/plugins",
-        "snapshotAt": "2026-10-22T01:19:49Z",
-        "evidenceType": "三窗榜单观察；不是收入、采用量或仓库创建时间",
+        "metric": "daily +303 stars / monthly +6,026 stars",
+        "category": "知识工作插件",
+        "signal": "榜单描述面向知识工作者的插件；供给增加意味着通用办公自动化竞争加剧。",
+        "url": "https://github.com/anthropics/knowledge-work-plugins",
+        "snapshotAt": "2026-10-23T01:19:58Z",
+        "evidenceType": "榜单观察；窗口增量不是收入或UTC自然日增量",
+        "links": [
+          [
+            "daily榜",
+            "https://github.com/trending?since=daily"
+          ],
+          [
+            "monthly榜",
+            "https://github.com/trending?since=monthly"
+          ]
+        ]
+      },
+      {
+        "name": "debpalash/VoiceStudio",
+        "source": "GitHub Trending · Language Any / Spoken Language Any",
+        "metric": "weekly +13,581 stars / monthly +47,620 stars",
+        "category": "本地语音工具",
+        "signal": "榜单定位本地语音制作、转录与配音工具；未验证语言覆盖、质量或商业授权。",
+        "url": "https://github.com/debpalash/VoiceStudio",
+        "snapshotAt": "2026-10-23T01:19:58Z",
+        "evidenceType": "榜单观察；窗口增量不是收入或UTC自然日增量",
         "links": [
           [
             "weekly榜",
@@ -402,15 +522,19 @@
         ]
       },
       {
-        "name": "NVIDIA/OpenShell",
+        "name": "heygen-com/hyperframes",
         "source": "GitHub Trending · Language Any / Spoken Language Any",
-        "metric": "monthly +8,303 stars",
-        "category": "Agent运行环境",
-        "signal": "月榜描述Agent运行时；safe/private为项目定位，未独立安全审计。",
-        "url": "https://github.com/NVIDIA/OpenShell",
-        "snapshotAt": "2026-10-22T01:19:49Z",
-        "evidenceType": "三窗榜单观察；不是收入、采用量或仓库创建时间",
+        "metric": "weekly +5,669 stars / monthly +17,770 stars",
+        "category": "HTML视频生成",
+        "signal": "榜单定位从HTML渲染视频；渲染能力不证明素材管理或交付流程已被解决。",
+        "url": "https://github.com/heygen-com/hyperframes",
+        "snapshotAt": "2026-10-23T01:19:58Z",
+        "evidenceType": "榜单观察；窗口增量不是收入或UTC自然日增量",
         "links": [
+          [
+            "weekly榜",
+            "https://github.com/trending?since=weekly"
+          ],
           [
             "monthly榜",
             "https://github.com/trending?since=monthly"
@@ -418,19 +542,35 @@
         ]
       },
       {
-        "name": "earthtojake/text-to-cad",
+        "name": "NationalSecurityAgency/ghidra",
         "source": "GitHub Trending · Language Any / Spoken Language Any",
-        "metric": "weekly +2,000 stars / monthly +6,081 stars",
-        "category": "CAD工具接口",
-        "signal": "榜单描述让Agent使用CAD；不证明制造可行性、工程精度或实体交付。",
-        "url": "https://github.com/earthtojake/text-to-cad",
-        "snapshotAt": "2026-10-22T01:19:49Z",
-        "evidenceType": "三窗榜单观察；不是收入、采用量或仓库创建时间",
+        "metric": "weekly +4,892 stars / monthly +13,804 stars",
+        "category": "软件分析框架",
+        "signal": "榜单描述软件逆向工程框架；这里只记录公共技术趋势，不执行任何分析。",
+        "url": "https://github.com/NationalSecurityAgency/ghidra",
+        "snapshotAt": "2026-10-23T01:19:58Z",
+        "evidenceType": "榜单观察；窗口增量不是收入或UTC自然日增量",
         "links": [
           [
             "weekly榜",
             "https://github.com/trending?since=weekly"
           ],
+          [
+            "monthly榜",
+            "https://github.com/trending?since=monthly"
+          ]
+        ]
+      },
+      {
+        "name": "VectifyAI/PageIndex",
+        "source": "GitHub Trending · Language Any / Spoken Language Any",
+        "metric": "monthly +3,800 stars",
+        "category": "文档检索",
+        "signal": "月榜定位基于文档索引的检索；没有本期企业搜索效果或采购证据。",
+        "url": "https://github.com/VectifyAI/PageIndex",
+        "snapshotAt": "2026-10-23T01:19:58Z",
+        "evidenceType": "榜单观察；窗口增量不是收入或UTC自然日增量",
+        "links": [
           [
             "monthly榜",
             "https://github.com/trending?since=monthly"
@@ -440,415 +580,255 @@
     ],
     "market": [
       {
-        "name": "Reach Capital谈AI评估与教育采购",
+        "name": "Slingshot Insurance种子轮",
         "source": "Crunchbase News",
-        "metric": "2026-10-21采访；非今日新融资",
-        "category": "全球投资偏好",
-        "signal": "受访投资人讨论教育、健康与工作的采购复杂性，并关注AI治理和评估；属投资观点，不是这些工具已有订单的证据。",
-        "url": "https://news.crunchbase.com/venture/ai-edtech-healthcare-reach-capital-qa-kim/",
-        "snapshotAt": "2026-10-22T01:22:38Z",
-        "evidenceType": "投资人一手访谈；观点与融资事件分开",
+        "metric": "2026-10-22报道；2,700万美元",
+        "category": "嵌入式保险",
+        "signal": "独家采访称完成种子轮，Rally Ventures与Skyward Group共同领投；软件连接分销方与保险方。首个设计伙伴与创始团队有关联，不视为独立市场验证。",
+        "url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/",
+        "snapshotAt": "2026-10-23T01:24:07Z",
+        "evidenceType": "公司及投资方采访；未核实交割，非收入证明",
         "links": []
       },
       {
-        "name": "乙太科技种子轮及天使轮",
+        "name": "芯际无限Pre-A轮",
         "source": "36氪",
-        "metric": "列表23小时前；累计超亿元，摘要未明示币种",
-        "category": "中国空间智能融资",
-        "signal": "公开摘要称近日连续完成两轮融资，方向为物理空间智能基础设施；不将相对发布时间当交割日期，不推定收入。",
+        "metric": "列表16小时前；未披露金额",
+        "category": "具身智能芯片",
+        "signal": "公开摘要称RISC-V芯片企业完成Pre-A轮，方向为研发与产业化；详情不可读，不补写投资方或客户。",
         "url": "https://pitchhub.36kr.com/financing-flash",
-        "snapshotAt": "2026-10-22T01:22:38Z",
-        "evidenceType": "公开摘要；详情触发安全检测，未继续访问",
+        "snapshotAt": "2026-10-23T01:24:07Z",
+        "evidenceType": "公开标题与摘要；资本密集方向",
         "links": [
           [
-            "详情入口（受限）",
-            "https://36kr.com/newsflashes/4034977298191241"
+            "详情入口（不可读）",
+            "https://36kr.com/p/4036761848779904"
           ]
         ]
       },
       {
-        "name": "睿质科技天使轮",
+        "name": "星忆智能种子及种子＋轮",
         "source": "36氪",
-        "metric": "列表2026-10-20；数千万元，摘要未明示币种",
-        "category": "中国材料研发融资",
-        "signal": "标题描述用AI智能体辅助新材料研发、面向工业客户；正文受限，不补写投资方、客户名单或模型成效。",
+        "metric": "列表17小时前；数千万元，摘要未明示币种",
+        "category": "具身智能数据",
+        "signal": "摘要称连续融资，种子轮由顺禧基金领投，种子＋轮由凌云光领投；聚焦手物交互数据交付。未核实订单或数据质量。",
         "url": "https://pitchhub.36kr.com/financing-flash",
-        "snapshotAt": "2026-10-22T01:22:38Z",
-        "evidenceType": "公开标题与摘要；详情触发安全检测",
+        "snapshotAt": "2026-10-23T01:24:07Z",
+        "evidenceType": "公开摘要；融资不证明数据采购需求",
         "links": [
           [
-            "详情入口（受限）",
-            "https://36kr.com/p/4033523733042053"
+            "详情入口（不可读）",
+            "https://36kr.com/p/4036683559408769"
           ]
         ]
       },
       {
         "name": "YC最新可见RFS：Fall 2026",
         "source": "YC Requests for Startups",
-        "metric": "Fall 2026；本日复核，非本日新发",
-        "category": "持续投资命题",
-        "signal": "当前最新标签为Fall 2026，包含基础学习、小软件云与多人AI；这是投资方希望看到的方向，不是客户需求统计。",
+        "metric": "Fall 2026；本日复核，非今日新公告",
+        "category": "投资命题",
+        "signal": "仍关注小软件云、多人AI、物理世界系统等；命题表达投资兴趣，不是买家承诺。",
         "url": "https://www.ycombinator.com/rfs",
-        "snapshotAt": "2026-10-22T01:22:38Z",
-        "evidenceType": "投资命题；非产品验证或资金承诺",
+        "snapshotAt": "2026-10-23T01:24:07Z",
+        "evidenceType": "投资方观点；未验证客户需求",
         "links": []
       },
       {
-        "name": "Hue",
+        "name": "Alkera AI",
         "source": "YC Company Directory",
-        "metric": "Fall 2026 / Active；本日档案",
-        "category": "生产运行转测试",
-        "signal": "档案描述保留真实运行的工具、数据和状态以构建可重复测试；可作为客服验收的相邻竞争供给，未核验效果。",
-        "url": "https://www.ycombinator.com/companies/hue",
-        "snapshotAt": "2026-10-22T01:22:38Z",
-        "evidenceType": "公司档案自述；非新融资公告",
+        "metric": "Summer 2026 / Active；本日档案",
+        "category": "数据溯源",
+        "signal": "档案描述结合数据历史、血缘与团队知识的分析工具；作为报表核对的相邻供给，不引用其排行榜或正确性宣传。",
+        "url": "https://www.ycombinator.com/companies/alkera-ai",
+        "snapshotAt": "2026-10-23T01:24:07Z",
+        "evidenceType": "公司档案自述；非新融资事件",
         "links": []
       },
       {
-        "name": "Agent Relay",
+        "name": "Speko",
         "source": "YC Company Directory",
-        "metric": "Fall 2026 / Active；本日档案",
-        "category": "跨Agent消息与历史",
-        "signal": "档案描述编码Agent直接沟通及共享可检索历史；与BAND形成供给重叠，不据此宣称协作市场已验证。",
-        "url": "https://www.ycombinator.com/companies/agent-relay",
-        "snapshotAt": "2026-10-22T01:22:38Z",
-        "evidenceType": "公司档案自述；非收入或留存证据",
+        "metric": "Summer 2026 / Active；本日档案",
+        "category": "语音选型",
+        "signal": "档案描述按语言和场景测量并路由语音模型；作者认为公共平均成绩未必代表客户录音条件。未复测榜单或切换效果。",
+        "url": "https://www.ycombinator.com/companies/speko",
+        "snapshotAt": "2026-10-23T01:24:07Z",
+        "evidenceType": "公司档案自述；非采购证明",
         "links": []
       }
     ],
     "pain": [
       {
-        "name": "Signastyle Home：错误回答后停用",
+        "name": "Ruby Designs Clothing Ltd：搜索混入无关商品",
         "source": "Shopify App Store",
-        "metric": "评论2026-10-08；Inbox 4.6分 / 5,806条",
-        "category": "客服回答质量",
-        "signal": "商家称重复错误影响经营并停用；未提供损失金额或可重放样本，不能推定所有店铺遇到同样问题。",
-        "url": "https://apps.shopify.com/inbox/reviews",
-        "snapshotAt": "2026-10-22T01:22:38Z",
+        "metric": "评论2026-10-17；Search & Discovery 2.6分 / 511条",
+        "category": "搜索相关性",
+        "signal": "商家称搜索单品时返回大量不相关商品；没有可重放样本或损失金额，需店主确认预期结果。",
+        "url": "https://apps.shopify.com/search-and-discovery/reviews",
+        "snapshotAt": "2026-10-23T01:24:07Z",
         "evidenceType": "商家单方反馈；单评星级未显示",
-        "links": []
+        "links": [
+          [
+            "官方语义搜索说明",
+            "https://help.shopify.com/en/manual/online-store/storefront-search/search-and-discovery-modify-search"
+          ]
+        ]
       },
       {
-        "name": "Roofing Supplies UK：回答之后缺业务动作",
+        "name": "Tezumi：同义词配置变化争议",
         "source": "Shopify App Store",
-        "metric": "评论2026-10-16；Inbox 4.6分 / 5,806条",
-        "category": "订单与客服交接",
-        "signal": "商家总体认可应用，希望会话涉及订单时记备注，或将困难问答转邮件；属于工作流诉求，未证明现有配置完全做不到。",
-        "url": "https://apps.shopify.com/inbox/reviews",
-        "snapshotAt": "2026-10-22T01:22:38Z",
-        "evidenceType": "近期具体功能诉求；非已证实平台缺陷",
-        "links": []
-      },
-      {
-        "name": "Compagnon：实物到货与订阅日期不匹配",
-        "source": "Shopify App Store",
-        "metric": "评论2026-10-07；Subscriptions 3.7分 / 865条",
-        "category": "订阅履约时序",
-        "signal": "商家称不能移动到期日期，希望关联实物收到后才开始订阅；需核实其具体合同和配置。",
-        "url": "https://apps.shopify.com/shopify-subscriptions/reviews",
-        "snapshotAt": "2026-10-22T01:22:38Z",
+        "metric": "评论2026-10-13；Search & Discovery 2.6分 / 511条",
+        "category": "搜索配置迁移",
+        "signal": "商家抱怨同义词被移除且未获通知；这是其体验，不能据此断言平台全量功能下线。官方文档说明语义关联与商品boost。",
+        "url": "https://apps.shopify.com/search-and-discovery/reviews",
+        "snapshotAt": "2026-10-23T01:24:07Z",
         "evidenceType": "近期单方反馈；未复现",
         "links": [
           [
-            "官方合同管理",
-            "https://help.shopify.com/en/manual/products/purchase-options/subscriptions/shopify-subscriptions/manage-subscriptions/manage-contracts"
+            "当前官方边界",
+            "https://help.shopify.com/en/manual/online-store/storefront-search/search-and-discovery-modify-search"
           ]
         ]
       },
       {
-        "name": "Geraldine’s Natural Wines：统一账期和季节换品",
+        "name": "Lux Bossa by Soul：通知模板翻译不一致",
         "source": "Shopify App Store",
-        "metric": "评论2026-09-12；Subscriptions 3.7分 / 865条",
-        "category": "订阅运营",
-        "signal": "商家希望统一扣款日并让客户季节性换品；官方文档允许商家编辑合同商品，不能将客户端诉求泛化为后台无法换品。",
-        "url": "https://apps.shopify.com/shopify-subscriptions/reviews",
-        "snapshotAt": "2026-10-22T01:22:38Z",
-        "evidenceType": "较旧反馈作为补充；保留官方反证",
+        "metric": "评论2026-09-12；Translate & Adapt 4.4分 / 1,399条",
+        "category": "多语言通知",
+        "signal": "商家称翻译读取原模板而非定制模板，并自报与支持沟通12小时。属于较旧补充；官方已有编辑和预览翻译能力，需先验证当前是否仍发生。",
+        "url": "https://apps.shopify.com/translate-and-adapt/reviews",
+        "snapshotAt": "2026-10-23T01:24:07Z",
+        "evidenceType": "单方经历；9月旧样本，不冒充当日投诉",
         "links": [
           [
-            "官方合同编辑",
-            "https://help.shopify.com/en/manual/products/purchase-options/subscriptions/shopify-subscriptions/manage-subscriptions/manage-contracts"
+            "官方编辑与预览",
+            "https://help.shopify.com/en/manual/international/languages/checkout-and-notifications"
           ]
         ]
       },
       {
-        "name": "303 Exclusive Diecasts：转人工与反馈定位争议",
+        "name": "Tornado Vape：商品页语言跳转",
         "source": "Shopify App Store",
-        "metric": "评论2026-09-19；官方回复2026-09-20",
-        "category": "功能发现与验收",
-        "signal": "商家称难以转人工和定位负反馈；官方回复称每条回复后有联系员工入口、Inbox内可查看反馈。只能列为待核实的使用障碍。",
-        "url": "https://apps.shopify.com/inbox/reviews",
-        "snapshotAt": "2026-10-22T01:22:38Z",
-        "evidenceType": "有官方反证的旧投诉；不认定能力缺失",
+        "metric": "评论2026-09-28；Translate & Adapt 4.4分 / 1,399条",
+        "category": "多语言路由",
+        "signal": "商家称点击商品后语言由德语变为英语，未主动切换；原因可能涉及主题、链接或翻译缺失，本期没有复现。",
+        "url": "https://apps.shopify.com/translate-and-adapt/reviews",
+        "snapshotAt": "2026-10-23T01:24:07Z",
+        "evidenceType": "单方反馈；9月补充样本",
         "links": []
       },
       {
-        "name": "NativeShip作者：手工HTTP接入负担",
-        "source": "Product Hunt",
-        "metric": "当前发布页；作者评论标13d ago",
-        "category": "集成实施",
-        "signal": "作者回忆为客户配置headers、body、endpoint，并因平台缺节点提出需求；这是有利益关系的作者经历，缺独立买家验证。",
-        "url": "https://www.producthunt.com/products/nativeship",
-        "snapshotAt": "2026-10-22T01:22:38Z",
-        "evidenceType": "发布者自述；不是独立商家评论",
-        "links": [
-          [
-            "n8n审核边界",
-            "https://docs.n8n.io/connect/create-nodes/build-your-node/reference/verification-guidelines.md"
-          ]
-        ]
+        "name": "La Buse Qui File：颜色变体未翻译",
+        "source": "Shopify App Store",
+        "metric": "评论2026-09-18；Translate & Adapt 4.4分 / 1,399条",
+        "category": "商品变体本地化",
+        "signal": "商家称当周颜色变体不再翻译；不能从单评推断所有商家持续受影响。",
+        "url": "https://apps.shopify.com/translate-and-adapt/reviews",
+        "snapshotAt": "2026-10-23T01:24:07Z",
+        "evidenceType": "单方反馈；9月补充样本",
+        "links": []
       },
       {
-        "name": "Flagsmith作者：曝光与转化关联困难",
+        "name": "Resend评论：人与Agent同时回复的归属",
         "source": "Product Hunt",
-        "metric": "当前Experiments public beta发布",
-        "category": "实验数据",
-        "signal": "作者称团队用开关分流后，还需跨工具拼接曝光和转化，部分实验难以完成；现成beta正在解决此问题，缺本期独立损失数据。",
-        "url": "https://www.producthunt.com/products/flagsmith",
-        "snapshotAt": "2026-10-22T01:22:38Z",
-        "evidenceType": "发布者问题陈述；现成供给同时构成反证",
+        "metric": "评论显示11h ago；不强行换算事件时间",
+        "category": "邮件工作流",
+        "signal": "Jean Bonnenfant称正在使用Zap做类似流程，并询问人与Agent同时回复时如何处理；证明存在替代流程与疑问，未证明Resend会重复发送。",
+        "url": "https://www.producthunt.com/products/resend",
+        "snapshotAt": "2026-10-23T01:24:07Z",
+        "evidenceType": "具体替代流程与疑问；非已复现缺陷",
+        "links": []
+      },
+      {
+        "name": "DeepCell评论：导出后数字关系丢失",
+        "source": "Product Hunt",
+        "metric": "评论显示6h ago；不强行换算事件时间",
+        "category": "报表交付",
+        "signal": "Rafik Mkhitaryan提到模型与幻灯片数字不同步，质疑导出后的静态数字；作者称协作功能在开发中。评论身份与损失未独立核实。",
+        "url": "https://www.producthunt.com/products/deepcell",
+        "snapshotAt": "2026-10-23T01:24:07Z",
+        "evidenceType": "评论经历和建议；非付费订单",
         "links": []
       }
     ]
   },
-  "themes": [
-    {
-      "name": "客服错误需回到具体会话验收",
-      "status": "商家反馈 + 相邻测试供给",
-      "evidence": "Inbox有停用反馈；Triage与Hue提供重放或测试供给。",
-      "summary": "推断先做店铺问答与转人工的有限验收，不能用测试工具发布证明商家愿意购买。",
-      "sources": [
-        "Shopify App Store",
-        "Product Hunt",
-        "YC Company Directory"
-      ],
-      "links": [
-        [
-          "商家及反证",
-          "https://apps.shopify.com/inbox/reviews"
-        ],
-        [
-          "复现供给",
-          "https://www.producthunt.com/products/triage-by-chodeberg"
-        ],
-        [
-          "测试供给",
-          "https://www.ycombinator.com/companies/hue"
-        ]
-      ]
-    },
-    {
-      "name": "订阅运营需要核对日期与履约",
-      "status": "商家诉求 + 官方边界 + 相邻集成供给",
-      "evidence": "两条订阅反馈指向时间与商品安排；官方支持合同编辑和CSV，NativeShip展示流程集成供给。",
-      "summary": "推断先提供只读差异清单。跨源关联较弱，n8n发布没有验证订阅客户预算。",
-      "sources": [
-        "Shopify App Store",
-        "Shopify Help Center",
-        "Product Hunt"
-      ],
-      "links": [
-        [
-          "商家诉求",
-          "https://apps.shopify.com/shopify-subscriptions/reviews"
-        ],
-        [
-          "合同边界",
-          "https://help.shopify.com/en/manual/products/purchase-options/subscriptions/shopify-subscriptions/manage-subscriptions/manage-contracts"
-        ],
-        [
-          "CSV",
-          "https://help.shopify.com/en/manual/products/purchase-options/subscriptions/shopify-subscriptions/import-export/importing-and-exporting"
-        ],
-        [
-          "相邻集成",
-          "https://www.producthunt.com/products/nativeship"
-        ]
-      ]
-    },
-    {
-      "name": "生成集成节点之后仍需维护验收",
-      "status": "作者经历 + 官方发布规则 + 轻量软件命题",
-      "evidence": "NativeShip已提供节点生成；n8n公开审核规范；YC关注小软件的部署与分享。",
-      "summary": "推断选择单一API版本升级的回归验收，不再做无差别节点生成平台。",
-      "sources": [
-        "Product Hunt",
-        "n8n官方文档",
-        "YC RFS"
-      ],
-      "links": [
-        [
-          "发布",
-          "https://www.producthunt.com/products/nativeship"
-        ],
-        [
-          "审核规则",
-          "https://docs.n8n.io/connect/create-nodes/build-your-node/reference/verification-guidelines.md"
-        ],
-        [
-          "投资命题",
-          "https://www.ycombinator.com/rfs"
-        ]
-      ]
-    },
-    {
-      "name": "实验工具增加后数据口径仍需验证",
-      "status": "两方产品供给；需求主要来自作者",
-      "evidence": "Flagsmith把开关接入实验；Show HN的Pug提供事件和用户档案。",
-      "summary": "推断检查曝光、身份和转化关联是否正确；两款工具不构成两份独立需求证据，也不保证可直接互联。",
-      "sources": [
-        "Product Hunt",
-        "Show HN / Pug"
-      ],
-      "links": [
-        [
-          "实验",
-          "https://www.producthunt.com/products/flagsmith"
-        ],
-        [
-          "分析",
-          "https://pug.sh/"
-        ],
-        [
-          "社区发布",
-          "https://news.ycombinator.com/item?id=50166960"
-        ]
-      ]
-    },
-    {
-      "name": "多人Agent协作进入拥挤供给区",
-      "status": "多源供给一致；独立采购证据弱",
-      "evidence": "BAND、Agent Relay、Weatherdeck与Trending中的ai-memory覆盖协作、状态和交接。",
-      "summary": "推断仅测试接口交接遗漏的复盘服务；状态上报和共享消息不证明任务语义一致。",
-      "sources": [
-        "Product Hunt",
-        "YC Company Directory",
-        "Show HN",
-        "GitHub Trending"
-      ],
-      "links": [
-        [
-          "协作",
-          "https://www.producthunt.com/products/band"
-        ],
-        [
-          "现成竞争",
-          "https://www.ycombinator.com/companies/agent-relay"
-        ],
-        [
-          "只读状态",
-          "https://github.com/Moshik21/weatherdeck"
-        ],
-        [
-          "记忆交接",
-          "https://github.com/akitaonrails/ai-memory"
-        ]
-      ]
-    },
-    {
-      "name": "学习反馈须验收纠错而非演示效果",
-      "status": "技术示例 + 投资观点；没有学校采购",
-      "evidence": "Penmentor提供手写反馈形态但演示含固定答案；Reach谈评估与复杂采购，YC提出基础学习命题。",
-      "summary": "推断先做成年学习者材料上的数学反馈审核；不能把微积分工具等同儿童学习效果。",
-      "sources": [
-        "Show HN / GitHub",
-        "Crunchbase News",
-        "YC RFS"
-      ],
-      "links": [
-        [
-          "项目与演示边界",
-          "https://github.com/AbdullahAlhariri/penmentor"
-        ],
-        [
-          "投资人采访",
-          "https://news.crunchbase.com/venture/ai-edtech-healthcare-reach-capital-qa-kim/"
-        ],
-        [
-          "持续命题",
-          "https://www.ycombinator.com/rfs"
-        ]
-      ]
-    }
-  ],
   "opportunities": [
     {
       "rank": "01",
-      "title": "家居店铺AI客服的问答与转人工验收",
-      "category": "Storefront Support Acceptance",
-      "thesis": "把一次错误回复变为店主确认的事实、预期答复及升级条件。",
-      "buyer": "使用者为客服主管；假设已有AI客服和近期错答工单的家居电商店主批准付款。",
-      "wedge": "单店30条脱敏历史问题，覆盖尺寸、配送与退货；店主先确认标准，再在授权测试入口检查回答和联系员工路径，交付错误分类、复测记录和人工处理清单。",
+      "title": "服装店铺搜索变更的相关性验收",
+      "category": "Storefront Search Acceptance",
+      "thesis": "把“搜索不准”拆成店主认可的查询、商品和可重放差异。",
+      "buyer": "使用者为电商运营；假设近期改过搜索或主题的服装店主批准预算。",
+      "wedge": "单店30条查询，含商品名、SKU与业务同义词；店主标注预期商品，记录前10结果与配置，交付异常表和复测脚本草案。",
       "proof": [
-        "需求23：有近期停用反馈和具体工作流诉求，但损失金额未经核验。",
-        "买家18、跨源9：Hue/Triage是相邻供给，不能加算客户证明；验证13、分发7、防御4。"
+        "近期有具体商家搜索抱怨，但没有损失金额或采购承诺。",
+        "官方语义扩展解释边界；heal.dev、Reticle只是相邻验证供给。"
       ],
-      "risk": "无法取得真实问题或复现配置会降低价值；官方已说明转人工存在，需先验证配置，避免卖一个已有功能。测试结果不保证所有回答正确。",
+      "risk": "平台语义扩展可能是预期行为；验收服务不能保证有接口修正排序。官方配置或主题修复可能已足够。",
       "sources": [
         [
-          "商家反馈及官方回复",
-          "https://apps.shopify.com/inbox/reviews"
+          "商家反馈",
+          "https://apps.shopify.com/search-and-discovery/reviews"
         ],
         [
-          "故障复现供给",
-          "https://www.producthunt.com/products/triage-by-chodeberg"
+          "官方规则",
+          "https://help.shopify.com/en/manual/online-store/storefront-search/search-and-discovery-modify-search"
         ],
         [
-          "保留状态的测试",
-          "https://www.ycombinator.com/companies/hue"
+          "复现供给",
+          "https://www.producthunt.com/products/heal-dev"
+        ],
+        [
+          "运行验收",
+          "https://github.com/reticlehq/reticle"
         ]
       ],
-      "experiment": "第一周访谈3家有近期错误问答的店铺，取得1组授权样本；拟报价300美元。第二周复测30条问题，由店主签认错误和升级规则，记录每例人工复核时间。",
-      "stop": "仅需官方配置教程即可解决、无法提供脱敏样本，或没有重复维护工作，则停止。",
-      "distribution": "通过Shopify实施服务商筛选前20位家居店主与客服主管；尚未联系。",
-      "defensibility": "客户确认的产品事实、政策版本和失败问法；可能积累回归集，但通用聊天界面没有壁垒。",
-      "score": 74,
+      "experiment": "第一周访谈3家服装商家，取得1组授权查询和预期商品；拟报价300美元。第二周人工复核30条并让店主确认是否有可处理的错配。",
+      "stop": "若无法给出预期商品、没有重复问题，或标准配置一次即可解决，停止产品化。",
+      "distribution": "经Shopify实施服务商寻找前20位近期做过搜索调整的店主；尚未联系。",
+      "defensibility": "客户确认的查询集、目录版本与失败分类；不能独占平台修复能力。",
+      "score": 72,
       "scoreBreakdown": {
-        "demand": 23,
+        "demand": 22,
         "buyer": 18,
         "crossSource": 9,
         "validation": 13,
-        "distribution": 7,
+        "distribution": 6,
         "defensibility": 4
       }
     },
     {
       "rank": "02",
-      "title": "订阅商家的账期与履约只读核对包",
-      "category": "Subscription Schedule Reconciliation",
-      "thesis": "在改合同前列清下次扣款、实物交付与客户约定之间的差异。",
-      "buyer": "使用者为订阅运营；假设经营实物会员或周期配送的独立店主付款。",
-      "wedge": "一份客户导出的合同CSV和20份脱敏交付安排；对齐UTC时间、当地业务日、商品和计划状态，输出需人工处理的差异表。只读分析，不代改账期或触发扣款。",
+      "title": "跨境店铺通知模板与语言路由核对",
+      "category": "Localization Delivery QA",
+      "thesis": "把模板变更后的语言差异变成可签认的验收清单。",
+      "buyer": "使用者为跨境运营和实施顾问；假设维护多语言定制模板的店主付款。",
+      "wedge": "一类订单通知、两种语言、20个客户提供的预览样本；对照源模板、翻译和商品页链接，检查漏字段、旧文案与语言跳转。",
       "proof": [
-        "需求22：两条日期相关反馈具体，但其中一条来自9月，未量化损失。",
-        "买家18、跨源5：官方文档与商店属于同生态，NativeShip仅相邻供给；验证13、分发6、防御4。"
+        "9月单评提供模板和路由问题，自报耗时未经核实；先降权并要求当前复现。",
+        "官方已提供翻译编辑和预览；Resend是相邻供给，跨源需求支持较弱。"
       ],
-      "risk": "官方已支持商品和频次编辑；CSV重复handle会跳过，不能将重新导入当更新既有合同的办法。日期清单若无法帮助实际操作就无持续价值。",
+      "risk": "旧投诉可能已修复；只做预览截图没有持续价值，且商家可能自行完成官方流程。",
       "sources": [
         [
-          "具体日期诉求",
-          "https://apps.shopify.com/shopify-subscriptions/reviews"
+          "商家反馈",
+          "https://apps.shopify.com/translate-and-adapt/reviews"
         ],
         [
-          "合同可编辑范围",
-          "https://help.shopify.com/en/manual/products/purchase-options/subscriptions/shopify-subscriptions/manage-subscriptions/manage-contracts"
+          "官方已有能力",
+          "https://help.shopify.com/en/manual/international/languages/checkout-and-notifications"
         ],
         [
-          "导出字段与重复规则",
-          "https://help.shopify.com/en/manual/products/purchase-options/subscriptions/shopify-subscriptions/import-export/importing-and-exporting"
-        ],
-        [
-          "相邻集成供给",
-          "https://www.producthunt.com/products/nativeship"
+          "邮件工作流供给",
+          "https://www.producthunt.com/products/resend"
         ]
       ],
-      "experiment": "访谈3家有批次交付或实物激活场景的商家；拟报价250美元。由客户导出1份文件，核对20份合同，要求运营逐条确认是否确有异常及处理方式。",
-      "stop": "标准后台操作已足够、导出缺关键字段，或客户只想直接自动扣款，则停止。",
-      "distribution": "从Shopify订阅实施顾问及公开经营实物会员的店铺寻找前20位运营负责人。",
-      "defensibility": "授权后的业务日历和异常处理规则；不持有支付资料，以持续对账价值检验续费。",
-      "score": 68,
+      "experiment": "第一周找3位多语言店铺实施顾问，要求最近一次模板变更样本；拟报价250美元。第二周核对20个预览，由客户确认差异与修复负责人。",
+      "stop": "无法复现旧问题、没有定制模板或后续变更，停止；不把新增预览按钮当MVP。",
+      "distribution": "从Shopify本地化实施商筛选前20位经手多语言通知的负责人。",
+      "defensibility": "语言、模板版本和业务字段之间的回归清单；需要持续更新才有续费价值。",
+      "score": 66,
       "scoreBreakdown": {
-        "demand": 22,
+        "demand": 20,
         "buyer": 18,
         "crossSource": 5,
         "validation": 13,
@@ -858,79 +838,75 @@
     },
     {
       "rank": "03",
-      "title": "单一SaaS的n8n节点版本回归包",
-      "category": "Integration Release Acceptance",
-      "thesis": "验证API升级后节点仍能完成客户原有工作流。",
-      "buyer": "使用者为集成工程师；假设已有客户通过n8n使用API的小型B2B SaaS技术负责人付款。",
-      "wedge": "一个已有节点、三个常用动作、十个脱敏请求；检查鉴权过期、分页、空值及错误映射，生成回归记录与待修清单，并检查公开发布材料。",
+      "title": "月度经营报告的数字出处核对",
+      "category": "Report Number Reconciliation",
+      "thesis": "在交付前确认源表、幻灯片与文字引用同一日期和口径。",
+      "buyer": "使用者为财务分析师或外包财务顾问；假设每月向客户交报告的小型财务服务商负责人付款。",
+      "wedge": "一份脱敏源表与一份已导出月报，人工映射20个关键数字，记录日期、单位、实际或预测、源位置和不一致项。",
       "proof": [
-        "需求17：NativeShip作者描述手工接入负担，有利益关系，尚无独立客户维护成本。",
-        "买家18、跨源9：官方审核规范给出边界，YC仅邻近命题；验证12、分发6、防御3。"
+        "DeepCell评论给出不同步经历，但没有独立量化返工损失。",
+        "Alkera和Graphify属于相邻血缘供给，不证明本服务有付费需求。"
       ],
-      "risk": "生成和维护已有工具覆盖；扫描通过不保证n8n审核通过。客户API若缺测试环境，两周验证可能受阻。",
+      "risk": "客户可能直接使用现成工具；语义口径不能仅靠数字相等判断，底层数据错误不在本MVP保证范围。",
       "sources": [
         [
-          "现成生成服务",
-          "https://www.producthunt.com/products/nativeship"
+          "发布与评论",
+          "https://www.producthunt.com/products/deepcell"
         ],
         [
-          "官方审核规范",
-          "https://docs.n8n.io/connect/create-nodes/build-your-node/reference/verification-guidelines.md"
+          "血缘供给",
+          "https://www.ycombinator.com/companies/alkera-ai"
         ],
         [
-          "小软件命题",
-          "https://www.ycombinator.com/rfs"
+          "图谱趋势",
+          "https://github.com/Graphify-Labs/graphify"
         ]
       ],
-      "experiment": "第一周访谈3家已有公开API和n8n节点的SaaS；取得一次已发生的API变更。拟报价400美元，第二周交付十例旧/新版本对照及发布材料检查清单。",
-      "stop": "没有真实节点用户或近期变更、现有测试完全覆盖，或客户要求保证平台审核通过，则停止。",
-      "distribution": "从公开维护n8n节点的小型SaaS寻找前20位开发者体验或技术负责人。",
-      "defensibility": "API版本、真实失败样本与节点行为的对应表；依赖客户持续版本变化。",
-      "score": 65,
+      "experiment": "第一周访谈3家外包财务团队，索取1组脱敏历史报告与最终签认版本；拟报价300美元。第二周核对20个数字，并计时记录人工复核负担。",
+      "stop": "没有可追溯源表、报告不重复，或现有工具已完整维持对应关系，停止。",
+      "distribution": "由公开提供月度管理报表的财务服务商中找前20位负责人。",
+      "defensibility": "经客户确认的指标定义与跨格式映射；不提供审计意见或财务决策建议。",
+      "score": 63,
       "scoreBreakdown": {
-        "demand": 17,
-        "buyer": 18,
-        "crossSource": 9,
-        "validation": 12,
+        "demand": 16,
+        "buyer": 17,
+        "crossSource": 10,
+        "validation": 11,
         "distribution": 6,
         "defensibility": 3
       }
     },
     {
       "rank": "04",
-      "title": "小型SaaS首次A/B实验的数据核对",
-      "category": "Experiment Event Reconciliation",
-      "thesis": "先验证一次曝光是否对应正确用户与结果，再解读实验输出。",
-      "buyer": "使用者为产品分析师或产品负责人；假设已运行开关实验的小SaaS负责人付款。",
-      "wedge": "一个实验、一个主要指标、客户导出的100行事件；检查重复曝光、用户身份关联、时间顺序和缺失转化，交付可复核的差异记录。",
+      "title": "小型SaaS收件箱的人机交接回放",
+      "category": "Inbox Handoff Replay",
+      "thesis": "在自动回复上线前确认一封邮件由谁处理、何时交回人工。",
+      "buyer": "使用者为客服运营或集成工程师；假设已有邮件自动化的小型SaaS技术负责人批准付款。",
+      "wedge": "用20条脱敏线程及客户声明的规则离线回放并发回复、重复事件和人工接管，输出状态转换与人工确认点；不向客户真实用户发信。",
       "proof": [
-        "需求14：主要依据Flagsmith作者描述，缺独立失败实验与支出记录。",
-        "买家17、跨源9：Pug是独立分析供给，不是需求证明；验证12、分发6、防御3。"
+        "评论者称有Zap替代流程并提出并发问题；尚非已发生事故。",
+        "YC多人AI为投资命题，无法补足收件箱采购证据。"
       ],
-      "risk": "现成beta或现有分析工具可能已覆盖核对；小流量样本无法给出可靠增长结论，事件正确也不证明因果关系。",
+      "risk": "新产品自身可能已经解决交接；看不到事件日志就不能定位重复来源。离线回放不保证实际发送幂等。",
       "sources": [
         [
-          "现成实验功能",
-          "https://www.producthunt.com/products/flagsmith"
+          "替代流程与提问",
+          "https://www.producthunt.com/products/resend"
         ],
         [
-          "事件分析供给",
-          "https://pug.sh/"
-        ],
-        [
-          "七日内社区发布",
-          "https://news.ycombinator.com/item?id=50166960"
+          "多人协作命题",
+          "https://www.ycombinator.com/rfs"
         ]
       ],
-      "experiment": "访谈3个正在尝试首轮实验的团队，拿到1份授权事件样本后拟报价250美元；第二周人工复核100行并让负责人签认异常，不承诺显著性或转化提升。",
-      "stop": "没有正在运行的实验、仅想得到漂亮增长数字，或现有工具已准确解释全部事件，则停止。",
-      "distribution": "从公开讨论特性开关与产品分析的小SaaS社群寻找前20位产品负责人。",
-      "defensibility": "客户确认的事件语义和历史异常；服务容易复制，先验证重复购买。",
-      "score": 61,
+      "experiment": "先访谈3个维护邮件工作流的SaaS，要求一例真实重复或漏回；拟报价250美元，第二周回放20条授权线程并由负责人签认规则。",
+      "stop": "只有理论担忧而没有真实线程，或平台现成状态已覆盖全部问题，停止。",
+      "distribution": "从公开分享邮件自动化经验的小型SaaS寻找前20位工程负责人。",
+      "defensibility": "事件到线程的映射与经确认的交接规则；平台原生能力替代风险高。",
+      "score": 60,
       "scoreBreakdown": {
         "demand": 14,
         "buyer": 17,
-        "crossSource": 9,
+        "crossSource": 8,
         "validation": 12,
         "distribution": 6,
         "defensibility": 3
@@ -938,86 +914,82 @@
     },
     {
       "rank": "05",
-      "title": "双Agent接口交接的事后差异复盘",
-      "category": "Agent Handoff Review",
-      "thesis": "将一次接口变更的约定、实际代码和验收结果放到同一份复盘表。",
-      "buyer": "使用者为技术负责人和开发者；假设已使用多个编码Agent的小外包团队负责人付款。",
-      "wedge": "一个已授权仓库、一次已完成交付、两段客户提供的会话记录；人工对照接口字段、负责人和验收标准，输出遗漏清单，不搭建新调度平台。",
+      "title": "预约语音机器人的姓名与地址确认测试",
+      "category": "Voice Field Acceptance",
+      "thesis": "只验收决定能否履约的关键字段，以及不确定时能否恰当追问。",
+      "buyer": "使用者为语音集成工程师；假设为维修预约提供语音系统的小型实施商负责人付款。",
+      "wedge": "由客户授权制作30段合成测试对话，包含姓名拼写、街道和预约编号；比较两个现成方案的字段正确、追问与人工接管结果。",
       "proof": [
-        "需求12：BAND作者和评论提出协调与上下文问题，缺独立量化返工样本。",
-        "买家16、跨源10：多个独立供给来源说明竞争强，不代表需求强；验证11、分发5、防御3。"
+        "Kugel Ear与Speko给出明确供给方向；尚无本期独立实施商投诉或预算。",
+        "VoiceStudio为另一实现路线，周月榜热度不是预约场景验证。"
       ],
-      "risk": "共享消息不能自动判定语义冲突；已有BAND、Agent Relay或团队代码审查可能足够。跨客户记录不得混用。",
+      "risk": "已有厂商评测可能足够；合成样本难代表真实口音、噪声及通话中断，不可承诺业务准确率。",
       "sources": [
         [
-          "当前发布与疑问",
-          "https://www.producthunt.com/products/band"
+          "词级不确定性",
+          "https://www.producthunt.com/products/kugelaudio"
         ],
         [
-          "已有协作供给",
-          "https://www.ycombinator.com/companies/agent-relay"
+          "按场景选型",
+          "https://www.ycombinator.com/companies/speko"
         ],
         [
-          "只读状态边界",
-          "https://github.com/Moshik21/weatherdeck"
-        ],
-        [
-          "记忆交接供给",
-          "https://github.com/akitaonrails/ai-memory"
+          "本地语音工具",
+          "https://github.com/debpalash/VoiceStudio"
         ]
       ],
-      "experiment": "访谈3家有真实接口返工的团队，取得1次已结束任务；拟报价200美元。复盘十项接口约定，只有负责人确认发现原流程漏掉的问题才考虑第二轮。",
-      "stop": "拿不到具体返工、记录不完整无法判断，或现有工具已完整记录并验收，则停止。",
-      "distribution": "在公开分享多Agent交付经验的软件工作室中筛选前20位负责人。",
-      "defensibility": "经授权的交接遗漏案例和检查项；平台替代风险高，不投入通用状态板。",
+      "experiment": "第一周访谈3位维修预约语音实施商，取得字段标准；拟报价200美元。第二周测30段合成样本，只有买家愿意再提供授权真实样本才继续。",
+      "stop": "买家只有通用演示需求，或无法定义字段正确与追问代价，停止。",
+      "distribution": "在公开交付预约语音系统的服务商中找前20位负责人。",
+      "defensibility": "客户批准的字段词表与错误分类；起步阶段防御性弱，不训练新基础模型。",
       "score": 57,
       "scoreBreakdown": {
-        "demand": 12,
+        "demand": 11,
         "buyer": 16,
         "crossSource": 10,
         "validation": 11,
         "distribution": 5,
-        "defensibility": 3
+        "defensibility": 4
       }
     },
     {
       "rank": "06",
-      "title": "成人数学学习产品的手写反馈审核",
-      "category": "Handwritten Math Feedback Audit",
-      "thesis": "验收第一处错误标注与提示是否准确，而不是用演示视频证明学习效果。",
-      "buyer": "使用者为数学内容编辑；假设面向成人学习者的小型教育软件负责人批准实验预算。",
-      "wedge": "20份原创成人微积分练习，由数学教师给出参考纠错；比较工具识别位置与提示内容，记录误报、漏报和人工修正时间。",
+      "title": "本地模型部署前的指定负载测量包",
+      "category": "Local Workload Measurement",
+      "thesis": "用客户任务检验已有机器，不把模拟速度当采购依据。",
+      "buyer": "使用者为内部工具开发者；假设准备在已有Mac运行本地推理的小型工作室负责人付款。",
+      "wedge": "客户现有机器、一个模型和20个授权代表任务；记录首次响应、完成时间、内存与功耗读数，明确无法取得的字段。",
       "proof": [
-        "需求9：Penmentor作者有具体学习流程，尚无教育企业付费或投诉；演示含固定答案。",
-        "买家14、跨源9：Reach与YC为投资观点，且基础儿童教育与成人微积分并非同一市场；验证10、分发5、防御3。"
+        "llmspeed公开说明混合估算，siltop提供观测边界；都是开发者供给。",
+        "本地语音仓库趋势只是相邻线索；没有本期企业硬件采购或付费记录。"
       ],
-      "risk": "识别正确不等于学习进步；采购意愿未知，教师审核可能比工具更贵。先用原创成人材料，避免以未核实效果向学生承诺。",
+      "risk": "无法取得客户机器就难两周验收；样本、模型版本和长短上下文会改变结果，不能外推整类硬件。",
       "sources": [
         [
-          "作者流程与演示说明",
-          "https://github.com/AbdullahAlhariri/penmentor"
+          "估算边界",
+          "https://llmspeed.dev/"
         ],
         [
-          "投资观点",
-          "https://news.crunchbase.com/venture/ai-edtech-healthcare-reach-capital-qa-kim/"
+          "观测边界",
+          "https://github.com/CLoaKY233/siltop"
         ],
         [
-          "学习命题",
-          "https://www.ycombinator.com/rfs"
+          "相邻负载",
+          "https://github.com/debpalash/VoiceStudio"
         ]
       ],
-      "experiment": "先访谈3位成人数学产品负责人并找1位教师合作；拟报价200美元审核20份原创练习。统计错误位置与提示一致性，只有买家愿付审核成本才继续。",
-      "stop": "没有明确产品买家、教师无法建立一致标准，或需要证明长期学习效果才能采购，则暂停。",
-      "distribution": "从成人考试辅导和数学学习工具的小团队寻找前20位内容负责人；尚未建立名单。",
-      "defensibility": "授权练习、教师标注与模型错误类型；小样本壁垒弱，不训练通用教育模型。",
-      "score": 50,
+      "experiment": "先访谈3家已持有测试机器的工作室，拟报价150美元；仅在1家提供机器与负载后记录20次任务及持续运行表现，不购置设备。",
+      "stop": "只有免费跑分兴趣、没有真实任务，或客户不能提供测试环境，停止。",
+      "distribution": "从公开讨论本地推理的小型工作室寻找前20位负责人；先验证预算。",
+      "defensibility": "同版本负载与资源记录的可复验档案；工具免费，服务价值必须靠客户确认。",
+      "score": 52,
       "scoreBreakdown": {
-        "demand": 9,
-        "buyer": 14,
-        "crossSource": 9,
-        "validation": 10,
+        "demand": 10,
+        "buyer": 15,
+        "crossSource": 6,
+        "validation": 12,
         "distribution": 5,
-        "defensibility": 3
+        "defensibility": 4
       }
     }
   ]
