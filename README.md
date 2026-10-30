@@ -34,6 +34,7 @@ journalctl -u startup-radar-update.service
 
 ## Reports
 
+- [2026-10-30 Startup Radar 创业机会日报](docs/startup_radar_2026-10-30_zh.md)
 - [2026-10-29 Startup Radar 创业机会日报](docs/startup_radar_2026-10-29_zh.md)
 - [2026-10-28 Startup Radar 创业机会日报](docs/startup_radar_2026-10-28_zh.md)
 - [2026-10-27 Startup Radar 创业机会日报](docs/startup_radar_2026-10-27_zh.md)
